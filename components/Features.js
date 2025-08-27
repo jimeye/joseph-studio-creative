@@ -47,6 +47,7 @@ export default function Features() {
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
                           Pourquoi choisir Joseph Studio creative ?
           </h2>
+          <div className="w-64 h-1 mb-6" style={{ backgroundColor: '#16214a' }}></div>
           <p className="text-xl max-w-3xl font-bold" style={{ color: '#16214a' }}>
             Des technologies de pointe au service de votre réussite digitale
           </p>
@@ -86,15 +87,15 @@ export default function Features() {
                 <div className="text-xl font-bold mb-1" style={{ color: '#16214a' }}>Next.js</div>
                 <div className="text-xs" style={{ color: '#16214a' }}>Framework React</div>
               </div>
-              <div className="bg-white rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="bg-white  p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
                 <div className="text-xl font-bold mb-1" style={{ color: '#16214a' }}>Tailwind</div>
                 <div className="text-xs" style={{ color: '#16214a' }}>CSS Framework</div>
               </div>
-              <div className="bg-white rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="bg-white  p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
                 <div className="text-xl font-bold mb-1" style={{ color: '#16214a' }}>Vercel</div>
                 <div className="text-xs" style={{ color: '#16214a' }}>Hébergement Cloud</div>
               </div>
-              <div className="bg-white rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="bg-white  p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
                 <div className="text-xl font-bold mb-1" style={{ color: '#16214a' }}>TypeScript</div>
                 <div className="text-xs" style={{ color: '#16214a' }}>Typage statique</div>
               </div>

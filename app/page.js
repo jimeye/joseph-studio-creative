@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import Services from '../components/Services'
+import ExpertAdvice from '../components/ExpertAdvice'
 import Pricing from '../components/Pricing'
 import Features from '../components/Features'
 import Mission from '../components/Mission'
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="min-h-screen">
       <Hero />
       <Services />
+      <ExpertAdvice />
       <Pricing />
       <Features />
       <Mission />

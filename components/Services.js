@@ -141,7 +141,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 rounded-lg border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -205,7 +205,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 rounded-lg border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -213,7 +213,7 @@ export default function Pricing() {
           </div>
 
           {/* Carte 3: Votre site Premium web sur mesure */}
-          <div className="relative bg-blue-600 rounded-lg border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
+          <div className="relative bg-blue-600  border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-white mb-6">
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
@@ -266,7 +266,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 rounded-lg border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
