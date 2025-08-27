@@ -1,0 +1,650 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Déclarations @font-face pour Newsreader */
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/Newsreader/Newsreader.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/Newsreader/Newsreader-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Déclarations @font-face pour Sharp Grotesk */
+@font-face {
+  font-family: 'Sharp Grotesk Light 10';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Light10.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Light 15';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Light15.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Light 20';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Light20.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Light 25';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Light25.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Medium 10';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Medium10.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Medium 15';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Medium15.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Medium 20';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Medium20.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Medium 25';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Medium25.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Bold 10';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Bold10.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Bold 15';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Bold15.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Bold 20';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Bold20.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Bold 25';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Bold25.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Book 10';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Book10.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Book 15';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Book15.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Book 20';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Book20.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Book 25';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Book25.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk SemiBold 10';
+  src: url('/Sharp_Grotesk/SharpGrotesk-SemiBold10.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk SemiBold 15';
+  src: url('/Sharp_Grotesk/SharpGrotesk-SemiBold15.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk SemiBold 20';
+  src: url('/Sharp_Grotesk/SharpGrotesk-SemiBold20.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk SemiBold 25';
+  src: url('/Sharp_Grotesk/SharpGrotesk-SemiBold25.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Black 10';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Black10.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Black 15';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Black15.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Black 20';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Black20.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk Black 25';
+  src: url('/Sharp_Grotesk/SharpGrotesk-Black25.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Déclarations @font-face pour Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Thin.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ExtraLight.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Light.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ExtraBold.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Black.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italiques Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ThinItalic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ExtraLightItalic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-LightItalic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Italic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-MediumItalic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-SemiBoldItalic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-BoldItalic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ExtraBoldItalic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-BlackItalic.woff2') format('woff2'),
+       url('/Montserrat-Full-Version/Web Fonts/Montserrat/Montserrat-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Déclarations @font-face pour Paneuropa Road */
+@font-face {
+  font-family: 'Paneuropa Road';
+  src: url('/Paneuropa Road/PaneuropaStreet.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Paneuropa Road';
+  src: url('/Paneuropa Road/PaneuropaRoad.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Paneuropa Road';
+  src: url('/Paneuropa Road/PaneuropaHighway.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Paneuropa Road';
+  src: url('/Paneuropa Road/PaneuropaFreeway.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Sharp Grotesk Light 15';
+    font-weight: 300;
+    font-stretch: expanded;
+    line-height: -0.2;
+    font-size: 14px;
+    color: #16214a;
+  }
+  
+  * {
+    font-family: 'Sharp Grotesk Light 15';
+    font-stretch: expanded;
+    line-height: -0.2;
+  }
+  
+  /* Exception pour les icônes dans les sections dépliables */
+  .cursor-pointer svg {
+    color: inherit !important;
+  }
+  
+  /* Classe spécifique pour forcer la couleur rouge des icônes */
+  .icon-red {
+    color: #d92f35 !important;
+  }
+  
+  /* Exception spécifique pour les icônes SVG */
+  svg.icon-red {
+    color: #d92f35 !important;
+  }
+  
+  /* Exception encore plus spécifique */
+  .cursor-pointer svg.icon-red {
+    color: #d92f35 !important;
+  }
+  
+  /* Correction pour les cartes et cadres */
+  .bg-white, .bg-pink-50, .bg-official {
+    line-height: 1.2 !important;
+  }
+  
+  /* Espacement spécifique pour les descriptions */
+  p {
+    line-height: 1.4 !important;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-white text-black font-bold py-2 px-8 rounded-lg border border-black;
+    box-shadow: 4px 4px 0px #000000;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000;
+  }
+
+  /* Exception pour le bouton hamburger */
+  button.hamburger-btn {
+    @apply bg-transparent text-gray-700 border-none shadow-none;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  
+  button.hamburger-btn:hover {
+    transform: none;
+    box-shadow: none;
+    @apply text-accent;
+  }
+
+  /* Stylo boss dimensions */
+  .stylo-boss {
+    width: 34px;
+    height: 30px;
+  }
+  
+  @media (min-width: 768px) {
+    .stylo-boss {
+      width: 44px;
+      height: 42px;
+    }
+  }
+
+  /* Typographie principale du site - Newsreader pour les textes */
+  body {
+    font-family: 'Newsreader', serif !important;
+    font-size: 16px !important; /* text-base = 16px - TAILLE STANDARD DU SITE */
+  }
+
+  /* Forcer la taille text-base partout sauf exceptions */
+  p, span, div, a, button, input, textarea, label {
+    font-size: 16px !important; /* text-base - TAILLE STANDARD DU SITE */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sharp Grotesk Medium 25', sans-serif !important;
+  }
+
+  /* Exceptions pour les tailles spécifiques */
+  .text-xs { font-size: 12px !important; }
+  .text-sm { font-size: 14px !important; }
+  .text-lg { font-size: 18px !important; }
+  .text-xl { font-size: 20px !important; }
+  .text-2xl { font-size: 24px !important; }
+  .text-3xl { font-size: 30px !important; }
+  .text-4xl { font-size: 36px !important; }
+  .text-5xl { font-size: 48px !important; }
+  .text-6xl { font-size: 60px !important; }
+
+  /* Hero title with Sharp Grotesk Medium 25 */
+  .hero-title {
+    font-family: 'Sharp Grotesk Medium 25', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 32px !important;
+    line-height: 35px !important;
+    letter-spacing: 0px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 54.88px !important;
+      line-height: 60px !important;
+    }
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Fluid Engine inspired classes */
+  .fluid-container {
+    @apply w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+
+  .fluid-grid {
+    @apply grid gap-4 sm:gap-6 lg:gap-8;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .fluid-flex {
+    @apply flex flex-wrap items-center justify-between gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  .fluid-card {
+    @apply bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300;
+    min-height: fit-content;
+  }
+
+  .fluid-text {
+    @apply text-sm sm:text-base lg:text-lg xl:text-xl;
+  }
+
+  .fluid-heading {
+    @apply text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold;
+  }
+
+  .fluid-spacing {
+    @apply space-y-4 sm:space-y-6 lg:space-y-8 xl:space-y-12;
+  }
+
+  .fluid-responsive {
+    @apply w-full h-auto object-cover;
+  }
+
+  /* Auto-layout inspired spacing */
+  .auto-spacing {
+    @apply flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  .auto-align {
+    @apply flex items-center justify-center;
+  }
+
+  .auto-distribute {
+    @apply flex justify-between items-center;
+  }
+
+  /* Constraint-based sizing */
+  .constraint-width {
+    @apply w-full max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg;
+  }
+
+  .constraint-height {
+    @apply h-auto min-h-0;
+  }
+
+  /* Ratio-based layouts */
+  .ratio-16-9 {
+    aspect-ratio: 16 / 9;
+  }
+
+  .ratio-4-3 {
+    aspect-ratio: 4 / 3;
+  }
+
+  .ratio-1-1 {
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Animation de transition des couleurs */
+  @keyframes colorCycle {
+    0% { color: #d92f35; }
+    25% { color: #0038b8; }
+    50% { color: #16214a; }
+    75% { color: #d92f35; }
+    100% { color: #d92f35; }
+  }
+
+  .color-transition {
+    animation: colorCycle 4s infinite;
+  }
+
+  .color-transition:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+
+  .color-transition:nth-child(3) {
+    animation-delay: 1.6s;
+  }
+
+  .color-transition:nth-child(4) {
+    animation-delay: 2.4s;
+  }
+
+  .color-transition:nth-child(5) {
+    animation-delay: 3.2s;
+  }
+} 

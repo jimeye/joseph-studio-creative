@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://studio-joseph-creative.com/sitemap.xml
+
+# Optimisations SEO
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Crawl-delay pour éviter de surcharger le serveur
+Crawl-delay: 1

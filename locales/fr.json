@@ -1,0 +1,166 @@
+{
+  "header": {
+    "logo": "STUDIO JOSEPH",
+    "nav": {
+      "services": "Services",
+      "ressources": "Ressources", 
+      "realisations": "Réalisations",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "language": "English"
+  },
+  "hero": {
+    "title": "Site internet dernière génération à 1€",
+    "subtitle": "Création de sites web Next.js/React ultra modernes avec financement d'aides publiques inclus. Performance, design et SEO optimisés. Maintenance 3 ans incluse.",
+    "cta": "Commencer maintenant",
+    "features": {
+      "responsive": {
+        "title": "Design Responsive",
+        "description": "Site professionnel responsive avec design moderne et optimisé SEO"
+      },
+      "performance": {
+        "title": "Performance Optimisée",
+        "description": "Vitesse de chargement ultra-rapide et optimisation SEO avancée"
+      },
+      "maintenance": {
+        "title": "Maintenance 1 an",
+        "description": "Maintenance et mises à jour incluses pendant 3 ans"
+      }
+    }
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions web complètes pour votre entreprise",
+    "items": {
+      "design": {
+        "title": "Design Moderne",
+        "description": "Interfaces utilisateur élégantes et intuitives",
+        "features": ["Design responsive", "Animations fluides", "UX optimisée"]
+      },
+      "development": {
+        "title": "Développement",
+        "description": "Sites web performants avec les dernières technologies",
+        "features": ["Next.js/React", "Performance optimisée", "Code propre"]
+      },
+      "seo": {
+        "title": "Sécurité",
+        "description": "Protection complète de votre site web",
+        "features": ["SSL sécurisé", "Sauvegardes automatiques", "Maintenance 1 an"]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Tarifs Transparents",
+    "subtitle": "Des prix clairs sans surprise",
+    "publicAid": {
+      "title": "Aides Publiques Disponibles",
+      "description": "Financez votre site web grâce aux aides publiques. Contactez-nous pour vérifier votre éligibilité.",
+      "cta": "Vérifier l'éligibilité"
+    },
+    "plans": {
+      "starter": {
+        "title": "Starter",
+        "price": "1€",
+        "description": "Site vitrine professionnel",
+        "features": ["Design responsive", "5 pages", "Hébergement 3 ans", "Maintenance 1 an", "SEO de base"]
+      },
+      "professional": {
+        "title": "Professional", 
+        "price": "299€",
+        "description": "Site e-commerce complet",
+        "features": ["Tout du Starter", "E-commerce", "Paiements sécurisés", "Gestion des stocks", "Support prioritaire"]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": "599€", 
+        "description": "Solution sur mesure",
+        "features": ["Tout du Professional", "Fonctionnalités sur mesure", "API personnalisée", "Support dédié", "Formation incluse"]
+      }
+    }
+  },
+  "features": {
+    "title": "Pourquoi Nous Choisir",
+    "subtitle": "L'excellence technique au service de votre réussite",
+    "items": {
+      "modern": {
+        "title": "Technologies Modernes",
+        "description": "Next.js, React et les dernières innovations web"
+      },
+      "performance": {
+        "title": "Performance Optimisée", 
+        "description": "Vitesse de chargement ultra-rapide et SEO avancé"
+      },
+      "maintenance": {
+        "title": "Maintenance 1 An",
+        "description": "Mises à jour et support inclus pendant 3 ans",
+        "stats": "100% des clients satisfaits"
+      }
+    },
+    "technologies": {
+      "title": "Technologies Utilisées",
+      "items": ["Next.js", "React", "Tailwind CSS", "TypeScript", "Vercel"]
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages Clients",
+    "subtitle": "Ce que disent nos clients",
+    "items": [
+      {
+        "text": "Site magnifique et professionnel. La maintenance 1 an incluse est un vrai plus !",
+        "author": "Marie Dubois",
+        "company": "Boutique Mode"
+      },
+      {
+        "text": "Performance exceptionnelle et design moderne. Je recommande vivement !",
+        "author": "Pierre Martin",
+        "company": "Restaurant Le Gourmet"
+      },
+      {
+        "text": "Service client impeccable et maintenance 1 an incluse. Parfait !",
+        "author": "Sophie Bernard",
+        "company": "Cabinet Avocat"
+      }
+    ],
+    "stats": {
+      "title": "Nos Chiffres",
+      "items": {
+        "projects": "150+ Projets",
+        "clients": "98% Satisfaits",
+        "support": "24/7 Support"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Prêt à lancer votre projet ?",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Votre message",
+      "submit": "Envoyer le message"
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "address": "123 Rue de la Paix, 75001 Paris",
+      "phone": "+33 1 23 45 67 89",
+      "email": "contact@studio-joseph.fr"
+    },
+    "quickResponse": {
+      "title": "Réponse Rapide",
+      "description": "Nous répondons sous 24h à toutes vos demandes"
+    }
+  },
+  "footer": {
+    "description": "STUDIO JOSEPH - Création de sites web Next.js/React ultra modernes avec financement d'aides publiques inclus. Performance, design et SEO optimisés. Maintenance 3 ans incluse.",
+    "links": {
+      "services": "Services",
+      "about": "À propos",
+      "contact": "Contact",
+      "privacy": "Confidentialité",
+      "terms": "Conditions"
+    },
+    "copyright": "© 2024 STUDIO JOSEPH. Tous droits réservés."
+  }
+} 

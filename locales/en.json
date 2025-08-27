@@ -1,0 +1,166 @@
+{
+  "header": {
+    "logo": "STUDIO JOSEPH",
+    "nav": {
+      "services": "Services",
+      "ressources": "Resources", 
+      "realisations": "Portfolio",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "language": "English"
+  },
+  "hero": {
+    "title": "Next-generation website for €1",
+    "subtitle": "Ultra-modern Next.js/React web development with public funding included. Optimized performance, design and SEO. 3-year maintenance included.",
+    "cta": "Get started now",
+    "features": {
+      "responsive": {
+        "title": "Responsive Design",
+        "description": "Professional responsive website with modern design and optimized SEO"
+      },
+      "performance": {
+        "title": "Optimized Performance",
+        "description": "Ultra-fast loading speed and advanced SEO optimization"
+      },
+      "maintenance": {
+        "title": "3-Year Maintenance",
+        "description": "Maintenance and updates included for 3 years"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete web solutions for your business",
+    "items": {
+      "design": {
+        "title": "Modern Design",
+        "description": "Elegant and intuitive user interfaces",
+        "features": ["Responsive design", "Smooth animations", "Optimized UX"]
+      },
+      "development": {
+        "title": "Development",
+        "description": "High-performance websites with latest technologies",
+        "features": ["Next.js/React", "Optimized performance", "Clean code"]
+      },
+      "seo": {
+        "title": "Security",
+        "description": "Complete protection for your website",
+        "features": ["SSL secured", "Automatic backups", "3-year maintenance"]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "Clear prices with no surprises",
+    "publicAid": {
+      "title": "Public Aid Available",
+      "description": "Finance your website through public aid. Contact us to check your eligibility.",
+      "cta": "Check eligibility"
+    },
+    "plans": {
+      "starter": {
+        "title": "Starter",
+        "price": "€1",
+        "description": "Professional showcase website",
+        "features": ["Responsive design", "5 pages", "3-year hosting", "3-year maintenance", "Basic SEO"]
+      },
+      "professional": {
+        "title": "Professional", 
+        "price": "€299",
+        "description": "Complete e-commerce website",
+        "features": ["Everything from Starter", "E-commerce", "Secure payments", "Inventory management", "Priority support"]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": "€599", 
+        "description": "Custom solution",
+        "features": ["Everything from Professional", "Custom features", "Custom API", "Dedicated support", "Training included"]
+      }
+    }
+  },
+  "features": {
+    "title": "Why Choose Us",
+    "subtitle": "Technical excellence at the service of your success",
+    "items": {
+      "modern": {
+        "title": "Modern Technologies",
+        "description": "Next.js, React and the latest web innovations"
+      },
+      "performance": {
+        "title": "Optimized Performance", 
+        "description": "Ultra-fast loading speed and advanced SEO"
+      },
+      "maintenance": {
+        "title": "3-Year Maintenance",
+        "description": "Updates and support included for 3 years",
+        "stats": "100% client satisfaction"
+      }
+    },
+    "technologies": {
+      "title": "Technologies Used",
+      "items": ["Next.js", "React", "Tailwind CSS", "TypeScript", "Vercel"]
+    }
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "What our clients say",
+    "items": [
+      {
+        "text": "Beautiful and professional website. The 3-year maintenance included is a real plus!",
+        "author": "Marie Dubois",
+        "company": "Fashion Boutique"
+      },
+      {
+        "text": "Exceptional performance and modern design. I highly recommend!",
+        "author": "Pierre Martin",
+        "company": "Le Gourmet Restaurant"
+      },
+      {
+        "text": "Impeccable customer service and 3-year maintenance included. Perfect!",
+        "author": "Sophie Bernard",
+        "company": "Law Firm"
+      }
+    ],
+    "stats": {
+      "title": "Our Numbers",
+      "items": {
+        "projects": "150+ Projects",
+        "clients": "98% Satisfied",
+        "support": "24/7 Support"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to launch your project?",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Your message",
+      "submit": "Send message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "123 Peace Street, 75001 Paris",
+      "phone": "+33 1 23 45 67 89",
+      "email": "contact@studio-joseph.fr"
+    },
+    "quickResponse": {
+      "title": "Quick Response",
+      "description": "We respond within 24h to all your requests"
+    }
+  },
+  "footer": {
+    "description": "STUDIO JOSEPH - Ultra-modern Next.js/React web development with public funding included. Optimized performance, design and SEO. 3-year maintenance included.",
+    "links": {
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "copyright": "© 2024 STUDIO JOSEPH. All rights reserved."
+  }
+} 
