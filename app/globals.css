@@ -619,6 +619,42 @@
     aspect-ratio: 1 / 1;
   }
 
+  /* Animation de rotation pour le système solaire */
+  @keyframes spin {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  /* Animation de rotation pour le soleil central */
+  @keyframes earthSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Animation pour faire sortir les planètes de leur orbite */
+  @keyframes flyOut {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg) translate(-50px, -50px);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translate(-100px, -100px);
+      opacity: 0;
+    }
+  }
+
   /* Animation de transition des couleurs */
   @keyframes colorCycle {
     0% { color: #d92f35; }

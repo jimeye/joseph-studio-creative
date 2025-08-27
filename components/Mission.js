@@ -43,7 +43,7 @@ export default function Mission() {
           >
             {/* Soleil central - Logo JOSEPH STUDIO */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-              <div className="rounded-full p-4 flex items-center justify-center" style={{ width: '100px', height: '100px', backgroundColor: '#f9f9f9', boxShadow: '0 0 20px rgba(249,249,249,0.8)' }}>
+              <div className="rounded-full p-4 flex items-center justify-center" style={{ width: '100px', height: '100px', backgroundColor: '#f9f9f9', boxShadow: '0 0 20px rgba(249,249,249,0.8)', animation: 'earthSpin 90s linear infinite' }}>
                 <div className="flex flex-col justify-center text-center" style={{ width: '80px', gap: '0', lineHeight: '0.8' }}>
                   <span className="text-sm font-bold" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '14px', letterSpacing: '0.1em' }}>JOSEPH</span>
                   <span className="text-sm font-bold" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '14px', letterSpacing: '0.1em' }}>STUDIO</span>
@@ -54,8 +54,7 @@ export default function Mission() {
 
             {/* Planètes en orbite - Outils no-code */}
             {/* Orbite 1 - 4 planètes (rotation lente) */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-gray-300 rounded-full opacity-30" style={{ animationDuration: '16s', animation: 'spin 16s linear infinite reverse' }}></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48" style={{ animationDuration: '16s', animation: 'spin 16s linear infinite reverse' }}>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48" style={{ animationDuration: '25s', animation: 'flyOut 25s linear infinite' }}>
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
                 <img src="/images/notion-logo.svg" alt="Notion" className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Notion</div>
@@ -75,8 +74,7 @@ export default function Mission() {
             </div>
 
             {/* Orbite 2 - 8 planètes (rotation plus rapide) */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 border border-gray-300 rounded-full opacity-30" style={{ animationDuration: '12s', animation: 'spin 12s linear infinite reverse' }}></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80" style={{ animationDuration: '12s', animation: 'spin 12s linear infinite reverse' }}>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80" style={{ animationDuration: '20s', animation: 'flyOut 20s linear infinite' }}>
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
                 <img src="/images/figma-logo.svg" alt="Figma" className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Figma</div>
