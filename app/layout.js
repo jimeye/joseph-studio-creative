@@ -16,14 +16,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://studio-joseph-creative.com'),
+  metadataBase: new URL('https://joseph-studio-creative.vercel.app'),
   alternates: {
     canonical: '/',
   },
       openGraph: {
       title: 'JOSEPH STUDIO CREATIVE - Site internet dernière génération à 1€',
     description: 'Création de sites web Next.js/React ultra modernes avec financement d\'aides publiques inclus. Performance, design et SEO optimisés.',
-    url: 'https://studio-joseph-creative.com',
+    url: 'https://joseph-studio-creative.vercel.app',
           siteName: 'JOSEPH STUDIO CREATIVE',
     locale: 'fr_FR',
     type: 'website',
