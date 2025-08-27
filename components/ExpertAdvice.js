@@ -52,7 +52,7 @@ export default function ExpertAdvice() {
             return (
                              <div 
                  key={index} 
-                 className="bg-white p-4 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group"
+                 className="bg-white p-4 md:p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 group"
                  style={{ 
                    borderColor: '#f0f0f0',
                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',

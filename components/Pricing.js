@@ -55,7 +55,7 @@ export default function Services() {
 
         <div className="fluid-grid">
           {services.map((service, index) => (
-            <div key={index} className="fluid-card hover:-translate-y-2 bg-white border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+            <div key={index} className="hover:-translate-y-2 bg-white border-2 p-6" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
               <div className="mb-6">
                 {service.icon}
               </div>
@@ -68,7 +68,7 @@ export default function Services() {
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-sm" style={{ color: '#16214a' }}>
-                    <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: '#d92f35' }}></div>
+                    <div className="w-2 h-2 mr-3" style={{ backgroundColor: '#d92f35' }}></div>
                     {feature}
                   </li>
                 ))}
