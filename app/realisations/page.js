@@ -68,7 +68,7 @@ export default function RealisationsPage() {
     {
       id: 3,
       title: 'Blondie Paris',
-      category: 'SQUARESPACE',
+      category: 'SUR MESURE',
       image: '/images/blondie.paris.webp',
       description: 'Relations presse',
       slug: 'blondie-paris'
@@ -108,7 +108,7 @@ export default function RealisationsPage() {
     {
       id: 8,
       title: 'Orphée Ritchie',
-      category: 'SQUARESPACE',
+      category: 'SUR MESURE',
       image: '/images/orphee-ritchie.webp',
       description: 'Cabinet de psychologie',
       slug: 'orphee-ritchie-psychologue'
@@ -116,7 +116,7 @@ export default function RealisationsPage() {
     {
       id: 9,
       title: 'Time 2 Win',
-      category: 'SHOPIFY',
+      category: 'SUR MESURE',
       image: '/images/time-2-win.jpg',
       description: 'Site web de lotterie',
       slug: 'time-2win'
@@ -124,7 +124,7 @@ export default function RealisationsPage() {
     {
       id: 10,
       title: 'El Meleh de la Paella',
-      category: 'SQUARESPACE',
+      category: 'SUR MESURE',
       image: '/images/el-meleh-de-la-paella.webp',
       description: 'Restaurant de paella',
       slug: 'el-meleh-paella-ibiza'
@@ -196,13 +196,6 @@ export default function RealisationsPage() {
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                  <div className="text-center text-[#f9f7f2]">
-                    <div className="text-xs font-light tracking-widest mb-3 opacity-90">{getProjectIcon(project.id)}</div>
-                    <div className="text-sm font-semibold mb-2">{project.title}</div>
-                    <div className="text-xs opacity-70">{project.category}</div>
-                  </div>
-                </div>
               </div>
 
               {/* Project Info */}
