@@ -54,8 +54,8 @@ export default function Header() {
               <span className="text-3xl cursor-pointer">🍅</span>
               <User size={28} className="cursor-pointer hover:text-accent" style={{ color: '#16214a' }} />
               <ShoppingCart size={28} className="cursor-pointer hover:text-accent" style={{ color: '#16214a' }} />
-                                        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="hamburger-btn focus:outline-none text-3xl" style={{ color: '#16214a' }}>
-                            {isMenuOpen ? "➕" : "➕"}
+                                        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="hamburger-btn focus:outline-none text-3xl transition-transform duration-300" style={{ color: '#16214a', transform: isMenuOpen ? 'rotate(90deg)' : 'rotate(0deg)' }}>
+                            ➕
                           </button>
             </div>
           </div>
