@@ -84,7 +84,7 @@ export default function CGV() {
           <section>
             <h3 className="text-xl font-bold mb-4">#1 Préambule</h3>
             <p>
-              La Prestation est édictée par la société JOSEPH STUDIO CREATIVE, société à responsabilité limitée au capital de 1.000 euros, immatriculée au Registre du commerce et des Sociétés de Paris sous le numéro 840 493 928, siégeant au 17 rue des petits carreaux, 75002 Paris et représentée par son Président Monsieur Jimmy Joseph Fellous (ci-après « JOSEPH STUDIO CREATIVE » ou le « Prestataire »).
+                                  La Prestation est édictée par la société JOSEPH STUDIO CREATIVE, société à responsabilité limitée au capital de 1.000 euros, immatriculée au Registre du commerce et des Sociétés de Paris sous le numéro 840 493 928, siégeant au 16 Boulevard des Filles du Calvaire, 75011 Paris et représentée par son Président Monsieur Jimmy Joseph Fellous (ci-après « JOSEPH STUDIO CREATIVE » ou le « Prestataire »).
             </p>
           </section>
 
@@ -103,7 +103,7 @@ export default function CGV() {
           <section>
             <h3 className="text-xl font-bold mb-4">#3 Objet de la prestation</h3>
             <p>
-              Les présentes conditions générales ont pour objet de définir le cadre juridique et financier au sein duquel les relations entre JOSEPH STUDIO CREATIVE et le Client vont s'inscrire. Elles n'ont nullement pour objet de définir les caractéristiques techniques détaillées de l'intervention de JOSEPH STUDIO CREATIVE auprès du Client, dans la mesure où celles-ci sont mentionnées sur josephstudiocreative.com dans la description détaillée des Prestations, ou font l'objet d'un devis accepté par les parties.
+              Les présentes conditions générales ont pour objet de définir le cadre juridique et financier au sein duquel les relations entre JOSEPH STUDIO CREATIVE et le Client vont s'inscrire. Elles n'ont nullement pour objet de définir les caractéristiques techniques détaillées de l'intervention de JOSEPH STUDIO CREATIVE auprès du Client, dans la mesure où celles-ci sont mentionnées sur joseph-creative-studio.com dans la description détaillée des Prestations, ou font l'objet d'un devis accepté par les parties.
             </p>
           </section>
 
@@ -113,7 +113,7 @@ export default function CGV() {
               JOSEPH STUDIO CREATIVE est une société spécialisée dans la conception de sites web sur-mesure, la création graphique de supports visuels, la création de contenus digitaux, ainsi que dans le conseil et l'encadrement de projets professionnels.
             </p>
             <p className="mb-4">
-              Le Client, bénéficiaire des présentes conditions générales, souhaite avoir recours aux services de JOSEPH STUDIO CREATIVE pour réaliser un certain nombre de Prestations qu'il aura défini au préalable sur le site internet josephstudiocreative.com ou par contact direct avec un des membres de JOSEPH STUDIO CREATIVE.
+              Le Client, bénéficiaire des présentes conditions générales, souhaite avoir recours aux services de JOSEPH STUDIO CREATIVE pour réaliser un certain nombre de Prestations qu'il aura défini au préalable sur le site internet joseph-creative-studio.com ou par contact direct avec un des membres de JOSEPH STUDIO CREATIVE.
             </p>
             <p className="mb-4">
               Préalablement à l'acceptation des présentes conditions générales de vente, le Client reconnaît avoir pris connaissance et déclare accepter sans réserve la proposition commerciale, la description détaillée des Prestations ainsi que les conditions financières appliquées par JOSEPH STUDIO CREATIVE et mentionnées sur le devis.
@@ -145,7 +145,7 @@ export default function CGV() {
           <section>
             <h3 className="text-xl font-bold mb-4">#6 Prestations</h3>
             <p className="mb-4">
-              La Prestation dont la réalisation est confiée à JOSEPH STUDIO CREATIVE figure sur josephstudiocreative.com dans la description détaillée des Prestations, et/ou sur le devis acceptés par les parties.
+              La Prestation dont la réalisation est confiée à JOSEPH STUDIO CREATIVE figure sur joseph-creative-studio.com dans la description détaillée des Prestations, et/ou sur le devis acceptés par les parties.
             </p>
             <p className="mb-4">
               Celle-ci comprend un rendez-vous téléphonique d'une heure pour la prise de brief et le cadrage de la demande ("RENDEZ-VOUS DE BRIEF"), un rendez-vous en visioconférence de présentation de son tableau de bord Notion sur lequel seront centralisés tous les éléments nécessaires à la création du site ("RENDEZ-VOUS DÉMARRER MON PROJET"), un rendez-vous en visioconférence d'une heure pour présenter la première version du site ("RENDEZ-VOUS DE LIVRAISON V1") et un rendez-vous final en visioconférence de formation d'une heure et trente minutes ("RENDEZ-VOUS DE FORMATION ET MISE EN LIGNE").
@@ -154,7 +154,7 @@ export default function CGV() {
               Entre ces rendez-vous, le Client a la possibilité de contacter son chef de projet à tout moment sur Notion ou de prendre un rendez-vous supplémentaire d'une vingtaine de minutes pour lui poser toutes ses questions.
             </p>
             <p className="mb-4">
-              Une fois la Prestation finalisée et envoyée au Client ("Version 1"), ce dernier peut demander des ajustements à JOSEPH STUDIO CREATIVE, qui devra envoyer une nouvelle version au Client, prenant en compte les modifications demandées ("Version 2"). Si des modifications de design et/ou de contenus sont demandées par client à l'issu de cette seconde version, elles feront l'objet d'un forfait maintenance à souscrire sur josephstudiocreative.com.
+              Une fois la Prestation finalisée et envoyée au Client ("Version 1"), ce dernier peut demander des ajustements à JOSEPH STUDIO CREATIVE, qui devra envoyer une nouvelle version au Client, prenant en compte les modifications demandées ("Version 2"). Si des modifications de design et/ou de contenus sont demandées par client à l'issu de cette seconde version, elles feront l'objet d'un forfait maintenance à souscrire sur joseph-creative-studio.com.
             </p>
             <p className="mb-4">
               Toutes demandes d'ajouts et/ou de modifications non prévus dans le cahier de charge initial établi lors du "RENDEZ-VOUS DE BRIEF" et non mentionné dans le devis, fera l'objet d'une facturation supplémentaire sur devis.
@@ -206,7 +206,7 @@ export default function CGV() {
           <section>
             <h3 className="text-xl font-bold mb-4">#9 Prix et modalités de règlement</h3>
             <p className="mb-4">
-              Les tarifs de JOSEPH STUDIO CREATIVE sont ceux applicables à la date de la réception de la facture acceptée par le client ou des offres mentionnées sur le site www.josephstudiocreative.com souscrite par le Client.
+              Les tarifs de JOSEPH STUDIO CREATIVE sont ceux applicables à la date de la réception de la facture acceptée par le client ou des offres mentionnées sur le site www.joseph-creative-studio.com souscrite par le Client.
             </p>
             <p className="mb-4">
               Chaque proposition commerciale comportera un prix relatif aux Prestations commandées par le client.

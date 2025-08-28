@@ -163,7 +163,7 @@ export default function Contact() {
                   <Mail size={20} className="mr-4" style={{ color: '#16214a' }} />
                   <div>
                     <h4 className="font-semibold" style={{ color: '#16214a' }}>Email</h4>
-                    <a href="mailto:contact@studio-joseph-creative.com" style={{ color: '#16214a', cursor: 'pointer' }} className="hover:!text-red-600">contact@studio-joseph-creative.com</a>
+                    <a href="mailto:contact@josephstudiocreative.com" style={{ color: '#16214a', cursor: 'pointer' }} className="hover:!text-red-600">contact@josephstudiocreative.com</a>
                   </div>
                 </div>
                 

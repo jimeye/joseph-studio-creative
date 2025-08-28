@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://studio-joseph-creative.com/sitemap.xml
+Sitemap: https://joseph-creative-studio.com/sitemap.xml
 
 # Optimisations SEO
 Disallow: /api/

@@ -2,12 +2,15 @@ export const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "JOSEPH STUDIO CREATIVE",
-  "url": "https://joseph-studio-creative.vercel.app",
-  "logo": "https://joseph-studio-creative.vercel.app/logo.png",
+  "url": "https://joseph-creative-studio.com",
+  "logo": "https://joseph-creative-studio.com/logo.png",
   "description": "Création de sites web Next.js/React ultra modernes avec financement d'aides publiques inclus. Performance, design et SEO optimisés.",
   "foundingDate": "2018",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "16 Boulevard des Filles du Calvaire",
+    "addressLocality": "Paris",
+    "postalCode": "75011",
     "addressCountry": "FR"
   },
   "contactPoint": {
@@ -16,8 +19,8 @@ export const structuredData = {
     "availableLanguage": "French"
   },
   "sameAs": [
-    "https://www.linkedin.com/company/studio-joseph-creative",
-    "https://www.facebook.com/studiojosephcreative"
+    "https://www.linkedin.com/company/josephstudiocreative",
+    "https://www.facebook.com/josephstudiocreative"
   ],
   "serviceArea": {
     "@type": "Country",
@@ -63,9 +66,9 @@ export const localBusinessData = {
   "@type": "LocalBusiness",
       "name": "JOSEPH STUDIO CREATIVE",
   "description": "Création de sites web Next.js/React ultra modernes",
-  "url": "https://joseph-studio-creative.vercel.app",
-  "telephone": "+33-XX-XX-XX-XX",
-  "email": "contact@studio-joseph-creative.com",
+  "url": "https://joseph-creative-studio.com",
+  "telephone": "+33 06 08 25 12 23",
+  "email": "contact@josephstudiocreative.com",
   "priceRange": "€€",
   "currenciesAccepted": "EUR",
   "paymentAccepted": "Cash, Credit Card, Bank Transfer",

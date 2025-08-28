@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Logo et description */}
           <div className="pl-[5px]">
             <h3 className="text-sm mb-2 pl-[5px] whitespace-nowrap">
-              joseph-studio-creative
+              joseph-creative-studio
             </h3>
             <p className="mb-4 max-w-md pl-[5px]" style={{ color: '#16214a' }}>
               Création de sites web ultra modernes.<br />
@@ -33,7 +33,7 @@ export default function Footer() {
             <h4 className="text-xs mb-2">Nos Coordonnées</h4>
             <ul className="space-y-1 pl-[5px]" style={{ color: '#16214a' }}>
               <li>
-                <a href="mailto:contact@studio-joseph-creative.com" className="block hover:!text-red-600" style={{ color: '#16214a', cursor: 'pointer' }}>contact@studio-joseph-creative.com</a>
+                <a href="mailto:contact@josephstudiocreative.com" className="block hover:!text-red-600" style={{ color: '#16214a', cursor: 'pointer' }}>contact@josephstudiocreative.com</a>
               </li>
               <li>
                 <a href="tel:+330608251223" className="block hover:!text-red-600" style={{ color: '#16214a', cursor: 'pointer' }}>+33 06 08 25 12 23</a>
@@ -72,7 +72,7 @@ export default function Footer() {
 
         {/* Copyright centré sur toute la largeur */}
         <div className="text-xs mt-4 text-center" style={{ color: '#16214a', fontSize: '10px' }}>
-          <a href="https://laboulette-ibiza.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#16214a' }}>©2025 <span style={{ fontFamily: 'Arial', fontWeight: 'normal' }}>JOSEPH-STUDIO-CREATIVE.COM</span><br className="md:hidden" /> | Powered by JOSEPH STUDIO creative | Tous droits réservés |</a>
+          <a href="https://laboulette-ibiza.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#16214a' }}>©2025 <span style={{ fontFamily: 'Arial', fontWeight: 'normal' }}>JOSEPH-CREATIVE-STUDIO.COM</span><br className="md:hidden" /> | Powered by JOSEPH STUDIO creative | Tous droits réservés |</a>
         </div>
 
       </div>
