@@ -174,31 +174,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <div className="bg-[#f9f7f2] p-8 w-full border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
-            <h3 className="text-2xl font-bold mb-4" style={{ color: '#16214a' }}>
-              📊 Statistiques de Satisfaction
-            </h3>
-            <div className="grid md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2" style={{ color: '#16214a' }}>98%</div>
-                <div className="text-sm" style={{ color: '#16214a' }}>Satisfaction client</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2" style={{ color: '#16214a' }}>500+</div>
-                <div className="text-sm" style={{ color: '#16214a' }}>Sites livrés</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2" style={{ color: '#16214a' }}>4.9/5</div>
-                <div className="text-sm" style={{ color: '#16214a' }}>Note moyenne</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2" style={{ color: '#16214a' }}>7j</div>
-                <div className="text-sm" style={{ color: '#16214a' }}>Délai moyen</div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
 
     </section>

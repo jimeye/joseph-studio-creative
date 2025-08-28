@@ -1,3 +1,5 @@
+'use client'
+
 import { ArrowLeft, Check } from 'lucide-react'
 
 export default function CarolineGoldmanProject() {
