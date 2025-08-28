@@ -5,6 +5,7 @@ import { ArrowLeft, Check } from 'lucide-react'
 export default function CarolineGoldmanProject() {
   return (
     <div className="min-h-screen bg-[#f9f7f2]">
+      {/* Caroline Goldman Project Page */}
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Header avec bouton retour */}
         <div className="mb-8">
