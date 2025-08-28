@@ -251,10 +251,10 @@ export default function Testimonials() {
                   className="flex-1 text-center px-4 py-2 text-sm font-bold transition-all duration-300"
                   style={{
                     boxShadow: '4px 4px 0px #16214a',
-                    color: '#ffffff',
-                    borderColor: '#ffffff',
+                    color: '#f9f7f2',
+                    borderColor: '#f9f7f2',
                     backgroundColor: '#16214a',
-                    border: '2px solid #ffffff',
+                    border: '2px solid #f9f7f2',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
@@ -264,8 +264,8 @@ export default function Testimonials() {
                   }}
                   onMouseLeave={(e) => {
                     e.target.style.backgroundColor = '#16214a';
-                    e.target.style.color = '#ffffff';
-                    e.target.style.borderColor = '#ffffff';
+                    e.target.style.color = '#f9f7f2';
+                    e.target.style.borderColor = '#f9f7f2';
                   }}
                 >
                   Voir le projet

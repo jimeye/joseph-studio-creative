@@ -19,8 +19,8 @@ export default function Hero() {
                         className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" 
                         style={{ 
                           boxShadow: '4px 4px 0px #16214a', 
-                          color: '#ffffff', 
-                          borderColor: '#ffffff', 
+                          color: '#f9f7f2', 
+                          borderColor: '#f9f7f2', 
                           backgroundColor: '#16214a',
                           transition: 'all 0.3s ease'
                         }}
@@ -31,8 +31,8 @@ export default function Hero() {
                         }}
                         onMouseLeave={(e) => {
                           e.target.style.backgroundColor = '#16214a';
-                          e.target.style.color = '#ffffff';
-                          e.target.style.borderColor = '#ffffff';
+                          e.target.style.color = '#f9f7f2';
+                          e.target.style.borderColor = '#f9f7f2';
                         }}
                       >
                         LANCER MON PROJET

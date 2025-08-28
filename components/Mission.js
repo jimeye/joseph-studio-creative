@@ -39,7 +39,7 @@ export default function Mission() {
             <div className="text-xl lg:text-2xl font-light mb-6" style={{ color: '#f9f7f2', fontFamily: 'Newsreader', textAlign: 'justify' }}>
                               Notre mission est d'imaginer comment simplifier votre quotidien en choisissant les bons outils no code que vous pourrez prendre en main facilement.
             </div>
-            <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
+            <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#f9f7f2'; e.target.style.borderColor = '#f9f7f2'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
               SE FORMER EN 1:1 AVEC UN EXPERT
             </button>
           </div>

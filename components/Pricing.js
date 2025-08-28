@@ -80,7 +80,7 @@ export default function Services() {
         </div>
 
                             <div className="text-center mt-8">
-                      <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 mx-auto" style={{ boxShadow: '4px 4px 0px #16214a', color: '#ffffff', borderColor: '#ffffff', backgroundColor: '#16214a', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }}>
+                      <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 mx-auto" style={{ boxShadow: '4px 4px 0px #16214a', color: '#f9f7f2', borderColor: '#f9f7f2', backgroundColor: '#16214a', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#f9f7f2'; e.target.style.borderColor = '#f9f7f2'; }}>
                         DÉCOUVRIR TOUS NOS SERVICES
                       </button>
                     </div>

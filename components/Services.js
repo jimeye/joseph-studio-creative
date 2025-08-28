@@ -90,11 +90,11 @@ export default function Pricing() {
           <div className="relative bg-blue-600 border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-[#f9f7f2] mb-6">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#f9f7f2' }}>
                 Votre site web express
               </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 1 € HT</p>
-              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#f9f7f2' }}>À partir de 1 € HT</p>
+              <p className="text-lg mb-6 font-bold" style={{ color: '#f9f7f2' }}>
                 Nous créons votre site web en 1 journée intensive exclusivement dédiée à la création de votre projet.
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
+              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#f9f7f2'; e.target.style.borderColor = '#f9f7f2'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -152,11 +152,11 @@ export default function Pricing() {
           <div className="relative bg-blue-600 border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-[#f9f7f2] mb-6">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#f9f7f2' }}>
                 Votre site web sur mesure
               </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 1800 € HT</p>
-              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#f9f7f2' }}>À partir de 1800 € HT</p>
+              <p className="text-lg mb-6 font-bold" style={{ color: '#f9f7f2' }}>
                 Donnez vie à votre vision avec un site web vitrine ou marchand au design unique et entièrement sur mesure.
               </p>
             </div>
@@ -205,7 +205,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
+              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#f9f7f2'; e.target.style.borderColor = '#f9f7f2'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -216,11 +216,11 @@ export default function Pricing() {
           <div className="relative bg-blue-600  border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-[#f9f7f2] mb-6">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#f9f7f2' }}>
                 Votre site web premium
               </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 4800 € HT</p>
-              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#f9f7f2' }}>À partir de 4800 € HT</p>
+              <p className="text-lg mb-6 font-bold" style={{ color: '#f9f7f2' }}>
                 L'excellence absolue pour votre présence web. Design unique, fonctionnalités avancées, suivi VIP.
               </p>
             </div>
@@ -266,7 +266,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
+              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#f9f7f2'; e.target.style.borderColor = '#f9f7f2'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
