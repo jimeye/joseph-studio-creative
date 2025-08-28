@@ -1,10 +1,25 @@
 'use client';
 
-import { Star, Quote, ExternalLink } from 'lucide-react';
+import { Star, Quote, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import { useState, useRef, useEffect } from 'react';
 
 export default function Testimonials() {
-  const projects = [
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const carouselRef = useRef(null);
+    
+    const projects = [
+    {
+      slug: 'any-paris',
+      name: "A | N | Y",
+      description: "Agence créative design",
+      fullDescription: "Fondée par Johann Roux et Julie Elbaz en 2006, l'agence ANY déploie son savoir-faire dans les domaines du luxe, de la mode, de la beauté ou de la joaillerie. Basée à Paris et à Londres, l'agence ANY se plait à traduire une vision, enrichir et mettre à l'épreuve du réel, l'identité, les contenus et les valeurs d'une marque.",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      features: ["Événements luxe", "Design spatial", "Production mondiale", "Expériences exclusives"],
+      image: "/images/any-paris.jpg",
+      url: "https://any.paris/",
+      rating: 5
+    },
     {
       slug: 'atnsoul',
       name: "ATN Soul",
@@ -23,7 +38,7 @@ export default function Testimonials() {
       fullDescription: "Site web professionnel pour une agence de relations presse. Interface élégante pour présenter les services et les réalisations.",
       technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
       features: ["Présentation des services", "Portfolio", "Blog", "Contact"],
-      image: "/images/blondie-paris.jpg",
+      image: "/images/blondie.paris.webp",
       url: "https://blondie.vercel.app",
       rating: 5
     },
@@ -92,8 +107,57 @@ export default function Testimonials() {
       image: "/images/time-2win.jpg",
       url: "https://time-2win.vercel.app",
       rating: 5
+    },
+    {
+      slug: 'el-meleh-paella-ibiza',
+      name: "El Meleh de la Paella",
+      description: "Restaurant de paella",
+      fullDescription: "Site web pour un restaurant de paella à Ibiza. Présentation du menu, réservations et informations pratiques.",
+      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
+      features: ["Menu interactif", "Système de réservation", "Localisation", "Horaires"],
+      image: "/images/el-meleh-paella.jpg",
+      url: "https://el-meleh-de-la-paella-d-ibiza.vercel.app",
+      rating: 5
+    },
+    {
+      slug: 'melanie-elbaz',
+      name: "Mélanie Elbaz",
+      description: "Photographe",
+      fullDescription: "Site web professionnel pour Mélanie Elbaz, photographe. Portfolio élégant pour présenter ses créations.",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      features: ["Portfolio photos", "Présentation artiste", "Contact", "Galerie"],
+      image: "/images/melanie-elbaz.jpg",
+      url: "https://www.melanieelbaz.com",
+      rating: 5
+    },
+    {
+      slug: 'mandala-project',
+      name: "Mandala Project",
+      description: "Retraite holistique et yoga",
+      fullDescription: "Site web pour une retraite holistique et yoga. Présentation des programmes, réservations et informations sur les retraites.",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      features: ["Programmes retraites", "Système de réservation", "Galerie photos", "Informations pratiques"],
+      image: "/images/mandala-project.jpg",
+      url: "https://www.mandala-project.com/",
+      rating: 5
     }
   ];
+
+  // Auto-scroll effect - Continuous smooth rotation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (carouselRef.current) {
+        carouselRef.current.scrollLeft += 1; // Tiny increment for smooth continuous movement
+        
+        // Reset to beginning when reaching the end
+        if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth - carouselRef.current.clientWidth) {
+          carouselRef.current.scrollLeft = 0;
+        }
+      }
+    }, 50); // Very frequent updates for smooth continuous movement
+    
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="realisations" className="section-padding bg-official mt-0" style={{ marginTop: 0, paddingTop: 0, scrollMarginTop: '100px', backgroundColor: '#f9f7f2' }}>
@@ -110,9 +174,15 @@ export default function Testimonials() {
           </p>
         </div>
 
-                 <div className="grid md:grid-cols-5 lg:grid-cols-5 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="bg-[#f9f7f2] p-6 border-2 transition-all duration-300 hover:transform hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+        {/* Carousel Container */}
+        <div className="relative">
+          <div 
+            ref={carouselRef}
+            className="flex gap-8 overflow-x-auto"
+            style={{ scrollBehavior: 'smooth', scrollbarWidth: 'none', msOverflowStyle: 'none', transition: 'scroll-left 0.5s ease-in-out' }}
+          >
+                        {projects.map((project, index) => (
+              <div key={index} className="bg-[#f9f7f2] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', width: '300px', transform: 'rotateY(0deg)' }}>
 
                              {/* Project Image */}
                <div className="mb-4 h-52 -mx-6 -mt-6 transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
@@ -133,6 +203,9 @@ export default function Testimonials() {
 
               {/* Project Info */}
               <div className="mb-4">
+                <h4 className="font-bold text-sm mb-1" style={{ color: '#16214a' }}>
+                  {project.name}
+                </h4>
                 <p className="text-xs mb-2" style={{ color: '#16214a' }}>
                   {project.description}
                 </p>
@@ -172,11 +245,41 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
+          </div>
+          
+          {/* Navigation Arrows */}
+          <div className="flex justify-center mt-8 gap-4">
+            <button
+              onClick={() => {
+                if (currentIndex > 0) {
+                  setCurrentIndex(currentIndex - 1);
+                  carouselRef.current.scrollLeft -= 320;
+                }
+              }}
+              className="p-2 border-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
+              style={{ borderColor: '#16214a', color: '#16214a', backgroundColor: '#f9f7f2' }}
+              disabled={currentIndex === 0}
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              onClick={() => {
+                if (currentIndex < projects.length - 5) {
+                  setCurrentIndex(currentIndex + 1);
+                  carouselRef.current.scrollLeft += 320;
+                }
+              }}
+              className="p-2 border-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
+              style={{ borderColor: '#16214a', color: '#16214a', backgroundColor: '#f9f7f2' }}
+              disabled={currentIndex >= projects.length - 5}
+            >
+              <ChevronRight size={24} />
+            </button>
+          </div>
         </div>
-
 
       </div>
 
     </section>
   )
-} 
+}
