@@ -27,11 +27,11 @@ export default function Contact() {
   return (
     <section id="contact" className="bg-official" style={{ paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem' }}>
       <div className="container-custom">
-                <div className="text-left mb-12" style={{ marginTop: '0rem' }}>
+                <div className="text-left lg:text-center mb-12" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
-            Contactez-Nous
+            Contactez-Nous.
           </h2>
-          <p className="text-xl max-w-3xl" style={{ color: '#16214a' }}>
+          <p className="text-xl lg:text-2xl max-w-3xl lg:mx-auto" style={{ color: '#16214a' }}>
             Prêt à transformer votre entreprise ? Contactez-nous pour un devis gratuit !
           </p>
         </div>
@@ -126,10 +126,26 @@ export default function Contact() {
               <div className="mt-8">
                                         <button
                             type="submit"
-                            className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8  border border-[#16214a] hover:transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 hover:bg-[#ffff00]"
-                            style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a' }}
+                            className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300"
+                            style={{ 
+                              boxShadow: '4px 4px 0px #16214a', 
+                              color: '#ffffff', 
+                              borderColor: '#ffffff', 
+                              backgroundColor: '#16214a',
+                              transition: 'all 0.3s ease'
+                            }}
+                            onMouseEnter={(e) => {
+                              e.target.style.backgroundColor = '#f9f7f2';
+                              e.target.style.color = '#16214a';
+                              e.target.style.borderColor = '#16214a';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.target.style.backgroundColor = '#16214a';
+                              e.target.style.color = '#ffffff';
+                              e.target.style.borderColor = '#ffffff';
+                            }}
                           >
-                            <Send size={20} style={{ color: '#16214a' }} />
+                            <Send size={20} style={{ color: 'inherit' }} />
                             ENVOYER MA DEMANDE
                           </button>
               </div>

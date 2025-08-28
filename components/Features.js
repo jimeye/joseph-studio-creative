@@ -55,8 +55,8 @@ export default function Features() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {features.map((feature, index) => (
             <div key={index} className="text-center group">
-              <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 transition-all duration-300" style={{ backgroundColor: '#d92f35', boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
-                <div style={{ color: '#16214a' }}>
+              <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 transition-all duration-300" style={{ backgroundColor: '#16214a', boxShadow: '4px 4px 0px #16214a', borderColor: '#f9f7f2' }}>
+                <div style={{ color: '#f9f7f2' }}>
                   {feature.icon}
                 </div>
               </div>

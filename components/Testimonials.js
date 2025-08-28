@@ -153,12 +153,12 @@ export default function Testimonials() {
       <div className="container-custom">
         
         {/* Section Témoignages */}
-        <div className="text-left mb-12" style={{ marginTop: '0rem' }}>
+        <div className="text-left lg:text-center mb-12" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
-            Nos réalisations
+            Nos réalisations.
           </h2>
-          <p className="text-xl max-w-3xl" style={{ color: '#16214a' }}>
-            Découvrez nos sites web sur-mesure créés pour nos clients
+          <p className="text-xl lg:text-2xl max-w-3xl lg:mx-auto" style={{ color: '#16214a' }}>
+            Découvrez nos sites web sur-mesure créés pour nos clients.
           </p>
         </div>
 
@@ -248,17 +248,24 @@ export default function Testimonials() {
               <div className="flex gap-2">
                 <Link
                   href={`/projets/${project.slug}`}
-                  className="flex-1 text-center px-4 py-2 bg-[#16214a] text-[#f9f7f2] text-sm font-semibold transition-all duration-300 hover:bg-[#f9f7f2] hover:text-[#16214a]"
+                  className="flex-1 text-center px-4 py-2 text-sm font-bold transition-all duration-300"
                   style={{
-                    border: '2px solid transparent',
-                    borderColor: 'transparent',
+                    boxShadow: '4px 4px 0px #16214a',
+                    color: '#ffffff',
+                    borderColor: '#ffffff',
+                    backgroundColor: '#16214a',
+                    border: '2px solid #ffffff',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
+                    e.target.style.backgroundColor = '#f9f7f2';
+                    e.target.style.color = '#16214a';
                     e.target.style.borderColor = '#16214a';
                   }}
                   onMouseLeave={(e) => {
-                    e.target.style.borderColor = 'transparent';
+                    e.target.style.backgroundColor = '#16214a';
+                    e.target.style.color = '#ffffff';
+                    e.target.style.borderColor = '#ffffff';
                   }}
                 >
                   Voir le projet

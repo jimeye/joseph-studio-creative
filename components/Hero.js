@@ -6,8 +6,8 @@ export default function Hero() {
   return (
     <section id="accueil" className="bg-official section-padding">
       <div className="fluid-container">
-                  <div className="text-center md:text-center mb-6 w-full max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight hero-title text-center md:text-center" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a', textAlign: 'center' }}>
+                  <div className="text-left md:text-center mb-6 w-full max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight hero-title text-left md:text-center" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
             Votre site web dernière <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>génération</span>, développé sur-mesure, conçu par des <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>experts</span> géré par <span className="hero-title bg-yellow-300" style={{ color: '#16214a', backgroundColor: '#ffff00', paddingTop: '0', paddingBottom: '0' }}>vous,</span> à partir de <span className="hero-title bg-yellow-300" style={{ color: '#16214a', backgroundColor: '#ffff00', paddingTop: '0', paddingBottom: '0' }}>1 €</span>.
           </h1>
                       <p className="text-xl max-w-3xl mb-6 mx-auto" style={{ color: '#16214a', textAlign: 'justify' }}>
@@ -16,7 +16,7 @@ export default function Hero() {
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
                       <button 
-                        className="text-lg flex items-center gap-2 font-bold py-3 px-8 border transition-all duration-300" 
+                        className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" 
                         style={{ 
                           boxShadow: '4px 4px 0px #16214a', 
                           color: '#ffffff', 
@@ -27,10 +27,12 @@ export default function Hero() {
                         onMouseEnter={(e) => {
                           e.target.style.backgroundColor = '#f9f7f2';
                           e.target.style.color = '#16214a';
+                          e.target.style.borderColor = '#16214a';
                         }}
                         onMouseLeave={(e) => {
                           e.target.style.backgroundColor = '#16214a';
                           e.target.style.color = '#ffffff';
+                          e.target.style.borderColor = '#ffffff';
                         }}
                       >
                         LANCER MON PROJET

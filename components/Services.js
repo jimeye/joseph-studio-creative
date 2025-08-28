@@ -76,12 +76,12 @@ export default function Pricing() {
       {/* Ligne de séparation */}
               <div className="border-t -my-8" style={{ borderColor: '#f9f9f9' }}></div>
         <div className="container-custom">
-        <div className="text-left mb-6" style={{ marginTop: '2rem' }}>
+        <div className="text-left lg:text-center mb-6" style={{ marginTop: '2rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight hero-title" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
-            Nous vous accompagnons dans la <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>création</span> ou la <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>refonte</span> de votre site web.
+            Nous vous accompagnons dans<br className="hidden lg:block" /> la <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>création</span> ou la <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>refonte</span> de<br className="hidden lg:block" /> votre site web.
           </h2>
-          <p className="text-xl max-w-3xl font-bold" style={{ color: '#16214a' }}>
-            Des solutions web complètes adaptées à tous les besoins de votre entreprise
+          <p className="text-xl lg:text-2xl max-w-3xl font-bold lg:mx-auto" style={{ color: '#16214a' }}>
+            Des solutions web complètes adaptées à tous les besoins de votre entreprise.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -205,7 +205,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -266,7 +266,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -277,25 +277,7 @@ export default function Pricing() {
         {/* Espace après les trois cadres */}
         <div className="mt-6"></div>
 
-        {/* Espace avant le cadre rouge */}
-        <div className="mt-6"></div>
 
-        <div className="text-center w-full">
-                      <div className="border-2 border-b-2 w-full p-8" style={{ backgroundColor: '#d92f35', boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', borderBottomWidth: '2px', borderBottomColor: '#16214a' }}>
-            <h2 className="text-4xl md:text-5xl font-normal mb-2 tracking-tight hero-title" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#f9f7f2' }}>
-              Votre site web évolue?
-            </h2>
-            <div className="text-6xl font-bold mb-4" style={{ color: '#16214a' }}>On vous accompagne.</div>
-            <p className="text-xl font-semibold mb-4 font-bold" style={{ color: '#f9f7f2' }}>
-              Vous avez déjà démarré la création de votre site web mais vous avez besoin de l'aide d'un expert ? C'est ici !
-            </p>
-            <div className="text-center">
-              <button className="text-lg flex items-center justify-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8 border-2 hover:transform hover:-translate-x-1 hover:-translate-y-1 mx-auto transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
-                AMÉLIOREZ VOTRE SITE WEB
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

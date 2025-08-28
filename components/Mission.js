@@ -21,23 +21,36 @@ export default function Mission() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Cadre jaune avec la mission */}
           <div
-            className="bg-yellow-100 p-8 md:max-w-xl mx-auto border-2 mt-0"
-            style={{ boxShadow: '4px 4px 0px #16214a', marginTop: 0, paddingTop: 0, borderColor: '#16214a' }}
+            className="p-8 md:max-w-xl mx-auto border-2 mt-0 transition-all duration-1000 ease-out"
+            style={{ 
+              backgroundColor: '#16214a', 
+              boxShadow: '4px 4px 0px #16214a', 
+              marginTop: 0, 
+              paddingTop: '0.8rem', 
+              paddingBottom: '4.4rem', 
+              borderColor: '#16214a',
+              transform: isVisible ? 'translateX(0)' : 'translateX(-100%)',
+              opacity: isVisible ? 1 : 0
+            }}
           >
             <div className="text-xl uppercase font-bold mb-4 mt-4" style={{ color: '#d92f35' }}>
               FORMATIONS
             </div>
-            <div className="text-3xl font-bold mb-6" style={{ color: '#16214a', fontFamily: 'Newsreader', textAlign: 'justify' }}>
-                              Notre mission est d'imaginer comment simplifier votre quotidien en choisissant les bons <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>outils no code</span> que vous pourrez prendre en main facilement.
+            <div className="text-3xl mb-6" style={{ color: '#f9f7f2', fontFamily: 'Newsreader', textAlign: 'justify' }}>
+                              Notre mission est d'imaginer comment simplifier votre quotidien en choisissant les bons outils no code que vous pourrez prendre en main facilement.
             </div>
-            <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8 border-2 border-[#16214a] hover:transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a' }}>
+            <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#ffffff'; e.target.style.borderColor = '#ffffff'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
               SE FORMER EN 1:1 AVEC UN EXPERT
             </button>
           </div>
 
           {/* Système solaire des outils no-code */}
           <div
-            className="relative w-full h-96"
+            className="relative w-full h-96 transition-all duration-1000 ease-out"
+            style={{
+              transform: isVisible ? 'translateX(0)' : 'translateX(100%)',
+              opacity: isVisible ? 1 : 0
+            }}
           >
             {/* Soleil central - Logo JOSEPH STUDIO */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
