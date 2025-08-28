@@ -110,16 +110,17 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <div className="grid md:grid-cols-5 lg:grid-cols-5 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-[#f9f7f2] p-6 border-2 transition-all duration-300 hover:transform hover:translate-x-1 hover:translate-y-1" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
 
-              {/* Project Image */}
-              <div className="mb-4 h-48 bg-gray-200 border-2" style={{ borderColor: '#16214a' }}>
+                             {/* Project Image */}
+               <div className="mb-4 h-52 -mx-6 -mt-6 transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
                 <img 
                   src={project.image} 
                   alt={project.name}
                   className="w-full h-full object-cover"
+                  style={{ border: '0', outline: 'none', boxShadow: 'none' }}
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';
@@ -132,23 +133,12 @@ export default function Testimonials() {
 
               {/* Project Info */}
               <div className="mb-4">
-                <h4 className="font-bold text-lg mb-2" style={{ color: '#16214a' }}>
-                  {project.name}
-                </h4>
-                <p className="text-sm mb-3" style={{ color: '#16214a' }}>
+                <p className="text-xs mb-2" style={{ color: '#16214a' }}>
                   {project.description}
-                </p>
-                <p className="text-sm leading-relaxed" style={{ color: '#16214a' }}>
-                  {project.fullDescription.substring(0, 120)}...
                 </p>
               </div>
               
-              {/* Rating */}
-              <div className="flex mb-4">
-                {[...Array(project.rating)].map((_, i) => (
-                  <Star key={i} size={16} style={{ color: '#FFD700', fill: '#FFD700' }} />
-                ))}
-              </div>
+              
 
               {/* Technologies */}
               <div className="flex flex-wrap gap-2 mb-4">
