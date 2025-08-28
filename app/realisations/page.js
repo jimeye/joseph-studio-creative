@@ -122,14 +122,14 @@ export default function RealisationsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#f9f7f2]">
 
 
       {/* Main Content */}
       <main className="w-full px-4 py-6">
         {/* Hero Section */}
         <div className="mb-6">
-          <div className="text-base mb-3" style={{ color: '#d92f35', fontFamily: 'Sharp Grotesk Medium 24', fontWeight: '400' }}>
+          <div className="text-base mb-3" style={{ color: '#da2f35', fontFamily: 'Sharp Grotesk Medium 24', fontWeight: '400' }}>
             PROJETS
           </div>
           <h1 className="text-base mb-2" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 24', fontWeight: '400' }}>
@@ -161,7 +161,7 @@ export default function RealisationsPage() {
               <div className="aspect-[3/4] flex items-center justify-center overflow-hidden" style={{ 
                 background: `linear-gradient(135deg, ${getProjectColor(project.id).from}, ${getProjectColor(project.id).to})`
               }}>
-                <div className="text-center text-white">
+                <div className="text-center text-[#f9f7f2]">
                   <div className="text-xs font-light tracking-widest mb-3 opacity-90">{getProjectIcon(project.id)}</div>
                   <div className="text-sm font-semibold mb-2">{project.title}</div>
                   <div className="text-xs opacity-70">{project.category}</div>
@@ -170,10 +170,10 @@ export default function RealisationsPage() {
               
               {/* Overlay on hover */}
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-4">
+                <div className="text-[#f9f7f2] opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-4">
                   <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
                   <p className="text-sm mb-3">{project.description}</p>
-                  <span className="inline-block px-3 py-1 bg-white text-black rounded-full text-xs font-medium">
+                  <span className="inline-block px-3 py-1 bg-[#f9f7f2] text-black rounded-full text-xs font-medium">
                     {project.category}
                   </span>
                 </div>

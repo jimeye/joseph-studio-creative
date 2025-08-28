@@ -38,7 +38,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 w-full max-w-none mx-0">
           {/* Formulaire */}
-          <div className="bg-white  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
+          <div className="bg-[#f9f7f2]  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
             <h3 className="text-2xl font-bold mb-6" style={{ color: '#16214a' }}>
               Demande de Devis Gratuit
             </h3>
@@ -54,7 +54,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-white"
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
                     style={{ borderColor: '#16214a' }}
                     placeholder="Votre nom"
                   />
@@ -69,7 +69,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-white"
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
                     style={{ borderColor: '#16214a' }}
                     placeholder="votre@email.com"
                   />
@@ -86,7 +86,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-white"
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
                     style={{ borderColor: '#16214a' }}
                     placeholder="06 12 34 56 78"
                   />
@@ -100,7 +100,7 @@ export default function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-white"
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
                     style={{ borderColor: '#16214a' }}
                     placeholder="Nom de votre entreprise"
                   />
@@ -117,7 +117,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows="4"
-                  className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-white"
+                  className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
                   style={{ borderColor: '#16214a' }}
                   placeholder="Décrivez votre projet, vos besoins, votre budget..."
                 ></textarea>
@@ -126,7 +126,7 @@ export default function Contact() {
               <div className="mt-8">
                                         <button
                             type="submit"
-                            className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8  border border-[#16214a] hover:transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 hover:bg-[#ffff00]"
+                            className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8  border border-[#16214a] hover:transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 hover:bg-[#ffff00]"
                             style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a' }}
                           >
                             <Send size={20} style={{ color: '#16214a' }} />
@@ -177,7 +177,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
+            <div className="bg-[#f9f7f2]  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
               <h4 className="text-lg font-bold mb-4" style={{ color: '#d92f35' }}>
                 ⚡ Réponse Rapide
               </h4>
@@ -185,7 +185,7 @@ export default function Contact() {
                 Nous répondons à toutes les demandes sous 24h maximum !
               </p>
             </div>
-            <div className="bg-white  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
+            <div className="bg-[#f9f7f2]  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
               <h4 className="text-lg font-bold mb-4" style={{ color: '#16214a' }}>
                 💰 Aides Publiques
               </h4>

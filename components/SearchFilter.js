@@ -40,7 +40,7 @@ export default function SearchFilter() {
             </button>
             
             {isFilterOpen && (
-              <div className="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-800 z-10">
+              <div className="absolute top-full left-0 mt-1 w-48 bg-[#f9f7f2] border border-gray-800 z-10">
                 {filters.map((filter) => (
                   <button
                     key={filter}
@@ -100,7 +100,7 @@ export default function SearchFilter() {
               </button>
               
               {isFilterOpen && (
-                <div className="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-800 z-10">
+                <div className="absolute top-full left-0 mt-1 w-48 bg-[#f9f7f2] border border-gray-800 z-10">
                   {filters.map((filter) => (
                     <button
                       key={filter}

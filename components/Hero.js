@@ -13,7 +13,7 @@ export default function Hero() {
             </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-start items-center mb-8">
-                      <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
+                      <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
                         LANCER MON PROJET
                         <ArrowRight size={20} />
                       </button>

@@ -111,7 +111,7 @@ export default function TestStylo() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {styloVariations.map((variation) => (
-            <div key={variation.id} className="bg-white p-6  shadow-md border">
+            <div key={variation.id} className="bg-[#f9f7f2] p-6  shadow-md border">
               <h3 className="text-lg font-semibold mb-4" style={{ color: '#16214a' }}>
                 {variation.id}. {variation.name}
               </h3>

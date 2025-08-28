@@ -45,7 +45,7 @@ export default function Services() {
       <div id="pricing-anchor" style={{ position: 'absolute', top: '-100px' }}></div>
       <div className="w-full">
                 <div className="text-left mb-8">
-          <h2 className="text-4xl md:text-5xl font-normal text-primary mb-4 tracking-tight" style={{ wordSpacing: '-0.1em' }}>
+          <h2 className="text-4xl md:text-5xl font-normal text-[#16214a] mb-4 tracking-tight" style={{ wordSpacing: '-0.1em' }}>
             Nos conseils d'<span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>experts</span> pour propulser votre <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>business</span> en ligne
           </h2>
           <p className="text-xl max-w-3xl mb-2 font-bold" style={{ color: '#16214a' }}>
@@ -55,11 +55,11 @@ export default function Services() {
 
         <div className="fluid-grid">
           {services.map((service, index) => (
-            <div key={index} className="hover:-translate-y-2 bg-white border-2 p-6" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+            <div key={index} className="hover:-translate-y-2 bg-[#f9f7f2] border-2 p-6" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
               <div className="mb-6">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-semibold text-primary mb-4">
+              <h3 className="text-xl font-semibold text-[#16214a] mb-4">
                 {service.title}
               </h3>
               <p className="mb-6" style={{ color: '#16214a' }}>
@@ -78,7 +78,7 @@ export default function Services() {
         </div>
 
                             <div className="text-left mt-12">
-                      <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
+                      <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
                         DÉCOUVRIR TOUS NOS SERVICES
                       </button>
                     </div>

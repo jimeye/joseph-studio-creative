@@ -9,11 +9,11 @@ module.exports = {
     extend: {
       colors: {
         primary: '#1a1a1a',
-        secondary: '#f9f9f9',
+        secondary: '#f9f7f2',
         accent: '#8B8B8B',
         'pink-light': '#f5f5f5',
         'pink-lighter': '#e8e8e8',
-        'official': '#f9f9f9',
+        'official': '#f9f7f2',
         'mouse-gray': '#8B8B8B',
       },
       fontFamily: {

@@ -8,18 +8,18 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="bg-white shadow-lg sticky top-0 z-50 border-t border-b border-[#16214a]" style={{ backgroundColor: '#f9f9f9' }}>
+      <header className="bg-[#f9f7f2] shadow-lg sticky top-0 z-50" style={{ backgroundColor: '#f9f7f2', paddingBottom: '1px', borderTop: '2.5px dotted #16214a', borderBottom: '2.5px dotted #16214a' }}>
         <div className="fluid-container">
           <div className="flex items-center pt-1 pb-0 px-2">
                                     {/* Logo */}
-                        <a href="/" className="flex flex-col justify-center cursor-pointer hover:opacity-80 transition-opacity" style={{ width: '120px', gap: '0', lineHeight: '0.8', paddingTop: '2px', paddingBottom: '2px' }}>
+                        <a href="/" className="flex flex-col justify-center cursor-pointer hover:opacity-80 transition-opacity" style={{ width: '120px', gap: '-25px', lineHeight: '0.8', alignItems: 'center' }}>
                           <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.1em', display: 'block', width: '120px' }}>JOSEPH</span>
-                          <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.1em', display: 'block', width: '120px' }}>STUDIO</span>
-                          <span className="text-lg text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.05em', display: 'block', width: '120px' }}>creative</span>
+                          <span className="text-lg text-center" style={{ fontFamily: 'Arial', lineHeight: '2.0', color: '#16214a', fontSize: '18px', letterSpacing: '0.05em', display: 'block', width: '300px', marginTop: '-10px' }}>creative</span>
+                          <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.1em', display: 'block', width: '120px', marginTop: '-10px' }}>STUDIO</span>
                         </a>
 
             {/* Navigation Desktop */}
-            <nav className="hidden md:flex items-center space-x-8 ml-8" style={{ lineHeight: '-0.2' }}>
+            <nav className="hidden md:flex items-center space-x-4 ml-8" style={{ lineHeight: '-0.2' }}>
               <a href="#services" className="hover:text-accent transition-colors flex items-center text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }}>
                                   Services <ChevronDown size={20} className="ml-1" />
                 </a>
@@ -62,7 +62,7 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <nav className="md:hidden bg-white py-4 px-6 space-y-4 text-sm">
+            <nav className="md:hidden bg-[#f9f7f2] py-4 px-6 space-y-4 text-sm">
               <a href="#services" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Services
               </a>

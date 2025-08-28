@@ -89,7 +89,7 @@ export default function Pricing() {
           {/* Carte 1: Votre site web express */}
           <div className="relative bg-blue-600 border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
-            <div className="text-white mb-6">
+            <div className="text-[#f9f7f2] mb-6">
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
                 Votre site web express
               </h3>
@@ -104,10 +104,10 @@ export default function Pricing() {
               <div className="cursor-pointer" onClick={() => toggleSection('description2')}>
                 <div className="flex items-center">
                   {openSections.description2 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
-                  <span className="text-white text-lg">Description</span>
+                  <span className="text-[#f9f7f2] text-lg">Description</span>
                 </div>
                 {openSections.description2 && (
-                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed text-left">
+                  <div className="mt-3 ml-8 text-[#f9f7f2] text-sm leading-relaxed text-left">
                     Vous avez un petit budget ou un site web assez simple à réaliser ? En une journée, nous créons la structure de votre site, nous intégrons votre design et vos contenus, et nous ajustons ensemble en fin de journée pour que le résultat soit à la hauteur de vos attentes.
                   </div>
                 )}
@@ -119,10 +119,10 @@ export default function Pricing() {
               <div className="cursor-pointer" onClick={() => toggleSection('offre2')}>
                 <div className="flex items-center">
                   {openSections.offre2 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
-                  <span className="text-white text-lg">Que comprend cette offre ?</span>
+                  <span className="text-[#f9f7f2] text-lg">Que comprend cette offre ?</span>
                 </div>
                 {openSections.offre2 && (
-                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed space-y-2 text-left">
+                  <div className="mt-3 ml-8 text-[#f9f7f2] text-sm leading-relaxed space-y-2 text-left">
                     <div>◼︎ Sélection d'un template</div>
                     <div>◼︎ 1 heure de rendez-vous de brief en visioconférence</div>
                     <div>◼︎ 6h de design et d'intégration par un expert</div>
@@ -141,7 +141,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -151,7 +151,7 @@ export default function Pricing() {
           {/* Carte 2: Votre site web sur mesure */}
           <div className="relative bg-blue-600 border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
-            <div className="text-white mb-6">
+            <div className="text-[#f9f7f2] mb-6">
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
                 Votre site web sur mesure
               </h3>
@@ -166,10 +166,10 @@ export default function Pricing() {
               <div className="cursor-pointer" onClick={() => toggleSection('description1')}>
                 <div className="flex items-center">
                   {openSections.description1 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
-                  <span className="text-white text-lg">Description</span>
+                  <span className="text-[#f9f7f2] text-lg">Description</span>
                 </div>
                 {openSections.description1 && (
-                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed text-left">
+                  <div className="mt-3 ml-8 text-[#f9f7f2] text-sm leading-relaxed text-left">
                     Nous démarrons d'une page blanche et non d'un template. Nous pouvons reproduire une maquette ou prendre en compte vos sites de références, votre identité, vos contenus, et vos envies pour créer pour vous un site web entièrement sur-mesure en intégrant du code à votre site.
                   </div>
                 )}
@@ -181,10 +181,10 @@ export default function Pricing() {
               <div className="cursor-pointer" onClick={() => toggleSection('offre1')}>
                 <div className="flex items-center">
                   {openSections.offre1 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
-                  <span className="text-white text-lg">Que comprend cette offre ?</span>
+                  <span className="text-[#f9f7f2] text-lg">Que comprend cette offre ?</span>
                 </div>
                 {openSections.offre1 && (
-                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed space-y-2 text-left">
+                  <div className="mt-3 ml-8 text-[#f9f7f2] text-sm leading-relaxed space-y-2 text-left">
                     <div>◼︎ Tout du plan Starter <span style={{ color: '#d92f35', fontSize: '1.5em', fontWeight: 'bold' }}>+</span></div>
                     <div>◼︎ 10 pages incluses</div>
                     <div>◼︎ Blog intégré</div>
@@ -205,7 +205,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -215,7 +215,7 @@ export default function Pricing() {
           {/* Carte 3: Votre site Premium web sur mesure */}
           <div className="relative bg-blue-600  border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
-            <div className="text-white mb-6">
+            <div className="text-[#f9f7f2] mb-6">
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
                 Votre site web premium
               </h3>
@@ -230,10 +230,10 @@ export default function Pricing() {
               <div className="cursor-pointer" onClick={() => toggleSection('description3')}>
                 <div className="flex items-center">
                   {openSections.description3 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
-                  <span className="text-white text-lg font-bold">Description</span>
+                  <span className="text-[#f9f7f2] text-lg font-bold">Description</span>
                 </div>
                 {openSections.description3 && (
-                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed text-left">
+                  <div className="mt-3 ml-8 text-[#f9f7f2] text-sm leading-relaxed text-left">
                     Notre offre Premium combine design d'exception, développement sur-mesure et accompagnement VIP. Nous créons un site web qui dépasse vos attentes avec des fonctionnalités avancées et une expérience utilisateur exceptionnelle.
                   </div>
                 )}
@@ -245,10 +245,10 @@ export default function Pricing() {
               <div className="cursor-pointer" onClick={() => toggleSection('offre3')}>
                 <div className="flex items-center">
                   {openSections.offre3 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
-                  <span className="text-white text-lg font-bold">Que comprend cette offre ?</span>
+                  <span className="text-[#f9f7f2] text-lg font-bold">Que comprend cette offre ?</span>
                 </div>
                 {openSections.offre3 && (
-                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed space-y-2 text-left">
+                  <div className="mt-3 ml-8 text-[#f9f7f2] text-sm leading-relaxed space-y-2 text-left">
                     <div>◼︎ Tout du plan sur mesure <span style={{ color: '#ff0000', fontSize: '1.5em', fontWeight: 'bold' }}>+</span></div>
                     <div>◼︎ Design d'exception par un expert senior</div>
                     <div>◼︎ Développement sur-mesure complet</div>
@@ -266,7 +266,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8  border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
                 CRÉER MON SITE WEB
               </button>
             </div>
@@ -292,7 +292,7 @@ export default function Pricing() {
               Vous avez déjà démarré la création de votre site web mais vous avez besoin de l'aide d'un expert ? C'est ici !
             </p>
             <div className="text-center">
-              <button className="text-lg flex items-center justify-center gap-2 bg-white font-bold py-3 px-8 border-2 hover:transform hover:-translate-x-1 hover:-translate-y-1 mx-auto transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center justify-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8 border-2 hover:transform hover:-translate-x-1 hover:-translate-y-1 mx-auto transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
                 AMÉLIOREZ VOTRE SITE WEB
               </button>
             </div>

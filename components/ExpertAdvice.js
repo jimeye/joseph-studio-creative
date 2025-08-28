@@ -35,7 +35,7 @@ export default function ExpertAdvice() {
   ]
 
   return (
-    <section className="bg-white section-padding">
+    <section className="bg-[#f9f7f2] section-padding">
       <div className="fluid-container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#16214a' }}>
@@ -52,7 +52,7 @@ export default function ExpertAdvice() {
             return (
                              <div 
                  key={index} 
-                 className="bg-white p-4 md:p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 group"
+                 className="bg-[#f9f7f2] p-4 md:p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 group"
                  style={{ 
                    borderColor: '#f0f0f0',
                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
@@ -108,7 +108,7 @@ export default function ExpertAdvice() {
 
         <div className="text-center mt-12">
           <button 
-            className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00] mx-auto"
+            className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00] mx-auto"
             style={{ 
               boxShadow: '4px 4px 0px #16214a', 
               color: '#16214a', 

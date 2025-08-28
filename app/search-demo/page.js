@@ -4,7 +4,7 @@ import SearchFilter from '../../components/SearchFilter';
 
 export default function SearchDemoPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#f9f7f2]">
       <div className="fluid-container py-12">
         <h1 className="text-3xl font-bold mb-8" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 25' }}>
           Menu de Recherche avec Filtre
@@ -24,7 +24,7 @@ export default function SearchDemoPage() {
                 background: `linear-gradient(135deg, ${getProjectColor(i + 1).from}, ${getProjectColor(i + 1).to})`
               }}
             >
-              <div className="text-center text-white">
+              <div className="text-center text-[#f9f7f2]">
                 <div className="text-xs font-light tracking-widest mb-3 opacity-90">{getProjectIcon(i + 1)}</div>
                 <div className="text-sm font-semibold mb-2">Projet {i + 1}</div>
                 <div className="text-xs opacity-70">CATÉGORIE</div>

@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Clock } fr
 export default function Footer() {
   return (
     <>
-      <footer className="text-white" style={{ backgroundColor: '#16214a' }}>
+      <footer className="text-[#f9f7f2]" style={{ backgroundColor: '#16214a' }}>
       <div className="container-custom py-4 px-2">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Logo et description */}
@@ -49,23 +49,23 @@ export default function Footer() {
           <div className="pl-[5px] mb-8">
             <h4 className="text-xs mb-2">Réseaux sociaux</h4>
             <div className="flex space-x-4 mb-4 pl-[5px]">
-              <a href="#" className="hover:text-white transition-colors" style={{ color: '#f9f9f9' }}>
+              <a href="#" className="hover:text-[#f9f7f2] transition-colors" style={{ color: '#f9f9f9' }}>
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors" style={{ color: '#f9f9f9' }}>
+              <a href="#" className="hover:text-[#f9f7f2] transition-colors" style={{ color: '#f9f9f9' }}>
                 <Twitter size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors" style={{ color: '#f9f9f9' }}>
+              <a href="#" className="hover:text-[#f9f7f2] transition-colors" style={{ color: '#f9f9f9' }}>
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors" style={{ color: '#f9f9f9' }}>
+              <a href="#" className="hover:text-[#f9f7f2] transition-colors" style={{ color: '#f9f9f9' }}>
                 <Linkedin size={20} />
               </a>
             </div>
             <div className="flex flex-col gap-1 text-sm pl-[5px]" style={{ color: '#f9f9f9' }}>
-              <a href="#" className="hover:text-white transition-colors" style={{ color: '#f9f9f9' }}>Mentions légales</a>
-              <a href="#" className="hover:text-white transition-colors" style={{ color: '#f9f9f9' }}>Politique de confidentialité</a>
-              <a href="#" className="hover:text-white transition-colors" style={{ color: '#f9f9f9' }}>CGV</a>
+              <a href="#" className="hover:text-[#f9f7f2] transition-colors" style={{ color: '#f9f9f9' }}>Mentions légales</a>
+              <a href="#" className="hover:text-[#f9f7f2] transition-colors" style={{ color: '#f9f9f9' }}>Politique de confidentialité</a>
+              <a href="#" className="hover:text-[#f9f7f2] transition-colors" style={{ color: '#f9f9f9' }}>CGV</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function Footer() {
     </footer>
     
     {/* Bandeau Aides Publiques */}
-    <div className="bg-white py-8 border-t-2 border-b-2" style={{ borderColor: '#16214a' }}>
+    <div className="bg-[#f9f7f2] py-8 border-t-2 border-b-2" style={{ borderColor: '#16214a' }}>
       <div className="container-custom">
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-4" style={{ color: '#16214a' }}>
