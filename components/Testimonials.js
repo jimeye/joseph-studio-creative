@@ -16,7 +16,7 @@ export default function Testimonials() {
       fullDescription: "Fondée par Johann Roux et Julie Elbaz en 2006, l'agence ANY déploie son savoir-faire dans les domaines du luxe, de la mode, de la beauté ou de la joaillerie. Basée à Paris et à Londres, l'agence ANY se plait à traduire une vision, enrichir et mettre à l'épreuve du réel, l'identité, les contenus et les valeurs d'une marque.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       features: ["Événements luxe", "Design spatial", "Production mondiale", "Expériences exclusives"],
-      image: "/images/any-paris.jpg",
+      image: "/images/any-paris.webp",
       url: "https://any.paris/",
       rating: 5
     },
@@ -60,7 +60,7 @@ export default function Testimonials() {
       fullDescription: "Boutique en ligne avec design moderne. E-commerce complet avec gestion des produits et panier d'achat.",
       technologies: ["Next.js", "React", "JavaScript", "Shopify"],
       features: ["Catalogue produits", "Panier d'achat", "Paiement sécurisé", "Gestion des commandes"],
-      image: "/images/estellon.jpg",
+      image: "/images/estellon.webp",
       url: "https://estellon.vercel.app",
       rating: 5
     },
@@ -82,7 +82,7 @@ export default function Testimonials() {
       fullDescription: "Site web créatif pour une marque d'upcycling. Design unique pour présenter les créations éco-responsables.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       features: ["Galerie produits", "Histoire de la marque", "Processus upcycling", "Contact"],
-      image: "/images/nena-mala.jpg",
+      image: "/images/nena-mala.webp",
       url: "https://nena-mala-upcycling.vercel.app",
       rating: 5
     },
@@ -104,7 +104,7 @@ export default function Testimonials() {
       fullDescription: "Site web de lotterie pour une entreprise de performance. Design professionnel et moderne.",
       technologies: ["Next.js", "React", "CSS", "JavaScript"],
       features: ["Présentation entreprise", "Services", "Équipe", "Contact"],
-      image: "/images/time-2-win.jpg",
+      image: "/images/time-2-win.webp",
       url: "https://time-2win.vercel.app",
       rating: 5
     },
@@ -137,7 +137,7 @@ export default function Testimonials() {
       fullDescription: "Site web pour une retraite holistique et yoga. Présentation des programmes, réservations et informations sur les retraites.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       features: ["Programmes retraites", "Système de réservation", "Galerie photos", "Informations pratiques"],
-      image: "/images/mandala-project.jpg",
+      image: "/images/mandala-project.webp",
       url: "https://www.mandala-project.com/",
       rating: 5
     }

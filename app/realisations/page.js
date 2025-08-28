@@ -53,7 +53,7 @@ export default function RealisationsPage() {
       id: 1,
       title: 'A | N | Y',
       category: 'SUR MESURE',
-      image: '/images/any-paris.jpg',
+      image: '/images/any-paris.webp',
       description: 'Agence créative design',
       slug: 'any-paris'
     },
@@ -85,7 +85,7 @@ export default function RealisationsPage() {
       id: 5,
       title: 'Estellon',
       category: 'SUR MESURE',
-      image: '/images/estellon.jpg',
+      image: '/images/estellon.webp',
       description: 'Boutique en ligne',
       slug: 'estellon'
     },
@@ -101,7 +101,7 @@ export default function RealisationsPage() {
       id: 7,
       title: 'Nena Mala',
       category: 'SHOPIFY',
-      image: '/images/nena-mala.jpg',
+      image: '/images/nena-mala.webp',
       description: 'Upcycling Clothing',
       slug: 'nena-mala-upcycling'
     },
@@ -117,7 +117,7 @@ export default function RealisationsPage() {
       id: 9,
       title: 'Time 2 Win',
       category: 'SUR MESURE',
-      image: '/images/time-2-win.jpg',
+      image: '/images/time-2-win.webp',
       description: 'Site web de lotterie',
       slug: 'time-2win'
     },
@@ -141,7 +141,7 @@ export default function RealisationsPage() {
       id: 12,
       title: 'Mandala Project',
       category: 'SUR MESURE',
-      image: '/images/mandala-project.jpg',
+      image: '/images/mandala-project.webp',
       description: 'Retraite holistique et yoga',
       slug: 'mandala-project'
     }

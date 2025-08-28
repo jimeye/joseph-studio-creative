@@ -45,7 +45,7 @@ export default function Features() {
       <div className="container-custom">
                 <div className="text-left mb-2" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-2 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
-                          Pourquoi choisir Joseph Studio creative ?
+                          Pourquoi choisir Joseph Creative Studio ?
           </h2>
           <p className="text-xl max-w-3xl font-bold" style={{ color: '#16214a', marginBottom: '30px' }}>
             Des technologies de pointe au service de votre réussite digitale

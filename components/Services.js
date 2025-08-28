@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { Check, Plus, ShoppingBag, Star, Minus, CheckCircle } from 'lucide-react'
 import { useState } from 'react'

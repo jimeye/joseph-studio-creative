@@ -29,7 +29,7 @@ export default function Header() {
                 <a href="/realisations" className="hover:text-accent transition-colors flex items-center text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }}>
                   Réalisations <ChevronDown size={20} className="ml-1" />
                 </a>
-                <a href="#a-propos" className="hover:text-accent transition-colors flex items-center text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }}>
+                <a href="/a-propos" className="hover:text-accent transition-colors flex items-center text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }}>
                   À propos <ChevronDown size={20} className="ml-1" />
                 </a>
                 <a href="#contact" className="hover:text-accent transition-colors text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }}>
@@ -72,7 +72,7 @@ export default function Header() {
               <a href="/realisations" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Réalisations
               </a>
-              <a href="#a-propos" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
+              <a href="/a-propos" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 À propos
               </a>
               <a href="#contact" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
