@@ -49,7 +49,7 @@ export default function Testimonials() {
       fullDescription: "Site web de réservation pour une guest house à Ibiza. Système de réservation intégré avec calendrier et paiement.",
       technologies: ["Next.js", "React", "TypeScript", "Stripe"],
       features: ["Système de réservation", "Calendrier", "Paiement sécurisé", "Galerie photos"],
-      image: "/images/casa-azul.jpg",
+      image: "/images/casa-azul-ibiza.webp",
       url: "https://casa-azul-ibiza.vercel.app",
       rating: 5
     },
@@ -71,14 +71,14 @@ export default function Testimonials() {
       fullDescription: "Site web restaurant pour La Boulette Ibiza. Présentation du menu, réservations et informations pratiques.",
       technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
       features: ["Menu interactif", "Système de réservation", "Localisation", "Horaires"],
-      image: "/images/la-boulette-ibiza.jpg",
+      image: "/images/la-boulette-ibiza.webp",
       url: "https://paris.vercel.app",
       rating: 5
     },
     {
       slug: 'nena-mala-upcycling',
       name: "Nena Mala",
-      description: "Upcycling",
+      description: "Upcycling Clothing",
       fullDescription: "Site web créatif pour une marque d'upcycling. Design unique pour présenter les créations éco-responsables.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       features: ["Galerie produits", "Histoire de la marque", "Processus upcycling", "Contact"],
@@ -93,18 +93,18 @@ export default function Testimonials() {
       fullDescription: "Site web professionnel pour un cabinet de psychologie. Interface rassurante et informative pour les patients.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       features: ["Présentation du praticien", "Services proposés", "Prise de rendez-vous", "Informations pratiques"],
-      image: "/images/orphee-ritchie.jpg",
+      image: "/images/orphee-ritchie.webp",
       url: "https://orphee-ritchie-psychologue.vercel.app",
       rating: 5
     },
     {
       slug: 'time-2win',
       name: "Time 2 Win",
-      description: "Site web corporate",
-      fullDescription: "Site web corporate pour une entreprise de performance. Design professionnel et moderne.",
+      description: "Site web de lotterie",
+      fullDescription: "Site web de lotterie pour une entreprise de performance. Design professionnel et moderne.",
       technologies: ["Next.js", "React", "CSS", "JavaScript"],
       features: ["Présentation entreprise", "Services", "Équipe", "Contact"],
-      image: "/images/time-2win.jpg",
+      image: "/images/time-2-win.jpg",
       url: "https://time-2win.vercel.app",
       rating: 5
     },
@@ -115,7 +115,7 @@ export default function Testimonials() {
       fullDescription: "Site web pour un restaurant de paella à Ibiza. Présentation du menu, réservations et informations pratiques.",
       technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
       features: ["Menu interactif", "Système de réservation", "Localisation", "Horaires"],
-      image: "/images/el-meleh-paella.jpg",
+      image: "/images/el-meleh-de-la-paella.webp",
       url: "https://el-meleh-de-la-paella-d-ibiza.vercel.app",
       rating: 5
     },
@@ -124,9 +124,9 @@ export default function Testimonials() {
       name: "Mélanie Elbaz",
       description: "Photographe",
       fullDescription: "Site web professionnel pour Mélanie Elbaz, photographe. Portfolio élégant pour présenter ses créations.",
-      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      technologies: ["Squarespace", "Design System", "CMS", "Responsive"],
       features: ["Portfolio photos", "Présentation artiste", "Contact", "Galerie"],
-      image: "/images/melanie-elbaz.jpg",
+      image: "/images/melanie-elbaz-photographe.webp",
       url: "https://www.melanieelbaz.com",
       rating: 5
     },
@@ -143,29 +143,17 @@ export default function Testimonials() {
     }
   ];
 
-  // Auto-scroll effect - Continuous smooth rotation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollLeft += 1; // Tiny increment for smooth continuous movement
-        
-        // Reset to beginning when reaching the end
-        if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth - carouselRef.current.clientWidth) {
-          carouselRef.current.scrollLeft = 0;
-        }
-      }
-    }, 50); // Very frequent updates for smooth continuous movement
-    
-    return () => clearInterval(interval);
-  }, []);
+
+
+
 
   return (
-    <section id="realisations" className="section-padding bg-official mt-0" style={{ marginTop: 0, paddingTop: 0, scrollMarginTop: '100px', backgroundColor: '#f9f7f2' }}>
+    <section id="realisations" className="bg-official mt-0" style={{ marginTop: 0, paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem', scrollMarginTop: '100px', backgroundColor: '#f9f7f2' }}>
 
       <div className="container-custom">
         
         {/* Section Témoignages */}
-        <div className="text-left mb-12">
+        <div className="text-left mb-12" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
             Nos réalisations
           </h2>
@@ -178,11 +166,41 @@ export default function Testimonials() {
         <div className="relative">
           <div 
             ref={carouselRef}
-            className="flex gap-8 overflow-x-auto"
+            className="flex gap-8 overflow-x-auto cursor-grab active:cursor-grabbing md:overflow-x-auto overflow-x-hidden"
             style={{ scrollBehavior: 'smooth', scrollbarWidth: 'none', msOverflowStyle: 'none', transition: 'scroll-left 0.5s ease-in-out' }}
+            onMouseDown={(e) => {
+              // Désactiver le drag sur mobile
+              if (window.innerWidth < 768) return;
+              
+              const slider = e.currentTarget;
+              let isDown = false;
+              let startX;
+              let scrollLeft;
+
+              isDown = true;
+              slider.style.cursor = 'grabbing';
+              startX = e.pageX - slider.offsetLeft;
+              scrollLeft = slider.scrollLeft;
+
+              const handleMouseMove = (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 2;
+                slider.scrollLeft = scrollLeft - walk;
+              };
+
+              const handleMouseUp = () => {
+                isDown = false;
+                slider.style.cursor = 'grab';
+              };
+
+              document.addEventListener('mousemove', handleMouseMove);
+              document.addEventListener('mouseup', handleMouseUp);
+            }}
           >
                         {projects.map((project, index) => (
-              <div key={index} className="bg-[#f9f7f2] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', width: '300px', transform: 'rotateY(0deg)' }}>
+              <div key={index} className="bg-[#f9f7f2] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0 w-[calc(50vw-2rem)] md:w-[calc(33.333vw-2rem)] lg:w-[300px] min-w-[280px] max-w-[300px]" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}>
 
                              {/* Project Image */}
                <div className="mb-4 h-52 -mx-6 -mt-6 transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
@@ -230,18 +248,21 @@ export default function Testimonials() {
               <div className="flex gap-2">
                 <Link
                   href={`/projets/${project.slug}`}
-                  className="flex-1 text-center px-4 py-2 bg-[#16214a] text-[#f9f7f2] text-sm font-semibold transition-all duration-300 hover:bg-[#ffff00] hover:text-[#16214a]"
+                  className="flex-1 text-center px-4 py-2 bg-[#16214a] text-[#f9f7f2] text-sm font-semibold transition-all duration-300 hover:bg-[#f9f7f2] hover:text-[#16214a]"
+                  style={{
+                    border: '2px solid transparent',
+                    borderColor: 'transparent',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.borderColor = '#16214a';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.borderColor = 'transparent';
+                  }}
                 >
                   Voir le projet
                 </Link>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-[#da2f35] text-[#f9f7f2] text-sm font-semibold transition-all duration-300 hover:bg-[#ffff00] hover:text-[#16214a] flex items-center"
-                >
-                  <ExternalLink size={16} />
-                </a>
               </div>
             </div>
           ))}
@@ -251,29 +272,35 @@ export default function Testimonials() {
           <div className="flex justify-center mt-8 gap-4">
             <button
               onClick={() => {
-                if (currentIndex > 0) {
-                  setCurrentIndex(currentIndex - 1);
-                  carouselRef.current.scrollLeft -= 320;
+                if (carouselRef.current) {
+                  carouselRef.current.scrollTo({
+                    left: carouselRef.current.scrollLeft - 320,
+                    behavior: 'smooth'
+                  });
                 }
               }}
-              className="p-2 border-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
-              style={{ borderColor: '#16214a', color: '#16214a', backgroundColor: '#f9f7f2' }}
-              disabled={currentIndex === 0}
+              className="p-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
+              style={{ color: '#16214a', backgroundColor: '#f9f7f2' }}
             >
-              <ChevronLeft size={24} />
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
             </button>
             <button
               onClick={() => {
-                if (currentIndex < projects.length - 5) {
-                  setCurrentIndex(currentIndex + 1);
-                  carouselRef.current.scrollLeft += 320;
+                if (carouselRef.current) {
+                  carouselRef.current.scrollTo({
+                    left: carouselRef.current.scrollLeft + 320,
+                    behavior: 'smooth'
+                  });
                 }
               }}
-              className="p-2 border-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
-              style={{ borderColor: '#16214a', color: '#16214a', backgroundColor: '#f9f7f2' }}
-              disabled={currentIndex >= projects.length - 5}
+              className="p-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
+              style={{ color: '#16214a', backgroundColor: '#f9f7f2' }}
             >
-              <ChevronRight size={24} />
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
             </button>
           </div>
         </div>

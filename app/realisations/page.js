@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Search, Filter, ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 import SearchFilter from '../../components/SearchFilter';
 
 export default function RealisationsPage() {
@@ -50,67 +51,99 @@ export default function RealisationsPage() {
   const projects = [
     {
       id: 1,
-      title: 'La Boulette Ibiza',
+      title: 'A | N | Y',
       category: 'SUR MESURE',
-      image: '/projects/restaurant-1.jpg',
-      description: 'Site web moderne pour restaurant gastronomique',
-      hasImage: true
+      image: '/images/any-paris.jpg',
+      description: 'Agence créative design',
+      slug: 'any-paris'
     },
     {
       id: 2,
-      title: 'Mandala Project',
-      category: 'SQUARESPACE',
-      image: '/projects/yoga-1.jpg',
-      description: 'Site web pour retraites holistiques',
-      hasImage: true
+      title: 'ATN Soul',
+      category: 'SUR MESURE',
+      image: '/images/atn-soul-atnsoul-producer-paris-ultra-soul-ultrasoul-portrait-2.jpg',
+      description: 'Music Producer',
+      slug: 'atnsoul'
     },
     {
       id: 3,
-      title: 'SapRiSti!',
-      category: 'SHOPIFY',
-      image: '/projects/cheese-1.jpg',
-      description: 'Boutique en ligne de fromages artisanaux',
-      hasImage: true
+      title: 'Blondie Paris',
+      category: 'SQUARESPACE',
+      image: '/images/blondie.paris.webp',
+      description: 'Relations presse',
+      slug: 'blondie-paris'
     },
     {
       id: 4,
-      title: 'Chef Gastronomique',
-      category: 'JOURNÉE INTENSIVE',
-      image: '/projects/chef-1.jpg',
-      description: 'Site web express pour chef cuisinier',
-      hasImage: true
+      title: 'Casa Azul Ibiza',
+      category: 'SQUARESPACE',
+      image: '/images/casa-azul-ibiza.webp',
+      description: 'Guest house booking',
+      slug: 'casa-azul-ibiza'
     },
     {
       id: 5,
-      title: 'Bougies Artisanales',
-      category: 'SHOPIFY',
-      image: '/projects/candle-1.jpg',
-      description: 'Boutique en ligne de bougies faites main',
-      hasImage: true
+      title: 'Estellon',
+      category: 'SUR MESURE',
+      image: '/images/estellon.jpg',
+      description: 'Boutique en ligne',
+      slug: 'estellon'
     },
     {
       id: 6,
-      title: 'Architecture Moderne',
-      category: 'SQUARESPACE',
-      image: '/projects/architecture-1.jpg',
-      description: 'Site web pour cabinet d\'architecture',
-      hasImage: true
+      title: 'La Boulette Ibiza',
+      category: 'SUR MESURE',
+      image: '/images/la-boulette-ibiza.webp',
+      description: 'Boulettes & Piments 🌶️',
+      slug: 'la-boulette-ibiza'
     },
     {
       id: 7,
-      title: 'Restaurant Familial',
-      category: 'SUR MESURE',
-      image: '/projects/restaurant-2.jpg',
-      description: 'Site web pour restaurant traditionnel',
-      hasImage: true
+      title: 'Nena Mala',
+      category: 'SHOPIFY',
+      image: '/images/nena-mala.jpg',
+      description: 'Upcycling Clothing',
+      slug: 'nena-mala-upcycling'
     },
     {
       id: 8,
-      title: 'Boutique Mode',
+      title: 'Orphée Ritchie',
+      category: 'SQUARESPACE',
+      image: '/images/orphee-ritchie.webp',
+      description: 'Cabinet de psychologie',
+      slug: 'orphee-ritchie-psychologue'
+    },
+    {
+      id: 9,
+      title: 'Time 2 Win',
       category: 'SHOPIFY',
-      image: '/projects/fashion-1.jpg',
-      description: 'Boutique en ligne de vêtements',
-      hasImage: true
+      image: '/images/time-2-win.jpg',
+      description: 'Site web de lotterie',
+      slug: 'time-2win'
+    },
+    {
+      id: 10,
+      title: 'El Meleh de la Paella',
+      category: 'SQUARESPACE',
+      image: '/images/el-meleh-de-la-paella.webp',
+      description: 'Restaurant de paella',
+      slug: 'el-meleh-paella-ibiza'
+    },
+    {
+      id: 11,
+      title: 'Mélanie Elbaz',
+      category: 'SUR MESURE',
+      image: '/images/melanie-elbaz-photographe.webp',
+      description: 'Photographe',
+      slug: 'melanie-elbaz'
+    },
+    {
+      id: 12,
+      title: 'Mandala Project',
+      category: 'SUR MESURE',
+      image: '/images/mandala-project.jpg',
+      description: 'Retraite holistique et yoga',
+      slug: 'mandala-project'
     }
   ];
 
@@ -122,13 +155,11 @@ export default function RealisationsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-[#f9f7f2]">
-
-
+    <div className="min-h-screen bg-[#f9f7f2] pt-4 relative" style={{ zIndex: 1000 }}>
       {/* Main Content */}
-      <main className="w-full px-4 py-6">
+      <main className="w-full px-4 relative" style={{ zIndex: 1001 }}>
         {/* Hero Section */}
-        <div className="mb-6">
+        <div className="mb-4">
           <div className="text-base mb-3" style={{ color: '#da2f35', fontFamily: 'Sharp Grotesk Medium 24', fontWeight: '400' }}>
             PROJETS
           </div>
@@ -146,37 +177,70 @@ export default function RealisationsPage() {
         </div>
 
         {/* Filter and Search Section */}
-        <div className="border-t border-gray-800 pt-8 mb-8">
+        <div className="border-t border-gray-800 pt-4 mb-6">
           <SearchFilter />
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group relative overflow-hidden bg-gray-100 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              className="bg-[#f9f7f2] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1"
+              style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}
             >
-              {/* Project Image - Format Portrait */}
-              <div className="aspect-[3/4] flex items-center justify-center overflow-hidden" style={{ 
-                background: `linear-gradient(135deg, ${getProjectColor(project.id).from}, ${getProjectColor(project.id).to})`
-              }}>
-                <div className="text-center text-[#f9f7f2]">
-                  <div className="text-xs font-light tracking-widest mb-3 opacity-90">{getProjectIcon(project.id)}</div>
-                  <div className="text-sm font-semibold mb-2">{project.title}</div>
-                  <div className="text-xs opacity-70">{project.category}</div>
+              {/* Project Image */}
+              <div className="mb-4 h-52 -mx-6 -mt-6 relative overflow-hidden transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                  <div className="text-center text-[#f9f7f2]">
+                    <div className="text-xs font-light tracking-widest mb-3 opacity-90">{getProjectIcon(project.id)}</div>
+                    <div className="text-sm font-semibold mb-2">{project.title}</div>
+                    <div className="text-xs opacity-70">{project.category}</div>
+                  </div>
                 </div>
               </div>
-              
-              {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                <div className="text-[#f9f7f2] opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-4">
-                  <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
-                  <p className="text-sm mb-3">{project.description}</p>
-                  <span className="inline-block px-3 py-1 bg-[#f9f7f2] text-black rounded-full text-xs font-medium">
-                    {project.category}
-                  </span>
-                </div>
+
+              {/* Project Info */}
+              <div className="mb-4">
+                <h4 className="font-bold text-sm mb-1" style={{ color: '#16214a' }}>
+                  {project.title}
+                </h4>
+                <p className="text-xs mb-2" style={{ color: '#16214a' }}>
+                  {project.description}
+                </p>
+              </div>
+
+              {/* Category Badge */}
+              <div className="mb-4">
+                <span className="px-2 py-1 border text-xs font-medium" style={{ borderColor: '#16214a', color: '#16214a', backgroundColor: '#f9f7f2' }}>
+                  {project.category}
+                </span>
+              </div>
+
+              {/* Action Button */}
+              <div className="flex gap-2">
+                <Link
+                  href={`/projets/${project.slug}`}
+                  className="flex-1 text-center px-4 py-2 bg-[#16214a] text-[#f9f7f2] text-sm font-semibold transition-all duration-300 hover:bg-[#f9f7f2] hover:text-[#16214a]"
+                  style={{
+                    border: '2px solid transparent',
+                    borderColor: 'transparent',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.borderColor = '#16214a';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.borderColor = 'transparent';
+                  }}
+                >
+                  Voir le projet
+                </Link>
               </div>
             </div>
           ))}
@@ -184,7 +248,7 @@ export default function RealisationsPage() {
 
         {/* No results message */}
         {filteredProjects.length === 0 && (
-          <div className="text-center py-12">
+          <div className="text-center py-12 border-4" style={{ borderColor: 'pink' }}>
             <div className="text-2xl mb-4">🔍</div>
             <h3 className="text-xl font-semibold mb-2" style={{ color: '#16214a' }}>
               Aucun projet trouvé

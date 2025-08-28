@@ -41,19 +41,18 @@ export default function Features() {
   ]
 
   return (
-    <section id="a-propos" className="section-padding bg-official" style={{ marginTop: 0, paddingTop: 0, scrollMarginTop: '100px' }}>
+    <section id="a-propos" className="bg-official" style={{ marginTop: 0, paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem', scrollMarginTop: '100px' }}>
       <div className="container-custom">
-                <div className="text-left mb-4">
-          <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
+                <div className="text-left mb-2" style={{ marginTop: '0rem' }}>
+          <h2 className="text-4xl md:text-5xl font-normal mb-2 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
                           Pourquoi choisir Joseph Studio creative ?
           </h2>
-          <div className="w-64 h-1 mb-6" style={{ backgroundColor: '#16214a' }}></div>
-          <p className="text-xl max-w-3xl font-bold" style={{ color: '#16214a' }}>
+          <p className="text-xl max-w-3xl font-bold" style={{ color: '#16214a', marginBottom: '30px' }}>
             Des technologies de pointe au service de votre réussite digitale
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {features.map((feature, index) => (
             <div key={index} className="text-center group">
               <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 transition-all duration-300" style={{ backgroundColor: '#d92f35', boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
@@ -74,7 +73,7 @@ export default function Features() {
           ))}
         </div>
 
-        <div className="mt-8 bg-[#f9f7f2] p-8 border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+        <div className="mt-3 bg-[#f9f7f2] p-6 border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4" style={{ color: '#16214a' }}>
               Technologies de Pointe

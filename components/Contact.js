@@ -25,9 +25,9 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section-padding bg-official">
+    <section id="contact" className="bg-official" style={{ paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem' }}>
       <div className="container-custom">
-                <div className="text-left mb-12">
+                <div className="text-left mb-12" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
             Contactez-Nous
           </h2>

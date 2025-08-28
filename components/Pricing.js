@@ -41,10 +41,10 @@ export default function Services() {
   ]
 
   return (
-    <section id="pricing" className="section-padding bg-official" style={{ scrollMarginTop: '100px' }}>
+    <section id="pricing" className="bg-official" style={{ paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem', scrollMarginTop: '100px' }}>
       <div id="pricing-anchor" style={{ position: 'absolute', top: '-100px' }}></div>
       <div className="w-full">
-                <div className="text-left mb-8">
+                <div className="text-left mb-6" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal text-[#16214a] mb-4 tracking-tight" style={{ wordSpacing: '-0.1em' }}>
             Nos conseils d'<span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>experts</span> pour propulser votre <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>business</span> en ligne
           </h2>
@@ -77,7 +77,7 @@ export default function Services() {
           ))}
         </div>
 
-                            <div className="text-left mt-12">
+                            <div className="text-left mt-8">
                       <button className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
                         DÉCOUVRIR TOUS NOS SERVICES
                       </button>

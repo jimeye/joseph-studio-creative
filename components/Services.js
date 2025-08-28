@@ -72,11 +72,11 @@ export default function Pricing() {
   ]
 
     return (
-    <section id="services" className="section-padding bg-official" style={{ scrollMarginTop: '100px' }}>
+    <section id="services" className="bg-official" style={{ paddingTop: '4rem', paddingBottom: '3rem', paddingLeft: '1rem', paddingRight: '1rem', scrollMarginTop: '100px' }}>
       {/* Ligne de séparation */}
               <div className="border-t -my-8" style={{ borderColor: '#f9f9f9' }}></div>
         <div className="container-custom">
-        <div className="text-left mb-8">
+        <div className="text-left mb-6" style={{ marginTop: '2rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight hero-title" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
             Nous vous accompagnons dans la <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>création</span> ou la <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>refonte</span> de votre site web.
           </h2>
@@ -85,7 +85,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 w-full max-w-none mx-0 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 w-full max-w-none mx-0 mb-6">
           {/* Carte 1: Votre site web express */}
           <div className="relative bg-blue-600 border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
@@ -275,12 +275,10 @@ export default function Pricing() {
         </div>
 
         {/* Espace après les trois cadres */}
-        <div className="mt-12"></div>
-
-
+        <div className="mt-6"></div>
 
         {/* Espace avant le cadre rouge */}
-        <div className="mt-12"></div>
+        <div className="mt-6"></div>
 
         <div className="text-center w-full">
                       <div className="border-2 border-b-2 w-full p-8" style={{ backgroundColor: '#d92f35', boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', borderBottomWidth: '2px', borderBottomColor: '#16214a' }}>

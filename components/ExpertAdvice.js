@@ -35,13 +35,13 @@ export default function ExpertAdvice() {
   ]
 
   return (
-    <section className="bg-[#f9f7f2] section-padding">
-      <div className="fluid-container">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#16214a' }}>
-            Nos conseils d'experts pour propulser votre business en ligne
+    <section className="bg-[#f9f7f2]" style={{ paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem' }}>
+      <div className="container-custom">
+        <div className="text-left mb-6" style={{ marginTop: '0rem' }}>
+          <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight hero-title" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
+            Stratégies de consultants et spécialistes pour <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>réussir</span> votre web et propulser votre <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>business</span>.
           </h2>
-          <p className="text-xl max-w-3xl mx-auto" style={{ color: '#666' }}>
+          <p className="text-xl max-w-3xl" style={{ color: '#666' }}>
             Découvrez nos stratégies éprouvées pour transformer votre présence digitale en véritable atout commercial.
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function ExpertAdvice() {
           })}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <button 
             className="text-lg flex items-center gap-2 bg-[#f9f7f2] font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00] mx-auto"
             style={{ 

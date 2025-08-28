@@ -16,13 +16,12 @@ export default function Mission() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding bg-official mt-0" style={{ marginTop: 0, paddingTop: 0 }}>
+    <section ref={sectionRef} className="bg-official" style={{ marginTop: 0, paddingTop: '1rem', paddingBottom: '4rem', marginBottom: '0', paddingLeft: '1rem', paddingRight: '1rem' }}>
       <div className="container-custom">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Cadre jaune avec la mission */}
           <div
-            className={`bg-yellow-100 p-10 md:max-w-xl mx-auto border-2 mt-0 transition-transform duration-[1400ms] ease-out
-              ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}
+            className="bg-yellow-100 p-8 md:max-w-xl mx-auto border-2 mt-0"
             style={{ boxShadow: '4px 4px 0px #16214a', marginTop: 0, paddingTop: 0, borderColor: '#16214a' }}
           >
             <div className="text-xl uppercase font-bold mb-4 mt-4" style={{ color: '#d92f35' }}>
@@ -38,8 +37,7 @@ export default function Mission() {
 
           {/* Système solaire des outils no-code */}
           <div
-            className={`relative w-full h-96 transition-transform duration-[1400ms] ease-out
-              ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}
+            className="relative w-full h-96"
           >
             {/* Soleil central - Logo JOSEPH STUDIO */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
