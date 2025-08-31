@@ -86,7 +86,7 @@ export default function AProposPage() {
                     2015 - 2022 (7 ans)
                   </p>
                   <p className="text-base mb-3" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}>
-                    <strong>Atelier Beaurepaire</strong> - Marque de vêtements premium - Direction complète
+                    <a href="https://www.google.com/search?sca_esv=3d7241390298868e&udm=2&fbs=AIIjpHx4nJjfGojPVHhEACUHPiMQ_pbg5bWizQs3A_kIenjtclZaCWQ2yYVOWcnHYc_MHE3VnMBj8K458S1BAxtYKJxjLa2kYTnlDkFTt9nTXlL9iqSYRI5hpG8FceRgIzAdysXM1yU5yDZin7t-GiPOdkkHif2EIdTCp0hx2AjwOYMXovuacIFNh6JoZrn12qr8fjZfBv7_&q=atelier+beaurepaire&sa=X&ved=2ahUKEwjK-L2Z97WPAxXC9QIHHcwqIMQQtKgLegQIHBAB&biw=500&bih=754&dpr=2" target="_blank" rel="noopener noreferrer" style={{ color: '#16214a', textDecoration: 'underline' }}><strong>Atelier Beaurepaire</strong></a> - Marque de vêtements premium - Direction complète
                   </p>
                   
                   <div className="grid md:grid-cols-3 gap-6">
@@ -139,7 +139,7 @@ export default function AProposPage() {
                     </div>
                     <div>
                       <p className="text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}>
-                        <strong>1995-2020 :</strong> Sales & Marketing Manager (25 ans), Agent Commercial Senior (18 ans)
+                        <strong>1990-2020 :</strong> Sales & Marketing Manager (25 ans), Agent Commercial Senior (18 ans)
                       </p>
                     </div>
                     <div>
