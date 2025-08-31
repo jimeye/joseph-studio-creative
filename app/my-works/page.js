@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 
 export default function JJFPortfolioPage() {
   return (
-    <div className="min-h-screen bg-[#FAFAFA] pt-4 relative" style={{ zIndex: 1000 }}>
+    <div className="min-h-screen bg-[#FAFAFA] pt-2 relative" style={{ zIndex: 1000 }}>
       {/* Main Content */}
       <main className="w-full px-8 relative" style={{ zIndex: 1001 }}>
         {/* Main Content Section */}
@@ -14,7 +14,7 @@ export default function JJFPortfolioPage() {
 
           {/* Carousel Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-6" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 24' }}>
+            <h3 className="text-2xl font-bold mb-4" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 24' }}>
               My Works
             </h3>
             
@@ -56,13 +56,6 @@ export default function JJFPortfolioPage() {
               >
                 {[
                   {
-                    name: "A | N | Y",
-                    description: "Agence créative design",
-                    image: "/images/any-paris.webp",
-                    url: "/projets/any-paris",
-                    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"]
-                  },
-                  {
                     name: "ATN Soul",
                     description: "Music Producer",
                     image: "/images/atn-soul-atnsoul-producer-paris-ultra-soul-ultrasoul-portrait-2.jpg",
@@ -82,6 +75,13 @@ export default function JJFPortfolioPage() {
                     image: "/images/casa-azul-ibiza.webp",
                     url: "/projets/casa-azul-ibiza",
                     technologies: ["Next.js", "React", "TypeScript", "Stripe"]
+                  },
+                  {
+                    name: "A | N | Y",
+                    description: "Agence créative design",
+                    image: "/images/any-paris.webp",
+                    url: "/projets/any-paris",
+                    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"]
                   },
                   {
                     name: "Estellon",
@@ -200,7 +200,7 @@ export default function JJFPortfolioPage() {
               </div>
               
               {/* Navigation Arrows */}
-              <div className="flex justify-center mt-6 gap-4">
+              <div className="flex justify-center mt-4 gap-4">
                 <button
                   onClick={() => {
                     const slider = document.querySelector('.flex.gap-8.overflow-x-auto');
