@@ -2,7 +2,7 @@
 
 export default function AProposPage() {
   return (
-    <div className="min-h-screen bg-[#fafafa] pt-4 relative" style={{ zIndex: 1000 }}>
+    <div className="min-h-screen bg-[#fafafa] pt-8 relative" style={{ zIndex: 1000 }}>
       {/* Main Content */}
       <main className="w-full px-8 relative" style={{ zIndex: 1001 }}>
         {/* Main Content Section */}
@@ -134,7 +134,7 @@ export default function AProposPage() {
                   <div className="space-y-3">
                     <div>
                       <p className="text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}>
-                        <strong>1990-1995 :</strong> Sentier (j'ai tout appris)
+                        <strong>1985-1990 :</strong> Sentier (j'ai tout appris)
                       </p>
                     </div>
                     <div>

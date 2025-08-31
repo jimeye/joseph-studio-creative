@@ -94,7 +94,7 @@ export default function ElMelehPaellaProject() {
             {/* CTA Button */}
             <div className="pt-8">
               <a
-                href="https://el-meleh-de-la-paella-d-ibiza.vercel.app"
+                href="https://el-meleh-de-la-paella-d-ibiza.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm flex items-center gap-2 font-bold py-2 px-5 border transition-all duration-300 hover:transform hover:translate-x-1 hover:translate-y-1"

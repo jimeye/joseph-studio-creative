@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 
 export default function JJFPortfolioPage() {
   return (
-    <div className="min-h-screen bg-[#FAFAFA] pt-2 relative" style={{ zIndex: 1000 }}>
+    <div className="bg-[#FAFAFA] pt-8 relative" style={{ zIndex: 1000 }}>
       {/* Main Content */}
       <main className="w-full px-8 relative" style={{ zIndex: 1001 }}>
         {/* Main Content Section */}
@@ -14,14 +14,14 @@ export default function JJFPortfolioPage() {
 
           {/* Carousel Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-4" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 24' }}>
+            <h3 className="text-2xl font-bold mb-8" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 24' }}>
               My Works
             </h3>
             
             {/* Carousel Container */}
             <div className="relative">
               <div 
-                className="flex gap-8 overflow-x-auto cursor-grab active:cursor-grabbing md:overflow-x-auto overflow-x-hidden"
+                className="flex gap-8 overflow-x-auto cursor-grab active:cursor-grabbing"
                 style={{ scrollBehavior: 'smooth', scrollbarWidth: 'none', msOverflowStyle: 'none', transition: 'scroll-left 0.5s ease-in-out' }}
                 onMouseDown={(e) => {
                   // Désactiver le drag sur mobile
@@ -55,23 +55,26 @@ export default function JJFPortfolioPage() {
                 }}
               >
                 {[
-                  {
-                    name: "ATN Soul",
-                    description: "Music Producer",
-                    image: "/images/atn-soul-atnsoul-producer-paris-ultra-soul-ultrasoul-portrait-2.jpg",
-                    url: "/projets/atn-soul",
-                    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"]
-                  },
-                  {
-                    name: "Blondie Paris",
-                    description: "Relations presse",
-                    image: "/images/blondie.paris.webp",
-                    url: "/projets/blondie-paris",
-                    technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
-                  },
+                                      {
+                      name: "ATN Soul",
+                      description: "Music Producer",
+                      subtitle: "Online or soon online",
+                      image: "/images/atn-soul-atnsoul-producer-paris-ultra-soul-ultrasoul-portrait-2.jpg",
+                      url: "/projets/atnsoul",
+                      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+                    },
+                                      {
+                      name: "Blondie Paris",
+                      description: "Relations presse",
+                      subtitle: "Online or soon online",
+                      image: "/images/blondie.paris.webp",
+                      url: "/projets/blondie-paris",
+                      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
+                    },
                   {
                     name: "Casa Azul Ibiza",
                     description: "Guest house booking",
+                    subtitle: "Work in progress",
                     image: "/images/casa-azul-ibiza.webp",
                     url: "/projets/casa-azul-ibiza",
                     technologies: ["Next.js", "React", "TypeScript", "Stripe"]
@@ -79,6 +82,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "A | N | Y",
                     description: "Agence créative design",
+                    subtitle: "Online or soon online",
                     image: "/images/any-paris.webp",
                     url: "/projets/any-paris",
                     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"]
@@ -86,6 +90,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "Estellon",
                     description: "Boutique en ligne",
+                    subtitle: "Work in progress",
                     image: "/images/estellon.webp",
                     url: "/projets/estellon",
                     technologies: ["Next.js", "React", "JavaScript", "Shopify"]
@@ -93,6 +98,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "La Boulette Ibiza",
                     description: "Boulettes & Piments 🌶️",
+                    subtitle: "Online or soon online",
                     image: "/images/la-boulette-ibiza.webp",
                     url: "/projets/la-boulette-ibiza",
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
@@ -100,6 +106,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "El Meleh Paella",
                     description: "Restaurant Ibiza",
+                    subtitle: "Online or soon online",
                     image: "/images/el-meleh-de-la-paella.webp",
                     url: "/projets/el-meleh-paella-ibiza",
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
@@ -107,6 +114,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "Nena Mala",
                     description: "Boutique mode",
+                    subtitle: "Work in progress",
                     image: "/images/nena-mala.webp",
                     url: "/projets/nena-mala",
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
@@ -114,6 +122,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "Mandala Project",
                     description: "Projet artistique",
+                    subtitle: "Online or soon online",
                     image: "/images/mandala-project.webp",
                     url: "/projets/mandala-project",
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
@@ -121,6 +130,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "Mélanie Elbaz",
                     description: "Photographe",
+                    subtitle: "Online or soon online",
                     image: "/images/melanie-elbaz-photographe.webp",
                     url: "/projets/melanie-elbaz",
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
@@ -128,6 +138,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "Orphée Ritchie",
                     description: "Artiste",
+                    subtitle: "Online or soon online",
                     image: "/images/orphee-ritchie.webp",
                     url: "/projets/orphee-ritchie",
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
@@ -135,6 +146,7 @@ export default function JJFPortfolioPage() {
                   {
                     name: "Time 2 Win",
                     description: "Application gaming",
+                    subtitle: "Work in progress",
                     image: "/images/time-2-win.webp",
                     url: "/projets/time-2win",
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
@@ -163,9 +175,14 @@ export default function JJFPortfolioPage() {
                       <h4 className="font-bold text-sm mb-1" style={{ color: '#16214a' }}>
                         {project.name}
                       </h4>
-                      <p className="text-xs mb-2" style={{ color: '#16214a' }}>
+                      <p className="text-xs mb-1" style={{ color: '#16214a' }}>
                         {project.description}
                       </p>
+                      {project.subtitle && (
+                        <p className="text-xs mb-2" style={{ color: '#d92f35', fontStyle: 'italic' }}>
+                          {project.subtitle}
+                        </p>
+                      )}
                     </div>
 
                     {/* Action Buttons */}
@@ -200,7 +217,7 @@ export default function JJFPortfolioPage() {
               </div>
               
               {/* Navigation Arrows */}
-              <div className="flex justify-center mt-4 gap-4">
+              <div className="flex justify-center gap-4">
                 <button
                   onClick={() => {
                     const slider = document.querySelector('.flex.gap-8.overflow-x-auto');
