@@ -412,6 +412,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
   }
   
   body {
@@ -421,6 +423,10 @@
     line-height: -0.2;
     font-size: 14px;
     color: #16214a;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
   
   * {

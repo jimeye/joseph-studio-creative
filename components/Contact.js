@@ -201,21 +201,7 @@ export default function Contact() {
                 Nous répondons à toutes les demandes sous 24h maximum !
               </p>
             </div>
-            <div className="bg-[#f9f7f2]  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
-              <h4 className="text-lg font-bold mb-4" style={{ color: '#16214a' }}>
-                💰 Aides Publiques
-              </h4>
-              <p className="mb-4" style={{ color: '#16214a' }}>
-                Bénéficiez d'aides publiques pouvant couvrir jusqu'à 2000 € de votre projet web.<br />
-                Nous faisons toutes les démarches pour vous. Vous n'avez plus qu'à le partager.
-              </p>
-              <ul className="space-y-2 text-sm" style={{ color: '#16214a' }}>
-                <li>• Accompagnement complet des démarches</li>
-                <li>• Dossier administratif géré</li>
-                <li>• Suivi jusqu'à l'obtention</li>
-                <li>• Aucun frais supplémentaire</li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </div>
