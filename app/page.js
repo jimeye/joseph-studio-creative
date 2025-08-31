@@ -332,45 +332,50 @@ export default function Home() {
           <div className="mb-16">
             
             <div className="bg-[#f9f7f2] p-8 rounded-lg relative p-4 border-2 rounded-lg" style={{ borderColor: '#d92f35' }}>
-               {/* Étoiles qui suivent le contour du cadre rouge */}
-               <div className="absolute inset-0 pointer-events-none">
-                 {/* Étoiles en haut - se déplacent de gauche à droite */}
-                 <div className="absolute top-0 left-0 right-0 flex justify-between gap-1 px-2">
-                   {Array.from({ length: 50 }).map((_, i) => (
-                     <span key={`top-${i}`} className="text-xs star-move-right" style={{ 
-                       color: '#16214a', 
-                       animationDelay: `${i * 0.4}s`
-                     }}>★</span>
-                   ))}
-                 </div>
-                 {/* Étoiles en bas - se déplacent de droite à gauche */}
-                 <div className="absolute bottom-0 left-0 right-0 flex justify-between gap-1 px-2">
-                   {Array.from({ length: 50 }).map((_, i) => (
-                     <span key={`bottom-${i}`} className="text-xs star-move-left" style={{ 
-                       color: '#16214a', 
-                       animationDelay: `${i * 0.4}s`
-                     }}>★</span>
-                   ))}
-                 </div>
-                 {/* Étoiles à gauche - se déplacent de haut en bas */}
-                 <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between gap-0.5 py-2">
-                   {Array.from({ length: 70 }).map((_, i) => (
-                     <span key={`left-${i}`} className="text-xs star-move-down" style={{ 
-                       color: '#16214a', 
-                       animationDelay: `${i * 0.3}s`
-                     }}>★</span>
-                   ))}
-                 </div>
-                 {/* Étoiles à droite - se déplacent de bas en haut */}
-                 <div className="absolute top-0 bottom-0 right-0 flex flex-col justify-between gap-0.5 py-2">
-                   {Array.from({ length: 70 }).map((_, i) => (
-                     <span key={`right-${i}`} className="text-xs star-move-up" style={{ 
-                       color: '#16214a', 
-                       animationDelay: `${i * 0.3}s`
-                     }}>★</span>
-                   ))}
-                 </div>
-               </div>
+              {/* Cadre d'étoiles - 1 ligne continue */}
+              <div className="absolute inset-2 pointer-events-none">
+                {Array.from({ length: 160 }).map((_, i) => {
+                  // Calculer le bon nombre d'étoiles pour chaque côté
+                  // Si on a 40 étoiles sur le haut (100% de largeur), 
+                  // on doit avoir proportionnellement moins sur les côtés
+                  const starsPerSide = 40; // 40 étoiles sur chaque côté
+                  
+                  let left, top;
+                  
+                  if (i < starsPerSide) {
+                    // Côté haut - 40 étoiles
+                    left = (i / (starsPerSide - 1)) * 100;
+                    top = 0;
+                  } else if (i < starsPerSide * 2) {
+                    // Côté droit - 40 étoiles
+                    left = 100;
+                    top = ((i - starsPerSide) / (starsPerSide - 1)) * 100;
+                  } else if (i < starsPerSide * 3) {
+                    // Côté bas - 40 étoiles
+                    left = 100 - (((i - starsPerSide * 2) / (starsPerSide - 1)) * 100);
+                    top = 100;
+                  } else {
+                    // Côté gauche - 40 étoiles
+                    left = 0;
+                    top = 100 - (((i - starsPerSide * 3) / (starsPerSide - 1)) * 100);
+                  }
+                  
+                  return (
+                    <span 
+                      key={`star-${i}`} 
+                      className="text-xs absolute" 
+                      style={{ 
+                        color: '#16214a',
+                        left: `${left}%`,
+                        top: `${top}%`,
+                        transform: 'translate(-50%, -50%)'
+                      }}
+                    >
+                      ★
+                    </span>
+                  );
+                })}
+              </div>
 
                 <div className="mb-6">
                 <h4 className="text-xl font-bold mb-3" style={{ color: '#d92f35', fontFamily: 'Sharp Grotesk Medium 24' }}>
