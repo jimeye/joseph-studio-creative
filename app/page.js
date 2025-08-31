@@ -336,8 +336,6 @@ export default function Home() {
               <div className="absolute inset-2 pointer-events-none">
                 {Array.from({ length: 160 }).map((_, i) => {
                   // Calculer le bon nombre d'étoiles pour chaque côté
-                  // Si on a 40 étoiles sur le haut (100% de largeur), 
-                  // on doit avoir proportionnellement moins sur les côtés
                   const starsPerSide = 40; // 40 étoiles sur chaque côté
                   
                   let left, top;
@@ -368,7 +366,8 @@ export default function Home() {
                         color: '#16214a',
                         left: `${left}%`,
                         top: `${top}%`,
-                        transform: 'translate(-50%, -50%)'
+                        transform: 'translate(-50%, -50%)',
+                        zIndex: 1000
                       }}
                     >
                       ★
