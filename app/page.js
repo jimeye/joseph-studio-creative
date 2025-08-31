@@ -136,13 +136,6 @@ export default function Home() {
               >
                 {[
                   {
-                    name: "A | N | Y",
-                    description: "Agence créative design",
-                    image: "/images/any-paris.webp",
-                    url: "/projets/any-paris",
-                    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"]
-                  },
-                  {
                     name: "ATN Soul",
                     description: "Music Producer",
                     image: "/images/atn-soul-atnsoul-producer-paris-ultra-soul-ultrasoul-portrait-2.jpg",
@@ -162,6 +155,13 @@ export default function Home() {
                     image: "/images/casa-azul-ibiza.webp",
                     url: "/projets/casa-azul-ibiza",
                     technologies: ["Next.js", "React", "TypeScript", "Stripe"]
+                  },
+                  {
+                    name: "A | N | Y",
+                    description: "Agence créative design",
+                    image: "/images/any-paris.webp",
+                    url: "/projets/any-paris",
+                    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"]
                   },
                   {
                     name: "Estellon",
