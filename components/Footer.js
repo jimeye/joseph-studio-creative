@@ -2,7 +2,8 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Clock } fr
 
 export default function Footer() {
   return (
-    <footer className="text-[#16214a]" style={{ backgroundColor: '#FAFAFA', borderTop: '2.5px dotted #16214a', borderBottom: '2.5px dotted #16214a', marginBottom: '1px' }}>
+    <footer className="text-[#16214a]" style={{ backgroundColor: '#fafafa', borderTop: '2.5px dotted #16214a', borderBottom: '2.5px dotted #16214a', marginBottom: '1px' }}>
+      <div className="pt-8"></div>
 
       <div className="container-custom py-2 px-2">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

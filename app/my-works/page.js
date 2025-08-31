@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 
 export default function JJFPortfolioPage() {
   return (
-    <div className="bg-[#FAFAFA] pt-8 relative" style={{ zIndex: 1000 }}>
+    <div className="bg-[#fafafa] pt-8 relative" style={{ zIndex: 1000 }}>
       {/* Main Content */}
       <main className="w-full px-8 relative" style={{ zIndex: 1001 }}>
         {/* Main Content Section */}
@@ -257,6 +257,7 @@ export default function JJFPortfolioPage() {
           </div>
         </div>
       </main>
+      <div className="pt-8" style={{ backgroundColor: '#fafafa' }}></div>
     </div>
   );
 }
