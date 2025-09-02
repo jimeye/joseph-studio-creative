@@ -13,9 +13,9 @@ export default function Header() {
           <div className="flex items-center pt-1 pb-0 px-2">
                                     {/* Logo */}
                         <a href="/" className="flex flex-col justify-center cursor-pointer hover:opacity-80 transition-opacity" style={{ width: '120px', gap: '-25px', lineHeight: '0.8', alignItems: 'center' }}>
-                          <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.1em', display: 'block', width: '120px' }}>JOSEPH</span>
-                          <span className="text-lg text-center" style={{ fontFamily: 'Arial', lineHeight: '2.0', color: '#16214a', fontSize: '18px', letterSpacing: '0.05em', display: 'block', width: '300px', marginTop: '-10px' }}>creative</span>
-                          <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.1em', display: 'block', width: '120px', marginTop: '-10px' }}>STUDIO</span>
+                          <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.16em', display: 'block', width: '120px' }}>JOSEPH</span>
+                          <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '2.0', color: '#ff0000', fontSize: '18px', letterSpacing: '0.21em', display: 'block', width: '180px', marginTop: '-10px' }}>STUDIO</span>
+                          <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.03em', display: 'block', width: '120px', marginTop: '-10px' }}>CREATIVE</span>
                         </a>
 
             {/* Navigation Desktop */}
