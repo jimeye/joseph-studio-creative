@@ -53,38 +53,20 @@ export default function Hero() {
             <h2 className="text-base font-bold mb-3" style={{ color: '#16214a' }}>
               EXPERTS CERTIFIÉS
             </h2>
-            <div className="grid grid-cols-3 gap-2 md:gap-4 w-full">
+            <div className="flex items-center gap-4 md:gap-6">
               {/* Squarespace Circle Platinum Partner */}
-              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '100%', minWidth: '120px', maxWidth: '180px' }}>
-                <div className="w-6 h-6 flex items-center justify-center">
-                  <img src="/images/squarespace-logo.svg" alt="Squarespace" className="w-4 h-4" />
-                </div>
-                <div className="text-left min-w-0">
-                  <div className="font-semibold text-[10px] md:text-xs truncate">SQUARESPACE</div>
-                  <div className="text-[10px] md:text-xs text-gray-600">2025</div>
-                </div>
+              <div className="w-8 h-8 flex items-center justify-center">
+                <img src="/images/squarespace-logo.svg" alt="Squarespace" className="w-6 h-6 object-contain" />
               </div>
 
               {/* Notion Official Ambassador */}
-              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '100%', minWidth: '100px', maxWidth: '160px' }}>
-                <div className="w-6 h-6 flex items-center justify-center">
-                  <img src="/images/notion-logo.svg" alt="Notion" className="w-4 h-4" />
-                </div>
-                <div className="text-left min-w-0">
-                  <div className="font-semibold text-[10px] md:text-xs truncate">Notion Ambassador</div>
-                  <div className="text-[10px] md:text-xs text-gray-600"></div>
-                </div>
+              <div className="w-8 h-8 flex items-center justify-center">
+                <img src="/images/notion-logo.svg" alt="Notion" className="w-6 h-6 object-contain" />
               </div>
 
               {/* Shopify Partner */}
-              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '100%', minWidth: '100px', maxWidth: '160px' }}>
-                <div className="w-6 h-6 flex items-center justify-center">
-                  <img src="/images/shopify-logo.svg" alt="Shopify" className="w-4 h-4" />
-                </div>
-                <div className="text-left min-w-0">
-                  <div className="font-semibold text-[10px] md:text-xs truncate">shopify</div>
-                  <div className="text-[10px] md:text-xs text-gray-600 italic">partner</div>
-                </div>
+              <div className="w-16 h-16 flex items-center justify-center">
+                <img src="/images/shopify-logo.svg" alt="Shopify" className="w-10 h-10 object-contain" style={{ marginLeft: '-30px', marginTop: '-3px' }} />
               </div>
             </div>
             <p className="text-xs font-bold mt-4 text-center" style={{ color: '#16214a' }}>
