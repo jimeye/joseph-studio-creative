@@ -636,6 +636,10 @@ html, body {
     @apply py-16 px-4 sm:px-6 lg:px-8;
   }
   
+  .hero-padding {
+    @apply py-8 px-4 sm:px-6 lg:px-8;
+  }
+  
   .container-custom {
     @apply max-w-7xl mx-auto;
   }

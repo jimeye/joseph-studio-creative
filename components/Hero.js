@@ -11,10 +11,10 @@ export default function Hero() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <section id="accueil" className="bg-gray-50 section-padding">
+    <section id="accueil" className="bg-gray-50 hero-padding">
       <div className="fluid-container">
         <div className="text-left mb-6 w-full max-w-4xl">
-          <h1 className="text-3xl font-normal mb-6 tracking-tight hero-title text-left" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
+          <h1 className="text-xl font-normal mb-6 tracking-tight hero-title text-left" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
             Votre site web dernière <span className="hero-title" style={{ fontSize: 'inherit', color: '#F20000 !important' }}>génération</span>, développé sur-mesure, conçu par des <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>experts</span> géré par <span className="hero-title bg-yellow-300" style={{ color: '#16214a', backgroundColor: '#ffff00', paddingTop: '0', paddingBottom: '0' }}>vous,</span> à partir de <span className="hero-title bg-yellow-300" style={{ color: '#16214a', backgroundColor: '#ffff00', paddingTop: '0', paddingBottom: '0' }}>1 €</span>.
           </h1>
           <p className="text-xl max-w-3xl mb-6" style={{ color: '#16214a', textAlign: 'left' }}>
@@ -53,36 +53,36 @@ export default function Hero() {
             <h2 className="text-base font-bold mb-3" style={{ color: '#16214a' }}>
               EXPERTS CERTIFIÉS
             </h2>
-            <div className="flex flex-row justify-start items-center gap-4 w-full">
+            <div className="grid grid-cols-3 gap-2 md:gap-4 w-full">
               {/* Squarespace Circle Platinum Partner */}
-              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '180px' }}>
+              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '100%', minWidth: '120px', maxWidth: '180px' }}>
                 <div className="w-6 h-6 flex items-center justify-center">
                   <img src="/images/squarespace-logo.svg" alt="Squarespace" className="w-4 h-4" />
                 </div>
-                <div className="text-left">
-                  <div className="font-semibold text-[10px] md:text-xs">SQUARESPACE</div>
+                <div className="text-left min-w-0">
+                  <div className="font-semibold text-[10px] md:text-xs truncate">SQUARESPACE</div>
                   <div className="text-[10px] md:text-xs text-gray-600">2025</div>
                 </div>
               </div>
 
               {/* Notion Official Ambassador */}
-              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '160px' }}>
+              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '100%', minWidth: '100px', maxWidth: '160px' }}>
                 <div className="w-6 h-6 flex items-center justify-center">
                   <img src="/images/notion-logo.svg" alt="Notion" className="w-4 h-4" />
                 </div>
-                <div className="text-left">
-                  <div className="font-semibold text-[10px] md:text-xs">Notion Ambassador</div>
+                <div className="text-left min-w-0">
+                  <div className="font-semibold text-[10px] md:text-xs truncate">Notion Ambassador</div>
                   <div className="text-[10px] md:text-xs text-gray-600"></div>
                 </div>
               </div>
 
               {/* Shopify Partner */}
-              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '160px' }}>
+              <div className="flex items-center gap-2 p-2 border border-gray-300" style={{ width: '100%', minWidth: '100px', maxWidth: '160px' }}>
                 <div className="w-6 h-6 flex items-center justify-center">
                   <img src="/images/shopify-logo.svg" alt="Shopify" className="w-4 h-4" />
                 </div>
-                <div className="text-left">
-                  <div className="font-semibold text-[10px] md:text-xs">shopify</div>
+                <div className="text-left min-w-0">
+                  <div className="font-semibold text-[10px] md:text-xs truncate">shopify</div>
                   <div className="text-[10px] md:text-xs text-gray-600 italic">partner</div>
                 </div>
               </div>
