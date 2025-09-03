@@ -1,15 +1,15 @@
-# Joseph Studio Creative - Site Web Moderne
+# JOSEPH STUDIO CREATIVE - Site Web Professionnel
 
-Site web professionnel pour Joseph Studio Creative, spécialisé dans la création de sites web sur mesure avec des outils no-code.
+Site web professionnel pour JOSEPH STUDIO CREATIVE, spécialisé dans la création de sites web sur mesure et la conception web personnalisée.
 
 ## 🚀 Technologies Utilisées
 
-- **Next.js 14** - Framework React moderne
-- **React 18** - Bibliothèque UI
+- **Next.js 15.5.2** - Framework React moderne avec App Router
+- **React 19** - Bibliothèque UI de dernière génération
 - **Tailwind CSS** - Framework CSS utilitaire
-- **Lucide React** - Icônes modernes
-- **PostCSS** - Traitement CSS
-- **Autoprefixer** - Compatibilité navigateurs
+- **Lucide React** - Icônes modernes et élégantes
+- **PostCSS** - Traitement CSS avancé
+- **Autoprefixer** - Compatibilité navigateurs optimale
 
 ## 📦 Installation
 
@@ -46,59 +46,75 @@ http://localhost:3000
 ```
 studio-joseph/
 ├── app/
-│   ├── globals.css      # Styles globaux
-│   ├── layout.js        # Layout principal
-│   └── page.js          # Page d'accueil
+│   ├── globals.css              # Styles globaux et polices
+│   ├── layout.js                # Layout principal avec métadonnées
+│   ├── page.js                  # Page d'accueil
+│   ├── site-web-express/        # Page service express
+│   ├── site-web-basique/        # Page service basique
+│   ├── site-web-sur-mesure/     # Page service sur mesure
+│   └── site-web-premium/        # Page service premium
 ├── components/
-│   ├── Header.js        # Navigation
-│   ├── Hero.js          # Section principale
-│   ├── Services.js      # Services offerts
-│   ├── Features.js      # Avantages techniques
-│   ├── Pricing.js       # Tarifs
-│   ├── Testimonials.js  # Témoignages
-│   ├── Contact.js       # Formulaire contact
-│   └── Footer.js        # Pied de page
-├── public/              # Assets statiques
-├── package.json         # Dépendances
-├── tailwind.config.js   # Configuration Tailwind
-├── postcss.config.js    # Configuration PostCSS
-└── next.config.js       # Configuration Next.js
+│   ├── Header.js                # Navigation et menu mobile
+│   ├── Hero.js                  # Section principale d'accueil
+│   ├── Services.js              # Cartes des services offerts
+│   ├── Features.js              # Avantages et technologies
+│   ├── Pricing.js               # Tarifs et forfaits
+│   ├── Testimonials.js          # Témoignages clients
+│   ├── Contact.js               # Formulaire de contact
+│   ├── Footer.js                # Pied de page
+│   └── AppointmentModal.js      # Modal de prise de rendez-vous
+├── public/                      # Assets statiques et images
+├── package.json                 # Dépendances et scripts
+├── tailwind.config.js           # Configuration Tailwind CSS
+├── postcss.config.js            # Configuration PostCSS
+└── next.config.js               # Configuration Next.js
 ```
 
 ## 🎨 Fonctionnalités
 
 ### ✅ Sections Principales
-- **Hero** - Présentation accrocheuse avec offre à 1€
-- **Services** - 6 services web différents
-- **Features** - Avantages techniques et technologies
-- **Pricing** - 3 forfaits avec aides publiques incluses
-- **Testimonials** - Témoignages clients fictifs
+- **Hero** - Présentation accrocheuse avec bouton "LANCER MON PROJET"
+- **Services** - 4 services web avec cartes détaillées
+- **Features** - Avantages techniques et technologies utilisées
+- **Pricing** - Tarifs transparents avec détails des services
+- **Testimonials** - Témoignages clients
 - **Contact** - Formulaire de contact complet
+- **Modal de Rendez-vous** - Système de prise de rendez-vous intégré
+
+### ✅ Services Offerts
+1. **Site Web Basique** - Offre de lancement
+2. **Site Web Express** - 2600€ HT (création en 1 journée)
+3. **Site Web Sur Mesure** - 3500€ HT (personnalisation complète)
+4. **Site Web Premium** - 8500€ HT (solution haut de gamme)
 
 ### ✅ Design Moderne
 - Design responsive (mobile, tablette, desktop)
 - Animations et transitions fluides
-- Palette de couleurs cohérente
-- Typographie moderne avec Inter
-- Icônes Lucide React
+- Palette de couleurs cohérente (bleu marine #16214a, rouge #f20000)
+- Typographie moderne avec Sharp Grotesk et Newsreader
+- Icônes Lucide React élégantes
+- Boutons avec effets de survol et ombres
 
 ### ✅ Optimisations
-- SEO optimisé avec métadonnées
-- Performance optimisée avec Next.js
-- Images optimisées
-- Code propre et maintenable
+- SEO optimisé avec métadonnées complètes
+- Performance optimisée avec Next.js 15
+- Images optimisées et responsive
+- Code propre, modulaire et maintenable
+- Navigation fluide entre les pages
 
-## 💰 Offre Commerciale
+## 🎯 Fonctionnalités Avancées
 
-### Forfaits Disponibles
-1. **Starter** - 1€ (au lieu de 500€)
-2. **Professional** - 99€ (au lieu de 1500€)
-3. **Enterprise** - 299€ (au lieu de 3000€)
+### Modal de Rendez-vous
+- Calendrier interactif avec sélection de dates
+- Créneaux horaires personnalisés (lundi-jeudi 10h-17h, vendredi 10h-12h)
+- Pas de rendez-vous le weekend
+- Interface utilisateur intuitive et responsive
 
-### Aides Publiques
-- Financement jusqu'à 2000€
-- Accompagnement complet des démarches
-- Aucun frais supplémentaire
+### Navigation
+- Menu mobile avec hamburger
+- Navigation fluide entre les sections
+- Liens directs vers les pages de services
+- Boutons d'action clairs et visibles
 
 ## 🚀 Déploiement
 
@@ -112,17 +128,34 @@ vercel --prod
 - Netlify
 - AWS Amplify
 - DigitalOcean App Platform
+- VPS personnalisé
 
-## 📞 Contact
+## 📱 Responsive Design
 
-- **Email** : contact@studio-joseph.fr
-- **Téléphone** : 01 23 45 67 89
-- **Adresse** : 123 Rue de la Tech, 75001 Paris
+- **Mobile First** - Optimisé pour les petits écrans
+- **Tablette** - Adaptation parfaite aux écrans moyens
+- **Desktop** - Expérience optimale sur grands écrans
+- **Navigation tactile** - Support complet des gestes mobiles
+
+## 🎨 Palette de Couleurs
+
+- **Bleu Marine Principal** : #16214a
+- **Rouge Accent** : #f20000
+- **Bleu Standard** : #3b82f6
+- **Gris Fond** : #f9fafb
+- **Blanc** : #ffffff
+- **Noir** : #000000
+
+## 📞 Contact et Rendez-vous
+
+- **Prise de Rendez-vous** - Modal intégré sur toutes les pages
+- **Consultation Préparatoire** - Accompagnement personnalisé
+- **Suivi de Projet** - Communication régulière et transparente
 
 ## 📄 Licence
 
-© 2024 STUDIO JOSEPH. Tous droits réservés.
+© 2025 JOSEPH-STUDIO-CREATIVE. Tous droits réservés.
 
 ---
 
-**Développé avec ❤️ par Joseph Studio Creative** # Force redeploy
+**Développé avec ❤️ par JOSEPH STUDIO CREATIVE**

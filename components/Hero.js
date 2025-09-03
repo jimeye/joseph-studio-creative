@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-start items-center mb-6">
             <button 
               onClick={openModal}
-              className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" 
+              className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 rounded-lg" 
               style={{ 
                 boxShadow: '4px 4px 0px #16214a', 
                                 color: '#f9f3f3',

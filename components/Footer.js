@@ -5,9 +5,9 @@ export default function Footer() {
     <>
       {/* Footer Principal */}
       <footer className="text-[#16214a] bg-gray-50" style={{ borderTop: '1px solid #16214a', borderBottom: '1px solid #16214a', marginBottom: '1px' }}>
-        <div className="pt-8"></div>
 
-        <div className="container-custom py-2 px-2">
+
+        <div className="container-custom py-4 px-2">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Logo et description */}
             <div className="text-left">
@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright centré sur toute la largeur */}
-          <div className="text-xs mt-2 text-center" style={{ color: '#16214a', fontSize: '10px' }}>
+          <div className="text-xs mt-2 text-center" style={{ color: '#16214a', fontSize: '18px' }}>
             ©2025 JOSEPH-STUDIO-CREATIVE | Powered by US | Tous droits réservés |
           </div>
         </div>

@@ -144,7 +144,7 @@ export default function AppointmentModal({ isOpen, onClose }) {
               <div className="flex items-center justify-between mb-4">
                 <button
                   onClick={prevMonth}
-                  className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                  className="p-2 hover:bg-gray-50 rounded-full transition-colors"
                 >
                   <ChevronLeft size={20} />
                 </button>
@@ -153,7 +153,7 @@ export default function AppointmentModal({ isOpen, onClose }) {
                 </h4>
                 <button
                   onClick={nextMonth}
-                  className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                  className="p-2 hover:bg-gray-50 rounded-full transition-colors"
                 >
                   <ChevronRight size={20} />
                 </button>
@@ -179,7 +179,7 @@ export default function AppointmentModal({ isOpen, onClose }) {
                       p-3 text-sm rounded-lg transition-all duration-200
                       ${day.isCurrentMonth 
                         ? day.isAvailable 
-                          ? 'hover:bg-blue-50 hover:text-blue-600 cursor-pointer' 
+                          ? 'hover:bg-gray-50 hover:text-blue-600 cursor-pointer' 
                           : 'text-gray-400 cursor-not-allowed'
                         : 'text-gray-300 cursor-not-allowed'
                       }
@@ -221,7 +221,7 @@ export default function AppointmentModal({ isOpen, onClose }) {
                            className={`
                              p-4 text-center rounded-lg border transition-all duration-200 font-bold
                              ${selectedTime === time
-                               ? 'border-blue-500 bg-blue-50 text-blue-700'
+                               ? 'border-blue-500 bg-gray-50 text-blue-700'
                                : 'text-black hover:bg-gray-50'
                              }
                            `}
@@ -239,7 +239,24 @@ export default function AppointmentModal({ isOpen, onClose }) {
               {selectedDate && selectedTime && (
                 <button
                   onClick={handleSubmit}
-                  className="w-full mt-6 bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
+                  className="text-lg flex items-center justify-center gap-2 font-bold py-2 px-8 border transition-all duration-300 w-full mt-6 rounded-lg" 
+                  style={{ 
+                    boxShadow: '4px 4px 0px #16214a', 
+                    color: '#f9f3f3',
+                    borderColor: '#f9f3f3', 
+                    backgroundColor: '#16214a',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.backgroundColor = '#f9f3f3';
+                    e.target.style.color = '#16214a';
+                    e.target.style.borderColor = '#f9f3f3';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.backgroundColor = '#16214a';
+                    e.target.style.color = '#f9f3f3';
+                    e.target.style.borderColor = '#f9f3f3';
+                  }}
                 >
                   Confirmer le rendez-vous
                 </button>
