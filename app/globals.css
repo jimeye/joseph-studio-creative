@@ -449,19 +449,84 @@
     color: inherit !important;
   }
   
+  /* FORCER la couleur rouge partout - RÈGLE TRÈS PUISSANTE */
+  [style*="#d92f35"], [style*="#F20000"] {
+    color: #F20000 !important;
+  }
+  
+  /* FORCER la couleur rouge sur tous les éléments avec style inline */
+  span[style*="color: #d92f35"], span[style*="color: #F20000"] {
+    color: #F20000 !important;
+  }
+  
+  /* FORCER la couleur rouge sur les backgrounds */
+  [style*="backgroundColor: #d92f35"], [style*="backgroundColor: #F20000"] {
+    background-color: #F20000 !important;
+  }
+  
+  /* FORCER la couleur de fond uniforme partout - RÈGLE TRÈS PUISSANTE */
+  .bg-white, .bg-\[#f9f7f2\], .bg-\[#fafafa\], .bg-\[#f5f5f5\], .bg-\[#e8e8e8\] {
+    background-color: #f9f3f3 !important;
+  }
+  
+  /* FORCER la couleur de fond sur tous les éléments avec style inline */
+  [style*="backgroundColor: #f9f7f2"], [style*="backgroundColor: #fafafa"], [style*="backgroundColor: #f5f5f5"], [style*="backgroundColor: #e8e8e8"] {
+    background-color: #f9f3f3 !important;
+  }
+  
+  /* FORCER la couleur de fond sur les boutons et cartes */
+  button.bg-white, div.bg-white, .bg-white {
+    background-color: #f9f3f3 !important;
+  }
+  
+  /* FORCER la couleur de fond du footer - RÈGLE TRÈS PUISSANTE */
+  footer, .footer, [class*="footer"], [id*="footer"] {
+    background-color: #f9f3f3 !important;
+  }
+  
+  /* FORCER la couleur de fond du header - RÈGLE TRÈS PUISSANTE */
+  header, .header, [class*="header"], [id*="header"] {
+    background-color: #f9f3f3 !important;
+  }
+  
+  /* FORCER la couleur de fond de toutes les sections principales */
+  section, .section, [class*="section"], [id*="section"] {
+    background-color: #f9f9f9 !important;
+  }
+  
+  /* FORCER TOUTES les couleurs blanches/beiges/crèmes en #f9f9f9 - RÈGLE TRÈS PUISSANTE */
+  .bg-white, .bg-\[#f9f7f2\], .bg-\[#fafafa\], .bg-\[#f5f5f5\], .bg-\[#e8e8e8\], .bg-\[#f9f3f3\], .bg-\[#f9f9f9\], .bg-\[#f4f4f4\], .bg-\[#f0f0f0\], .bg-\[#f8f8f8\], .bg-\[#f6f6f6\], .bg-\[#f2f2f2\], .bg-\[#f1f1f1\], .bg-\[#f3f3f3\], .bg-\[#f7f7f7\], .bg-\[#fafafa\], .bg-\[#f5f5f5\], .bg-\[#e8e8e8\], .bg-\[#f4f4f4\], .bg-\[#f0f0f0\], .bg-\[#f8f8f8\], .bg-\[#f6f6f6\], .bg-\[#f2f2f2\], .bg-\[#f1f1f1\], .bg-\[#f3f3f3\], .bg-\[#f7f7f7\] {
+    background-color: #f9f9f9 !important;
+  }
+  
+  /* FORCER TOUTES les couleurs de fond sur les styles inline */
+  [style*="backgroundColor: #f9f7f2"], [style*="backgroundColor: #fafafa"], [style*="backgroundColor: #f5f5f5"], [style*="backgroundColor: #e8e8e8"], [style*="backgroundColor: #f9f3f3"], [style*="backgroundColor: #f9f9f9"], [style*="backgroundColor: #f4f4f4"], [style*="backgroundColor: #f0f0f0"], [style*="backgroundColor: #f8f8f8"], [style*="backgroundColor: #f6f6f6"], [style*="backgroundColor: #f2f2f2"], [style*="backgroundColor: #f1f1f1"], [style*="backgroundColor: #f3f3f3"], [style*="backgroundColor: #f7f7f7"], [style*="backgroundColor: #ffffff"], [style*="backgroundColor: white"], [style*="backgroundColor: #f9f7f2"], [style*="backgroundColor: #fafafa"], [style*="backgroundColor: #f5f5f5"], [style*="backgroundColor: #e8e8e8"] {
+    background-color: #f9f9f9 !important;
+  }
+  
+  /* FORCER TOUTES les couleurs de texte blancs/beiges/crèmes */
+  [style*="color: #f9f7f2"], [style*="color: #fafafa"], [style*="color: #f5f5f5"], [style*="color: #e8e8e8"], [style*="color: #f9f3f3"], [style*="color: #f9f9f9"], [style*="color: #f4f4f4"], [style*="color: #f0f0f0"], [style*="color: #f8f8f8"], [style*="color: #f6f6f6"], [style*="color: #f2f2f2"], [style*="color: #f1f1f1"], [style*="color: #f3f3f3"], [style*="color: #f7f7f7"], [style*="color: #ffffff"], [style*="color: white"], [style*="color: #f9f7f2"], [style*="color: #fafafa"], [style*="color: #f5f5f5"], [style*="color: #e8e8e8"] {
+    color: #f9f9f9 !important;
+  }
+  
+  /* FORCER la couleur de fond du header et footer en #f9f9f9 */
+  header, .header, [class*="header"], [id*="header"], footer, .footer, [class*="footer"], [id*="footer"] {
+    background-color: #f9f9f9 !important;
+  }
+  
   /* Classe spécifique pour forcer la couleur rouge des icônes */
   .icon-red {
-    color: #d92f35 !important;
+    color: #F20000 !important;
   }
   
   /* Exception spécifique pour les icônes SVG */
   svg.icon-red {
-    color: #d92f35 !important;
+    color: #F20000 !important;
   }
   
   /* Exception encore plus spécifique */
   .cursor-pointer svg.icon-red {
-    color: #d92f35 !important;
+    color: #F20000 !important;
   }
   
   /* Correction pour les cartes et cadres */
@@ -679,11 +744,11 @@
 
   /* Animation de transition des couleurs */
   @keyframes colorCycle {
-    0% { color: #d92f35; }
+    0% { color: #F20000; }
     25% { color: #0038b8; }
     50% { color: #16214a; }
-    75% { color: #d92f35; }
-    100% { color: #d92f35; }
+    75% { color: #F20000; }
+    100% { color: #F20000; }
   }
 
   .color-transition {

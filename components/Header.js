@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="bg-[#f9f7f2] shadow-lg sticky top-0 z-50" style={{ backgroundColor: '#f9f7f2', paddingBottom: '1px', borderTop: '2.5px dotted #16214a', borderBottom: '2.5px dotted #16214a' }}>
+      <header className="sticky top-0 z-50 bg-new-bg" style={{ paddingBottom: '1px', borderTop: '1px solid #16214a', borderBottom: '1px solid #16214a' }}>
         <div className="fluid-container">
           <div className="flex items-center pt-1 pb-0 px-2">
                                     {/* Logo */}
@@ -32,7 +32,7 @@ export default function Header() {
                 <a href="/a-propos" className="hover:text-accent transition-colors flex items-center text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }}>
                   À propos <ChevronDown size={20} className="ml-1" />
                 </a>
-                <a href="#contact" className="hover:text-accent transition-colors text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }}>
+                <a href="/contact" className="hover:text-accent transition-colors text-sm" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }}>
                   Contact
                 </a>
             </nav>
@@ -62,7 +62,7 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <nav className="md:hidden bg-[#f9f7f2] py-4 px-6 space-y-4 text-sm">
+            <nav className="md:hidden py-4 px-6 space-y-4 text-sm bg-new-bg">
               <a href="#services" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Services
               </a>
@@ -75,7 +75,7 @@ export default function Header() {
               <a href="/a-propos" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 À propos
               </a>
-              <a href="#contact" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
+              <a href="/contact" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Contact
               </a>
               {/* Add mobile versions of the remaining icons */}

@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         primary: '#1a1a1a',
         secondary: '#f9f7f2',
+        'site-bg': '#f9f3f3',
+        'new-bg': '#f9f9f9',
         accent: '#8B8B8B',
         'pink-light': '#f5f5f5',
         'pink-lighter': '#e8e8e8',

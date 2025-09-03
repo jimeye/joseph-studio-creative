@@ -20,20 +20,20 @@ export default function Mission() {
       <div className="container-custom">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Cadre jaune avec la mission */}
-          <div
-            className="p-8 md:max-w-xl mx-auto border-2 mt-0 transition-all duration-1000 ease-out"
-            style={{ 
-              backgroundColor: '#16214a', 
-              boxShadow: '4px 4px 0px #16214a', 
-              marginTop: 0, 
-              paddingTop: '0.8rem', 
-              paddingBottom: '4.4rem', 
-              borderColor: '#16214a',
-              transform: isVisible ? 'translateX(0)' : 'translateX(-100%)',
-              opacity: isVisible ? 1 : 0
-            }}
-          >
-            <div className="text-xl uppercase font-bold mb-4 mt-4" style={{ color: '#d92f35' }}>
+                      <div
+              className="p-8 md:max-w-xl mx-auto border-2 mt-0 transition-all duration-1000 ease-out rounded-lg"
+              style={{ 
+                backgroundColor: '#16214a', 
+                boxShadow: '4px 4px 0px #16214a', 
+                marginTop: 0, 
+                paddingTop: '0.8rem', 
+                paddingBottom: '4.4rem', 
+                borderColor: '#16214a',
+                transform: isVisible ? 'translateX(0)' : 'translateX(-100%)',
+                opacity: isVisible ? 1 : 0
+              }}
+            >
+            <div className="text-xl uppercase font-bold mb-4 mt-4" style={{ color: '#F20000 !important' }}>
               FORMATIONS
             </div>
             <div className="text-xl lg:text-2xl font-light mb-6" style={{ color: '#f9f7f2', fontFamily: 'Newsreader', textAlign: 'justify' }}>

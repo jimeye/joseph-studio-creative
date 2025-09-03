@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple styles for JJF Portfolio */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f7f2;
+}
+
+.text-accent {
+  color: #8B8B8B;
+}
+
+/* Animations pour les étoiles dans la section My Story */
+@keyframes star-move-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes star-move-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes star-move-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes star-move-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Classes pour les animations des étoiles */
+.star-move-right {
+  animation: star-move-right 8s linear infinite;
+}
+
+.star-move-left {
+  animation: star-move-left 8s linear infinite;
+}
+
+.star-move-down {
+  animation: star-move-down 6s linear infinite;
+}
+
+.star-move-up {
+  animation: star-move-up 6s linear infinite;
+}
+
+/* Styles pour masquer la scrollbar du carousel */
+.flex.gap-8.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+.flex.gap-8.overflow-x-auto {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} 

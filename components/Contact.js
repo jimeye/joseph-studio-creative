@@ -38,7 +38,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 w-full max-w-none mx-0">
           {/* Formulaire */}
-          <div className="bg-[#f9f7f2]  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
+          <div className="bg-[#f9f7f2]  p-8 border-2 rounded-lg" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
             <h3 className="text-2xl font-bold mb-6" style={{ color: '#16214a' }}>
               Demande de Devis Gratuit
             </h3>

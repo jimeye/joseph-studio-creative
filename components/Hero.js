@@ -11,14 +11,14 @@ export default function Hero() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <section id="accueil" className="bg-official section-padding">
+    <section id="accueil" className="bg-new-bg section-padding">
       <div className="fluid-container">
         <div className="text-left md:text-center mb-6 w-full max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight hero-title text-left md:text-center" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
-            Votre site web dernière <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>génération</span>, développé sur-mesure, conçu par des <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>experts</span> géré par <span className="hero-title bg-yellow-300" style={{ color: '#16214a', backgroundColor: '#ffff00', paddingTop: '0', paddingBottom: '0' }}>vous,</span> à partir de <span className="hero-title bg-yellow-300" style={{ color: '#16214a', backgroundColor: '#ffff00', paddingTop: '0', paddingBottom: '0' }}>1 €</span>.
+            Votre site web dernière <span className="hero-title" style={{ fontSize: 'inherit', color: '#F20000 !important' }}>génération</span>, développé sur-mesure, conçu par des <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>experts</span> géré par <span className="hero-title bg-yellow-300" style={{ color: '#16214a', backgroundColor: '#ffff00', paddingTop: '0', paddingBottom: '0' }}>vous,</span> à partir de <span className="hero-title bg-yellow-300" style={{ color: '#16214a', backgroundColor: '#ffff00', paddingTop: '0', paddingBottom: '0' }}>1 €</span>.
           </h1>
           <p className="text-xl max-w-3xl mb-6 mx-auto" style={{ color: '#16214a', textAlign: 'justify' }}>
-            Création de sites web Next.js/React ultra modernes avec financement d'aides publiques inclus.<br className="md:hidden" /> <span style={{ fontSize: '24px', fontFamily: 'Sharp Grotesk Black 25', fontWeight: '900' }}><span className="color-transition" style={{ color: '#d92f35', transition: 'color 2s ease-in-out' }}>Performance,</span> <span className="color-transition" style={{ color: '#0038b8', transition: 'color 2s ease-in-out' }}>design</span> <span className="color-transition" style={{ backgroundColor: '#ffff00', color: '#16214a', transition: 'all 2s ease-in-out' }}>&</span> <span className="color-transition" style={{ color: '#d92f35', transition: 'color 2s ease-in-out' }}>SEO</span> <span className="color-transition" style={{ color: '#0038b8', transition: 'color 2s ease-in-out' }}>optimisés.</span></span> Maintenance 1 an incluse.
+            Création de sites web Next.js/React ultra modernes avec financement d'aides publiques inclus.<br className="md:hidden" /> <span style={{ fontSize: '24px', fontFamily: 'Sharp Grotesk Black 25', fontWeight: '900' }}><span className="color-transition" style={{ color: '#F20000 !important', transition: 'color 2s ease-in-out' }}>Performance,</span> <span className="color-transition" style={{ color: '#0038b8', transition: 'color 2s ease-in-out' }}>design</span> <span className="color-transition" style={{ backgroundColor: '#ffff00', color: '#16214a', transition: 'all 2s ease-in-out' }}>&</span> <span className="color-transition" style={{ color: '#F20000 !important', transition: 'color 2s ease-in-out' }}>SEO</span> <span className="color-transition" style={{ color: '#0038b8', transition: 'color 2s ease-in-out' }}>optimisés.</span></span> Maintenance 1 an incluse.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
@@ -27,20 +27,20 @@ export default function Hero() {
               className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" 
               style={{ 
                 boxShadow: '4px 4px 0px #16214a', 
-                color: '#f9f7f2', 
-                borderColor: '#f9f7f2', 
+                                color: '#f9f3f3',
+                borderColor: '#f9f3f3', 
                 backgroundColor: '#16214a',
                 transition: 'all 0.3s ease'
               }}
               onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#f9f7f2';
+                e.target.style.backgroundColor = '#f9f3f3';
                 e.target.style.color = '#16214a';
-                e.target.style.borderColor = '#f9f7f2';
+                e.target.style.borderColor = '#f9f3f3';
               }}
               onMouseLeave={(e) => {
                 e.target.style.backgroundColor = '#16214a';
-                e.target.style.color = '#f9f7f2';
-                e.target.style.borderColor = '#f9f7f2';
+                e.target.style.color = '#f9f3f3';
+                e.target.style.borderColor = '#f9f3f3';
               }}
             >
               LANCER MON PROJET
