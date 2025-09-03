@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Règles globales pour empêcher le débordement horizontal */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* Déclarations @font-face pour Newsreader */
 @font-face {
   font-family: 'Newsreader';
@@ -631,14 +642,16 @@
 
   /* Fluid Engine inspired classes */
   .fluid-container {
-    @apply w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
     /* Correction du centrage pour éviter le flottement */
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    /* Suppression du text-align center qui causait des problèmes */
     /* Empêcher le swipe horizontal */
     overflow-x: hidden;
-    max-width: 100vw;
+    /* Limitation de la largeur maximale pour éviter le débordement */
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .fluid-grid {

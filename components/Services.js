@@ -3,7 +3,7 @@
 import { Check, Plus, ShoppingBag, Star, Minus, CheckCircle } from 'lucide-react'
 import { useState } from 'react'
 
-export default function Pricing() {
+export default function Services() {
   const [openSections, setOpenSections] = useState({
     description1: false,
     offre1: false,
@@ -22,62 +22,11 @@ export default function Pricing() {
     }))
   }
 
-  const plans = [
-    {
-      name: "Starter",
-      price: "1 €",
-      originalPrice: "500 €",
-      description: "Site vitrine basique pour commencer",
-      features: [
-        "Design responsive",
-        "5 pages incluses",
-        "Formulaire de contact",
-        "Optimisation SEO basique",
-        "Hébergement 3 ans",
-        "Maintenance 1 an",
-        "Support email"
-      ],
-      popular: false
-    },
-    {
-      name: "Professional",
-      price: "99 €",
-      originalPrice: "1500 €",
-      description: "Site complet avec fonctionnalités avancées",
-      features: [
-        "Tout du plan Starter",
-        "10 pages incluses",
-        "Blog intégré",
-        "Optimisation SEO avancée",
-        "Analytics Google",
-        "Maintenance 1 an",
-        "Support prioritaire"
-      ],
-      popular: true
-    },
-    {
-      name: "Enterprise",
-      price: "299 €",
-      originalPrice: "3000 €",
-      description: "Solution complète pour grandes entreprises",
-      features: [
-        "Tout du plan Professional",
-        "Pages illimitées",
-        "E-commerce intégré",
-        "Paiement sécurisé",
-        "Gestion des stocks",
-        "Maintenance 1 an",
-        "Support 24/7"
-      ],
-      popular: false
-    }
-  ]
-
-    return (
+  return (
     <section id="services" className="section-padding bg-official" style={{ scrollMarginTop: '100px' }}>
       {/* Ligne de séparation */}
-              <div className="border-t -my-8" style={{ borderColor: '#f9f9f9' }}></div>
-        <div className="container-custom">
+      <div className="border-t -my-8" style={{ borderColor: '#f9f9f9' }}></div>
+      <div className="container-custom">
         <div className="text-left mb-8">
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight hero-title" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
             Nous vous accompagnons dans la <span className="hero-title" style={{ fontSize: 'inherit', color: '#F20000 !important' }}>création</span> ou la <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>refonte</span> de votre site web.
@@ -88,29 +37,29 @@ export default function Pricing() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 w-full max-w-none mx-0 mb-8">
-          {/* Carte 1: Votre site web express */}
+          {/* Carte 1: Votre site web basique à 1 € */}
           <div className="relative bg-blue-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-white mb-6">
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
-                Votre site web express
+                Votre site web basique
               </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 2000 € HT</p>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 1 € HT</p>
               <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
-                Nous créons votre site web en 1 journée intensive exclusivement dédiée à la création de votre projet.
+                Une solution simple et efficace pour démarrer votre présence en ligne.
               </p>
             </div>
 
             {/* Sections extensibles */}
             <div className="space-y-4 mb-8">
-              <div className="cursor-pointer" onClick={() => toggleSection('description2')}>
+              <div className="cursor-pointer" onClick={() => toggleSection('description4')}>
                 <div className="flex items-center">
-                  {openSections.description2 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
+                  {openSections.description4 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
                   <span className="text-white text-lg">Description</span>
                 </div>
-                {openSections.description2 && (
+                {openSections.description4 && (
                   <div className="mt-3 ml-8 text-white text-sm leading-relaxed text-left">
-                    Vous avez un petit budget ou un site web assez simple à réaliser ? En une journée, nous créons la structure de votre site, nous intégrons votre design et vos contenus, et nous ajustons ensemble en fin de journée pour que le résultat soit à la hauteur de vos attentes.
+                    Parfait pour les entrepreneurs qui débutent. Un site web simple mais professionnel pour présenter votre activité et vos services de base.
                   </div>
                 )}
               </div>
@@ -118,25 +67,20 @@ export default function Pricing() {
               {/* Trait blanc de séparation */}
               <div className="border-t border-white opacity-50"></div>
               
-              <div className="cursor-pointer" onClick={() => toggleSection('offre2')}>
+              <div className="cursor-pointer" onClick={() => toggleSection('offre4')}>
                 <div className="flex items-center">
-                  {openSections.offre2 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
+                  {openSections.offre4 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
                   <span className="text-white text-lg">Que comprend cette offre ?</span>
                 </div>
-                {openSections.offre2 && (
+                {openSections.offre4 && (
                   <div className="mt-3 ml-8 text-white text-sm leading-relaxed space-y-2 text-left">
-                    <div>◼︎ Sélection d'un template</div>
-                    <div>◼︎ 1 heure de rendez-vous de brief en visioconférence</div>
-                    <div>◼︎ 6h de design et d'intégration par un expert</div>
-                    <div>◼︎ 1h30 d'ajustements en live et de formation</div>
-                    <div>◼︎ Le replay de la formation</div>
-                    <div>◼︎ Design responsive</div>
-                    <div>◼︎ 5 pages incluses</div>
-                    <div>◼︎ Formulaire de contact</div>
-                    <div>◼︎ Optimisation SEO basique</div>
-                    <div>◼︎ Hébergement 3 ans</div>
-                    <div>◼︎ Maintenance 1 an</div>
-                    <div>◼︎ Support email</div>
+                    <div>◼︎ Template pré-conçu</div>
+                    <div>◼︎ 3 pages incluses</div>
+                    <div>◼︎ Design responsive basique</div>
+                    <div>◼︎ Formulaire de contact simple</div>
+                    <div>◼︎ Hébergement 1 an</div>
+                    <div>◼︎ Support email basique</div>
+                    <div>◼︎ Délai : 7-14 jours</div>
                   </div>
                 )}
               </div>
@@ -214,7 +158,69 @@ export default function Pricing() {
             <p className="text-center mt-3 text-green-500 font-semibold">* Aides publiques à calculer</p>
           </div>
 
-          {/* Carte 3: Votre site Premium web sur mesure */}
+          {/* Carte 3: Votre site web express */}
+          <div className="relative bg-blue-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
+            
+            <div className="text-white mb-6">
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+                Votre site web express
+              </h3>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 2000 € HT</p>
+              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
+                Nous créons votre site web en 1 journée intensive exclusivement dédiée à la création de votre projet.
+              </p>
+            </div>
+
+            {/* Sections extensibles */}
+            <div className="space-y-4 mb-8">
+              <div className="cursor-pointer" onClick={() => toggleSection('description2')}>
+                <div className="flex items-center">
+                  {openSections.description2 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
+                  <span className="text-white text-lg">Description</span>
+                </div>
+                {openSections.description2 && (
+                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed text-left">
+                    Vous avez un petit budget ou un site web assez simple à réaliser ? En une journée, nous créons la structure de votre site, nous intégrons votre design et vos contenus, et nous ajustons ensemble en fin de journée pour que le résultat soit à la hauteur de vos attentes.
+                  </div>
+                )}
+              </div>
+              
+              {/* Trait blanc de séparation */}
+              <div className="border-t border-white opacity-50"></div>
+              
+              <div className="cursor-pointer" onClick={() => toggleSection('offre2')}>
+                <div className="flex items-center">
+                  {openSections.offre2 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
+                  <span className="text-white text-lg">Que comprend cette offre ?</span>
+                </div>
+                {openSections.offre2 && (
+                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed space-y-2 text-left">
+                    <div>◼︎ Sélection d'un template</div>
+                    <div>◼︎ 1 heure de rendez-vous de brief en visioconférence</div>
+                    <div>◼︎ 6h de design et d'intégration par un expert</div>
+                    <div>◼︎ 1h30 d'ajustements en live et de formation</div>
+                    <div>◼︎ Le replay de la formation</div>
+                    <div>◼︎ Design responsive</div>
+                    <div>◼︎ 5 pages incluses</div>
+                    <div>◼︎ Formulaire de contact</div>
+                    <div>◼︎ Optimisation SEO basique</div>
+                    <div>◼︎ Hébergement 3 ans</div>
+                    <div>◼︎ Maintenance 1 an</div>
+                    <div>◼︎ Support email</div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 rounded-lg border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
+                CRÉER MON SITE WEB
+              </button>
+            </div>
+            <p className="text-center mt-3 text-green-500 font-semibold">* Aides publiques à calculer</p>
+          </div>
+
+          {/* Carte 4: Votre site web premium */}
           <div className="relative bg-blue-600 rounded-lg border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-white mb-6">
@@ -274,75 +280,16 @@ export default function Pricing() {
             </div>
             <p className="text-center mt-3 text-green-500 font-semibold">* Aides publiques à calculer</p>
           </div>
-
-          {/* Carte 4: Votre site web basique à 1 € */}
-          <div className="relative bg-blue-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
-            
-            <div className="text-white mb-6">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
-                Votre site web basique
-              </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 1 € HT</p>
-              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
-                Une solution simple et efficace pour démarrer votre présence en ligne.
-              </p>
-            </div>
-
-            {/* Sections extensibles */}
-            <div className="space-y-4 mb-8">
-              <div className="cursor-pointer" onClick={() => toggleSection('description4')}>
-                <div className="flex items-center">
-                  {openSections.description4 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
-                  <span className="text-white text-lg">Description</span>
-                </div>
-                {openSections.description4 && (
-                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed text-left">
-                    Parfait pour les entrepreneurs qui débutent. Un site web simple mais professionnel pour présenter votre activité et vos services de base.
-                  </div>
-                )}
-              </div>
-              
-              {/* Trait blanc de séparation */}
-              <div className="border-t border-white opacity-50"></div>
-              
-              <div className="cursor-pointer" onClick={() => toggleSection('offre4')}>
-                                  <div className="flex items-center">
-                    {openSections.offre4 ? <Minus size={24} className="mr-3 icon-red font-bold" /> : <Plus size={24} className="mr-3 icon-red font-bold" />}
-                    <span className="text-white text-lg">Que comprend cette offre ?</span>
-                  </div>
-                  {openSections.offre4 && (
-                  <div className="mt-3 ml-8 text-white text-sm leading-relaxed space-y-2 text-left">
-                    <div>◼︎ Template pré-conçu</div>
-                    <div>◼︎ 3 pages incluses</div>
-                    <div>◼︎ Design responsive basique</div>
-                    <div>◼︎ Formulaire de contact simple</div>
-                    <div>◼︎ Hébergement 1 an</div>
-                    <div>◼︎ Support email basique</div>
-                    <div>◼︎ Délai : 7-14 jours</div>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            <div className="flex justify-center">
-              <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 rounded-lg border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
-                CRÉER MON SITE WEB
-              </button>
-            </div>
-            <p className="text-center mt-3 text-green-500 font-semibold">* Aides publiques à calculer</p>
-          </div>
         </div>
 
         {/* Espace après les quatre cadres */}
         <div className="mt-12"></div>
 
-
-
         {/* Espace avant le cadre rouge */}
         <div className="mt-12"></div>
 
         <div className="text-center w-full">
-                      <div className="border-2 border-b-2 w-full p-8 rounded-lg" style={{ backgroundColor: '#F20000', boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', borderBottomWidth: '2px', borderBottomColor: '#16214a' }}>
+          <div className="border-2 border-b-2 w-full p-8 rounded-lg" style={{ backgroundColor: '#F20000', boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', borderBottomWidth: '2px', borderBottomColor: '#16214a' }}>
             <h2 className="text-4xl md:text-5xl font-normal mb-2 tracking-tight hero-title" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#fff' }}>
               Votre site web évolue?
             </h2>

@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="sticky top-0 z-50 bg-new-bg" style={{ paddingBottom: '1px', borderTop: '1px solid #16214a', borderBottom: '1px solid #16214a' }}>
+      <header className="sticky top-0 z-50 bg-gray-50" style={{ paddingBottom: '1px', borderTop: '1px solid #16214a', borderBottom: '1px solid #16214a' }}>
         <div className="fluid-container">
           <div className="flex items-center pt-1 pb-0 px-2">
                                     {/* Logo */}
@@ -60,36 +60,52 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <nav className="md:hidden py-4 px-6 space-y-4 text-sm bg-new-bg">
-              <a href="#services" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
+          {/* Mobile Menu - Animation de gauche à droite */}
+          <div 
+            className={`md:hidden fixed top-0 left-0 w-full h-screen bg-gray-50 transition-transform duration-500 ease-in-out transform ${
+              isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+            }`}
+            style={{ zIndex: 1000 }}
+          >
+            {/* Bouton fermer en haut à droite */}
+            <div className="flex justify-end p-4">
+              <button 
+                onClick={() => setIsMenuOpen(false)} 
+                className="text-3xl hover:opacity-70 transition-opacity"
+                style={{ color: '#16214a' }}
+              >
+                ✕
+              </button>
+            </div>
+            
+            {/* Contenu du menu */}
+            <nav className="px-8 py-8 space-y-6">
+              <a href="#services" className="block text-xl hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Services
               </a>
-              <a href="#pricing" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
+              <a href="#pricing" className="block text-xl hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Ressources
               </a>
-              <a href="/realisations" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
+              <a href="/realisations" className="block text-xl hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Réalisations
               </a>
-              <a href="/a-propos" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
+              <a href="/a-propos" className="block text-xl hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 À propos
               </a>
-              <a href="/contact" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
+              <a href="/contact" className="block text-xl hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Contact
               </a>
-              {/* Add mobile versions of the remaining icons */}
-              <div className="flex items-center space-x-4 mt-4 justify-between">
-                <div className="flex items-center space-x-4">
-                  <Search size={28} className="cursor-pointer" style={{ color: '#16214a' }} />
-                  <div className="flex items-center cursor-pointer text-lg" style={{ color: '#16214a' }}>
-                    <span>Français</span>
-                    <ChevronDown size={20} className="ml-1" />
-                  </div>
+              
+              {/* Icônes supplémentaires */}
+              <div className="flex items-center space-x-6 mt-8 pt-8 border-t" style={{ borderColor: '#e5e7eb' }}>
+                <Search size={28} className="cursor-pointer hover:opacity-70 transition-opacity" style={{ color: '#16214a' }} />
+                <div className="flex items-center cursor-pointer text-lg hover:opacity-70 transition-opacity" style={{ color: '#16214a' }}>
+                  <span>Français</span>
+                  <ChevronDown size={20} className="ml-1" />
                 </div>
               </div>
             </nav>
-          )}
+          </div>
         </div>
       </header>
     </>

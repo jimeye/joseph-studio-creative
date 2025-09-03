@@ -11,7 +11,7 @@ export default function Hero() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <section id="accueil" className="bg-new-bg section-padding">
+    <section id="accueil" className="bg-gray-50 section-padding">
       <div className="fluid-container">
         <div className="text-left mb-6 w-full max-w-4xl">
           <h1 className="text-3xl font-normal mb-6 tracking-tight hero-title text-left" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>

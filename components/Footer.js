@@ -4,26 +4,25 @@ export default function Footer() {
   return (
     <>
       {/* Footer Principal */}
-      <footer className="text-[#16214a] bg-new-bg" style={{ borderTop: '1px solid #16214a', borderBottom: '1px solid #16214a', marginBottom: '1px' }}>
+      <footer className="text-[#16214a] bg-gray-50" style={{ borderTop: '1px solid #16214a', borderBottom: '1px solid #16214a', marginBottom: '1px' }}>
         <div className="pt-8"></div>
 
         <div className="container-custom py-2 px-2">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Logo et description */}
-            <div className="pl-[5px]">
-              <h3 className="text-sm mb-2 pl-[5px] whitespace-nowrap font-bold" style={{ color: '#16214a' }}>
+            <div className="text-left">
+              <h3 className="text-sm mb-2 whitespace-nowrap font-bold" style={{ color: '#16214a' }}>
                 JOSEPH STUDIO CREATIVE
               </h3>
-              <p className="mb-2 max-w-md pl-[5px]" style={{ color: '#16214a' }}>
+              <p className="mb-2 max-w-md" style={{ color: '#16214a' }}>
                 Création de sites web ultra modernes.<br />
                 Performance, design et SEO optimisés.
               </p>
             </div>
 
             {/* Services */}
-            <div className="pl-[5px] mb-4">
-              <h4 className="text-xs mb-2 pl-[5px] font-bold" style={{ color: '#16214a' }}>Services</h4>
-              <ul className="space-y-1 pl-[5px]" style={{ color: '#16214a' }}>
+            <div className="text-left mb-4">
+              <ul className="space-y-1" style={{ color: '#16214a' }}>
                 <li><a href="#services" className="hover:!text-red-600 transition-colors">SEO & Marketing</a></li>
                 <li><a href="#services" className="hover:!text-red-600 transition-colors">Site web sur mesure</a></li>
                 <li><a href="#services" className="hover:!text-red-600 transition-colors">Site web express</a></li>
@@ -32,9 +31,8 @@ export default function Footer() {
             </div>
 
             {/* Contact */}
-            <div className="pl-[5px] mb-4">
-              <h4 className="text-xs mb-2 font-bold" style={{ color: '#16214a' }}>Nos Coordonnées</h4>
-              <ul className="space-y-1 pl-[5px]" style={{ color: '#16214a' }}>
+            <div className="text-left mb-4">
+              <ul className="space-y-1" style={{ color: '#16214a' }}>
                 <li>
                   <a href="mailto:contact@josephstudiocreative.com" className="block hover:!text-red-600 cursor-pointer">contact@josephstudiocreative.com</a>
                 </li>
@@ -48,9 +46,8 @@ export default function Footer() {
             </div>
 
             {/* Réseaux sociaux et mentions légales */}
-            <div className="pl-[5px] mb-4">
-              <h4 className="text-xs mb-2 font-bold" style={{ color: '#16214a' }}>Réseaux sociaux</h4>
-              <div className="flex space-x-4 mb-2 pl-[5px]">
+            <div className="text-left mb-4">
+              <div className="flex space-x-4 mb-2">
                 <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-red-600 transition-colors" style={{ color: '#16214a' }}>
                   <Facebook size={20} />
                 </a>
@@ -64,7 +61,7 @@ export default function Footer() {
                   <Linkedin size={20} />
                 </a>
               </div>
-              <ul className="space-y-1 pl-[5px]" style={{ color: '#16214a' }}>
+              <ul className="space-y-1" style={{ color: '#16214a' }}>
                 <li><a href="/mentions-legales" className="hover:!text-red-600 transition-colors">Mentions légales</a></li>
                 <li><a href="/politique-confidentialite" className="hover:!text-red-600 transition-colors">Politique de confidentialité</a></li>
                 <li><a href="/cgv" className="hover:!text-red-600 transition-colors">CGV</a></li>
@@ -80,7 +77,7 @@ export default function Footer() {
       </footer>
 
       {/* Bandeau Aides Publiques */}
-      <div className="py-8 border-b-2 bg-new-bg" style={{ borderColor: '#16214a' }}>
+      <div className="py-8 border-b-2 bg-gray-50" style={{ borderColor: '#16214a' }}>
         <div className="container-custom">
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
