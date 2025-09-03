@@ -87,7 +87,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-none mx-0 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 w-full max-w-none mx-0 mb-8">
           {/* Carte 1: Votre site web express */}
           <div className="relative bg-blue-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
@@ -276,7 +276,7 @@ export default function Pricing() {
           </div>
 
           {/* Carte 4: Votre site web basique à 1 € */}
-          <div className="relative bg-green-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#10b981', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
+          <div className="relative bg-blue-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-white mb-6">
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
