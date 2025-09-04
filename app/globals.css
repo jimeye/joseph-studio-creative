@@ -668,7 +668,7 @@ html, body {
   }
 
   .fluid-card {
-    @apply bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300;
     min-height: fit-content;
   }
 

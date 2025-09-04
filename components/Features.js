@@ -55,7 +55,7 @@ export default function Features() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="text-center group">
-              <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 transition-all duration-300" style={{ backgroundColor: '#d92f35', boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 transition-all duration-300" style={{ backgroundColor: '#f20000', boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
                 <div style={{ color: '#16214a' }}>
                   {feature.icon}
                 </div>
@@ -73,7 +73,7 @@ export default function Features() {
           ))}
         </div>
 
-        <div className="mt-8 bg-[#f9f3f3] p-8 border-2 rounded-lg" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+        <div className="mt-8 p-8 border-2 rounded-lg" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4" style={{ color: '#16214a' }}>
               Technologies de Pointe
@@ -82,19 +82,19 @@ export default function Features() {
               Nous utilisons les dernières technologies pour garantir performance et modernité
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-[#f9f3f3] p-2 text-center border-2 rounded-lg" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="p-2 text-center border-2 rounded-lg" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
                 <div className="text-xl font-bold mb-1" style={{ color: '#16214a' }}>Next.js</div>
                 <div className="text-xs" style={{ color: '#16214a' }}>Framework React</div>
               </div>
-              <div className="bg-[#f9f3f3] rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
                 <div className="text-xl font-bold mb-1" style={{ color: '#16214a' }}>Tailwind</div>
                 <div className="text-xs" style={{ color: '#16214a' }}>CSS Framework</div>
               </div>
-              <div className="bg-[#f9f3f3] rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
                 <div className="text-xl font-bold mb-1" style={{ color: '#16214a' }}>Vercel</div>
                 <div className="text-xs" style={{ color: '#16214a' }}>Hébergement Cloud</div>
               </div>
-              <div className="bg-[#f9f3f3] rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="rounded-lg p-2 text-center border-2" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
                 <div className="text-xl font-bold mb-1" style={{ color: '#16214a' }}>TypeScript</div>
                 <div className="text-xs" style={{ color: '#16214a' }}>Typage statique</div>
               </div>

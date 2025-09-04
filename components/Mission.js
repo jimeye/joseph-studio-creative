@@ -23,7 +23,7 @@ export default function Mission() {
                       <div
               className="p-8 md:max-w-xl mx-auto border-2 mt-0 transition-all duration-1000 ease-out rounded-lg"
               style={{ 
-                backgroundColor: '#16214a', 
+                backgroundColor: 'transparent', 
                 boxShadow: '4px 4px 0px #16214a', 
                 marginTop: 0, 
                 paddingTop: '0.8rem', 
@@ -33,13 +33,18 @@ export default function Mission() {
                 opacity: isVisible ? 1 : 0
               }}
             >
-            <div className="text-xl uppercase font-bold mb-4 mt-4" style={{ color: '#F20000 !important' }}>
+            <div className="text-xl uppercase font-bold mb-4 mt-4 text-left" style={{ color: '#F20000 !important' }}>
               FORMATIONS
             </div>
-            <div className="text-xl lg:text-2xl font-light mb-6" style={{ color: '#f9f7f2', fontFamily: 'Newsreader', textAlign: 'justify' }}>
+            <div className="text-xl lg:text-2xl font-light mb-6" style={{ color: '#16214a', fontFamily: 'Newsreader', textAlign: 'justify' }}>
                               Notre mission est d'imaginer comment simplifier votre quotidien en choisissant les bons outils no code que vous pourrez prendre en main facilement.
             </div>
-            <button className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a', backgroundColor: '#f9f7f2', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#f9f7f2'; e.target.style.borderColor = '#f9f7f2'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }}>
+            <button 
+              onClick={() => window.location.href = '/pricelist'}
+              className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 cursor-pointer" 
+              style={{ boxShadow: '4px 4px 0px #16214a', color: '#f9f7f2', borderColor: '#16214a', backgroundColor: '#16214a', transition: 'all 0.3s ease' }} 
+              onMouseEnter={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }} 
+              onMouseLeave={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#f9f7f2'; e.target.style.borderColor = '#16214a'; }}>
               SE FORMER EN 1:1 AVEC UN EXPERT
             </button>
           </div>

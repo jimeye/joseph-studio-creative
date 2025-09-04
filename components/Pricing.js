@@ -55,8 +55,8 @@ export default function Services() {
 
         <div className="fluid-grid">
           {services.map((service, index) => (
-            <div key={index} className="fluid-card hover:-translate-y-2 bg-white border-2 rounded-lg" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
-              <div className="mb-6">
+            <div key={index} className="fluid-card hover:-translate-y-2 border-2 rounded-lg" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a' }}>
+              <div className="mb-6 flex justify-center">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold text-primary mb-4">
@@ -68,7 +68,7 @@ export default function Services() {
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-sm" style={{ color: '#16214a' }}>
-                    <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: '#d92f35' }}></div>
+                    <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: '#F20000' }}></div>
                     {feature}
                   </li>
                 ))}
@@ -78,7 +78,7 @@ export default function Services() {
         </div>
 
                             <div className="text-left mt-12">
-                      <button className="text-lg flex items-center gap-2 bg-white font-bold py-3 px-8 border transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
+                      <button className="text-lg flex items-center gap-2 font-bold py-3 px-8 border rounded-lg transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
                         DÉCOUVRIR TOUS NOS SERVICES
                       </button>
                     </div>

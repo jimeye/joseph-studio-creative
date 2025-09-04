@@ -41,11 +41,11 @@ export default function Services() {
           <div className="relative bg-blue-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-white mb-6">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#f9f7f2' }}>
                 Votre site basique
               </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 1 €</p>
-              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#f9f7f2' }}>À partir de 1 €</p>
+              <p className="text-lg mb-6 font-bold" style={{ color: '#f9f7f2' }}>
                 Une solution simple pour démarrer votre présence en ligne avec un site pro.
               </p>
             </div>
@@ -98,11 +98,11 @@ export default function Services() {
           <div className="relative bg-blue-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-white mb-6">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#f9f7f2' }}>
                 Votre site express
               </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 2600 €</p>
-              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#f9f7f2' }}>À partir de 2600 €</p>
+              <p className="text-lg mb-6 font-bold" style={{ color: '#f9f7f2' }}>
                 Nous créons votre site web en une journée intensive dédiée à la création de votre projet web.
               </p>
             </div>
@@ -160,11 +160,11 @@ export default function Services() {
           <div className="relative bg-blue-600 border-2 p-8 text-center rounded-lg" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-white mb-6">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#f9f7f2' }}>
                 Votre site sur mesure
               </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 3500 €</p>
-              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#f9f7f2' }}>À partir de 3500 €</p>
+              <p className="text-lg mb-6 font-bold" style={{ color: '#f9f7f2' }}>
                 Donnez vie à votre vision avec un site web vitrine ou marchand au design unique et sur mesure.
               </p>
             </div>
@@ -226,11 +226,11 @@ export default function Services() {
           <div className="relative bg-blue-600 rounded-lg border-2 p-8 text-center" style={{ backgroundColor: '#0038b8', boxShadow: '4px 4px 0px #000000', borderColor: '#16214a' }}>
             
             <div className="text-white mb-6">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#f9f7f2' }}>
                 Votre site premium
               </h3>
-              <p className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>À partir de 8500 €</p>
-              <p className="text-lg mb-6 font-bold" style={{ color: '#ffffff' }}>
+              <p className="text-2xl font-bold mb-4" style={{ color: '#f9f7f2' }}>À partir de 8500 €</p>
+              <p className="text-lg mb-6 font-bold" style={{ color: '#f9f7f2' }}>
                 L'excellence présence web design unique, fonctionnalités avancées suivi personnalisé.
               </p>
             </div>
