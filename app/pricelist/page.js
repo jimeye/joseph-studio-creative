@@ -436,60 +436,95 @@ export default function Pricelist() {
           </div>
         </div>
 
-        {/* Newsletter */}
-        <div className="mt-16 rounded-lg p-8">
-          <div className="text-center max-w-2xl mx-auto">
-                         <h2 className="mb-4" style={{ color: '#16214a' }}>
-               Restez informé de nos nouveautés
-             </h2>
-            <p className="text-lg mb-6" style={{ color: '#16214a' }}>
-              Recevez nos conseils et astuces pour optimiser votre présence en ligne
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Votre adresse e-mail"
-                value={newsletterEmail}
-                onChange={(e) => setNewsletterEmail(e.target.value)}
-                required
-                className="flex-1 px-4 py-3 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F20000]"
-                style={{ borderColor: '#16214a' }}
-              />
-              <button
-                type="submit"
-                className="bg-[#16214a] text-white font-bold py-3 px-8 border-2 transition-all duration-300 hover:bg-[#F20000] hover:border-[#F20000] rounded-lg"
-                style={{ borderColor: '#16214a' }}
-              >
-                <Mail size={20} className="inline mr-2" />
-                S'inscrire
-              </button>
-            </form>
-            <p className="text-sm mt-4" style={{ color: '#16214a' }}>
-              Votre adresse e-mail est confidentielle.
-            </p>
+        {/* Newsletter et Contact côte à côte */}
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Newsletter */}
+          <div className="rounded-lg p-8">
+            <div className="text-center max-w-2xl mx-auto">
+              <h2 className="mb-4" style={{ color: '#16214a' }}>
+                Restez informé de nos nouveautés
+              </h2>
+              <p className="text-lg mb-6" style={{ color: '#16214a' }}>
+                Recevez nos conseils et astuces pour optimiser votre présence en ligne
+              </p>
+              <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input
+                  type="email"
+                  placeholder="Votre adresse e-mail"
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
+                  required
+                  className="flex-1 px-4 py-3 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F20000]"
+                  style={{ borderColor: '#16214a' }}
+                />
+                <button
+                  type="submit"
+                  className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 rounded-lg"
+                  style={{ 
+                    boxShadow: '4px 4px 0px #16214a', 
+                    color: '#16214a',
+                    borderColor: '#f9f3f3', 
+                    backgroundColor: 'transparent',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.backgroundColor = '#f9fafb';
+                    e.target.style.color = '#16214a';
+                    e.target.style.borderColor = '#f9fafb';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.backgroundColor = '#16214a';
+                    e.target.style.color = '#f9f7f2';
+                    e.target.style.borderColor = '#f9f3f3';
+                  }}
+                >
+                  <Mail size={20} />
+                  S'inscrire
+                </button>
+              </form>
+              <p className="text-sm mt-4" style={{ color: '#16214a' }}>
+                Votre adresse e-mail est confidentielle.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Section contact */}
-        <div className="mt-16 rounded-lg p-8" style={{ boxShadow: '4px 4px 0px #16214a' }}>
-          <div className="text-center max-w-2xl mx-auto">
-            <h2 className="mb-4" style={{ color: '#16214a' }}>
-              Besoin d'aide pour choisir ?
-            </h2>
-            <p className="text-lg mb-6" style={{ color: '#16214a' }}>
-              Réservez un créneau pour discuter de vos besoins avec Jimmy Joseph
-            </p>
-            <a
-              href="https://acuityscheduling.com/schedule.php?owner=YOUR_ACUITY_ID"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#16214a] text-white font-bold py-4 px-8 border-2 transition-all duration-300 hover:bg-[#F20000] hover:border-[#F20000] rounded-lg"
-              style={{ borderColor: '#16214a' }}
-            >
-              <Calendar size={24} />
-              PRENDRE RENDEZ-VOUS
-              <ArrowRight size={20} />
-            </a>
+          {/* Section contact */}
+          <div className="rounded-lg p-8">
+            <div className="text-center max-w-2xl mx-auto">
+              <h2 className="mb-4" style={{ color: '#16214a' }}>
+                Besoin d'aide pour choisir ?
+              </h2>
+              <p className="text-lg mb-6" style={{ color: '#16214a' }}>
+                Réservez un créneau pour discuter de vos besoins avec Jimmy Joseph
+              </p>
+              <a
+                href="https://acuityscheduling.com/schedule.php?owner=YOUR_ACUITY_ID"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 rounded-lg"
+                style={{ 
+                  boxShadow: '4px 4px 0px #16214a', 
+                  color: '#16214a',
+                  borderColor: '#f9f3f3', 
+                  backgroundColor: 'transparent',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = '#f9fafb';
+                  e.target.style.color = '#16214a';
+                  e.target.style.borderColor = '#f9fafb';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = '#16214a';
+                  e.target.style.color = '#f9f7f2';
+                  e.target.style.borderColor = '#f9f3f3';
+                }}
+              >
+                <Calendar size={20} />
+                PRENDRE RENDEZ-VOUS
+                <ArrowRight size={20} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

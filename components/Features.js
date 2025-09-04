@@ -27,7 +27,7 @@ export default function Features() {
       stats: "99.9% de disponibilité"
     },
     {
-      icon: <Search size={40} style={{ color: '#f9f9f9' }} />,
+      icon: <Search size={120} style={{ color: '#f9f9f9' }} />,
       title: "SEO Optimisé",
       description: "Optimisation pour les moteurs Google, Bing, Yahoo",
       stats: "+300% de visibilité"

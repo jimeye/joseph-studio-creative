@@ -104,7 +104,7 @@ export default function Mission() {
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>LiveChat</div>
               </div>
               <div className="absolute bottom-1/4 right-1/4 transform translate-x-1/2 translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/acuity-logo.svg" alt="Acuity" className="w-8 h-8 mb-1" />
+                <img src="/images/acuity-logo.svg" alt="Acuity" className="w-16 h-16 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Acuity</div>
               </div>
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
