@@ -1,285 +1,158 @@
-'use client';
-
-import { Mail, Phone, MapPin, Instagram, Linkedin } from 'lucide-react';
-
+'use client'
+import { useState } from 'react'
+import { Send } from 'lucide-react'
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: ''
+  })
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // Ici on ajouterait la logique d'envoi du formulaire
+    alert('Merci pour votre message ! Nous vous recontacterons rapidement.')
+  }
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
 
   return (
-    <div className="min-h-screen bg-[#f9f3f3] pt-4 relative" style={{ zIndex: 1000 }}>
+    <div className="min-h-screen bg-gray-50" style={{ paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem' }}>
+      <div className="container-custom">
+        <div className="text-left lg:text-center mb-12" style={{ marginTop: '0rem' }}>
+          <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
+            Contactez-Nous
+          </h2>
+          <p className="text-xl lg:text-2xl max-w-3xl lg:mx-auto" style={{ color: '#16214a' }}>
+            Prêt à transformer votre entreprise ? Contactez-nous pour un devis gratuit !
+          </p>
+        </div>
 
-      {/* Main Content */}
-      <main className="w-full px-8 relative" style={{ zIndex: 1001 }}>
-
-        {/* Main Content Section */}
-
-        <div className="w-full">
-
-
-          {/* Contact Section */}
-
-          <div className="mb-16">
-
-            <h3 className="text-2xl font-bold mb-8" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 24' }}>
-
-              Contact
+        <div className="flex justify-center w-full max-w-none mx-0">
+          {/* Formulaire */}
+          <div className="bg-gray-50 p-8 rounded-lg w-full">
+            <h3 className="text-2xl font-bold mb-6" style={{ color: '#16214a' }}>
+              Demande de Devis Gratuit
             </h3>
-            
-            <div className="bg-[#f9f3f3] p-8 rounded-lg relative border-2" style={{ position: 'relative', borderColor: '#F20000' }}>
-
-              
-              {/* Cadre d'étoiles - 1 ligne continue */}
-
-              <div className="absolute inset-2 pointer-events-none">
-
-                {Array.from({ length: 160 }).map((_, i) => {
-
-                  // Calculer le bon nombre d'étoiles pour chaque côté
-
-                  // Si on a 40 étoiles sur le haut (100% de largeur),
-
-                  // on doit avoir proportionnellement moins sur les côtés
-
-                  const starsPerSide = 40; // 40 étoiles sur chaque côté
-
-                  
-                  let left, top;
-
-                  
-                  if (i < starsPerSide) {
-
-                    // Côté haut - 40 étoiles
-
-                    left = (i / (starsPerSide - 1)) * 100;
-
-                    top = 0;
-                  } else if (i < starsPerSide * 2) {
-
-                    // Côté droit - 40 étoiles
-
-                    left = 100;
-                    top = ((i - starsPerSide) / (starsPerSide - 1)) * 100;
-
-                  } else if (i < starsPerSide * 3) {
-
-                    // Côté bas - 40 étoiles
-
-                    left = 100 - (((i - starsPerSide * 2) / (starsPerSide - 1)) * 100);
-
-                    top = 100;
-                  } else {
-                    // Côté gauche - 40 étoiles
-
-                    left = 0;
-                    top = 100 - (((i - starsPerSide * 3) / (starsPerSide - 1)) * 100);
-
-                  }
-                  
-                  return (
-                    <span 
-                      key={`star-${i}`}
-
-                      className="text-xs absolute"
-
-                      style={{ 
-                        color: '#16214a',
-
-                        left: `${left}%`,
-
-                        top: `${top}%`,
-
-                        transform: 'translate(-50%, -50%)'
-
-                      }}
-                    >
-                      ★
-                    </span>
-                  );
-                })}
-              </div>
-
-              <div className="relative z-10">
-
-                {/* Présentation */}
-
-                <div className="mb-8">
-
-                  <h4 className="text-xl font-bold mb-4" style={{ color: '#F20000', fontFamily: 'Sharp Grotesk Medium 24' }}>
-
-                    Jimmy Joseph Fellous
-
-                  </h4>
-                  <p className="text-lg mb-4" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}>
-
-                    Création de sites web ultra modernes.<br />
-
-                    Performance, design et SEO optimisés.
-
-                  </p>
-                </div>
-
-                {/* Services */}
-
-                <div className="mb-8">
-
-                  <h5 className="text-lg font-bold mb-4" style={{ color: '#F20000', fontFamily: 'Sharp Grotesk Medium 20' }}>
-
-                    Services
-                  </h5>
-                  <ul className="space-y-2" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}>
-
-                    <li>• SEO & Marketing</li>
-
-                    <li>• Site web sur mesure</li>
-
-                    <li>• Freelance</li>
-
-                  </ul>
-                </div>
-
-                {/* Coordonnées */}
-
-                <div className="mb-8">
-
-                  <h5 className="text-lg font-bold mb-4" style={{ color: '#F20000', fontFamily: 'Sharp Grotesk Medium 20' }}>
-
-                    Mes Coordonnées
-
-                  </h5>
-                  <div className="space-y-4">
-
-                    <div className="flex items-center space-x-3">
-
-                      <Mail size={20} style={{ color: '#F20000' }} />
-
-                      <a 
-                        href="mailto:jimmyfellous@gmail.com"
-
-                        className="hover:!text-red-600 transition-colors"
-
-                        style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}
-
-                      >
-                        jimmyfellous@gmail.com
-
-                      </a>
-                    </div>
-                    <div className="flex items-center space-x-3">
-
-                      <Phone size={20} style={{ color: '#F20000' }} />
-
-                      <a 
-                        href="tel:+330608251223"
-
-                        className="hover:!text-red-600 transition-colors"
-
-                        style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}
-
-                      >
-                        +33 06 08 25 12 23
-
-                      </a>
-                    </div>
-                    <div className="flex items-center space-x-3">
-
-                      <MapPin size={20} style={{ color: '#F20000' }} />
-
-                      <a 
-                        href="https://maps.google.com/?q=16+Boulevard+des+Filles+du+Calvaire+75011+Paris+France"
-
-                        target="_blank"
-
-                        rel="noopener noreferrer"
-
-                        className="hover:!text-red-600 transition-colors"
-
-                        style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}
-
-                      >
-                        16 Bld des Filles du Calvaire<br />
-
-                        75011 Paris, France
-
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Réseaux sociaux */}
-
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <h5 className="text-lg font-bold mb-4" style={{ color: '#F20000', fontFamily: 'Sharp Grotesk Medium 20' }}>
-
-                    Réseaux sociaux
-
-                  </h5>
-                  <div className="flex space-x-4">
-
-                    <a 
-                      href="https://www.instagram.com/jimmyloveyou/"
-
-                      target="_blank"
-
-                      rel="noopener noreferrer"
-
-                      className="hover:text-[#F20000] transition-colors p-2 border-2 rounded-lg"
-
-                      style={{ color: '#16214a', borderColor: '#16214a' }}
-
-                      onMouseEnter={(e) => {
-
-                        e.target.style.backgroundColor = '#16214a';
-
-                        e.target.style.color = '#f9f3f3';
-
-                      }}
-                      onMouseLeave={(e) => {
-
-                        e.target.style.backgroundColor = 'transparent';
-
-                        e.target.style.color = '#16214a';
-
-                      }}
-                    >
-                      <Instagram size={24} />
-
-                    </a>
-                    <a 
-                      href="https://www.linkedin.com/feed/?legoTrackingToken=30NfmlWqldVomNMsSBA9z0Kc3RBsCZzkTsCfn9xk6NBkDsCfmhLjmNBkDsCejAVejAZp6lQsSlRsmlirnlK9AVfilh9kQZgfnB2sClAsAZQpmtAqnsCt6VBt6VFnT9BqSlBsRZyrSFvcDpAon1EoSVRomMZp4BQpmtAqnsCc3RKrSBQqndLk7hBpShFtOoMbz0Zpn9LoRdOpOoZsC5gr6lisCsCfmhLjmNBkD9D9z0ZrCZFt6BPrR1MtmZOpOoVejAVejRApnhPpnlNpl9JtkVMtmZOpOpQr7lxpClAfmh9s7lLsCsCjAZ9l4BjjR0Zuk9OpmhOrOpQr7lxpClAfmh9t6VBrmtBsOpQrClQrCAZp4BQrSNP9DhItm5CpmgZp4BQtmZVomMCcDpAon1EoSVRomMZpmRxjClDon0Cq7hTrT9Dfmh9s71x9zcVdjAVczRAimVLqndOpnoCe3cSe38PdjgOfmh9tioScPlzdj0PozgTdPsJejAPoyQVdjsQbjoRcmcJdSdzcj8Re34Zp4BQu6lQrCZz"
-
-                      target="_blank"
-
-                      rel="noopener noreferrer"
-
-                      className="hover:text-[#F20000] transition-colors p-2 border-2 rounded-lg"
-
-                      style={{ color: '#16214a', borderColor: '#16214a' }}
-
-                      onMouseEnter={(e) => {
-
-                        e.target.style.backgroundColor = '#16214a';
-
-                        e.target.style.color = '#f9f3f3';
-
-                      }}
-                      onMouseLeave={(e) => {
-
-                        e.target.style.backgroundColor = 'transparent';
-
-                        e.target.style.color = '#16214a';
-
-                      }}
-                    >
-                      <Linkedin size={24} />
-
-                    </a>
-                  </div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Nom complet *
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-gray-50"
+                    style={{ borderColor: '#16214a' }}
+                    placeholder="Votre nom"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-gray-50"
+                    style={{ borderColor: '#16214a' }}
+                    placeholder="votre@email.com"
+                  />
                 </div>
               </div>
-            </div>
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Téléphone
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-gray-50"
+                    style={{ borderColor: '#16214a' }}
+                    placeholder="06 12 34 56 78"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Entreprise
+                  </label>
+                  <input
+                    type="text"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-gray-50"
+                    style={{ borderColor: '#16214a' }}
+                    placeholder="Nom de votre entreprise"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Votre projet *
+                </label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows="4"
+                  className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-transparent"
+                  style={{ borderColor: '#16214a' }}
+                  placeholder="Décrivez votre projet, vos besoins, votre budget..."
+                ></textarea>
+              </div>
+              
+              <div className="mt-8">
+                <button
+                  type="submit"
+                  className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 rounded-lg"
+                  style={{ 
+                    boxShadow: '4px 4px 0px #16214a', 
+                    color: '#f9f3f3', 
+                    borderColor: '#f9f3f3', 
+                    backgroundColor: '#16214a',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.backgroundColor = '#f9fafb';
+                    e.target.style.color = '#16214a';
+                    e.target.style.borderColor = '#16214a';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.backgroundColor = '#16214a';
+                    e.target.style.color = '#f9f3f3';
+                    e.target.style.borderColor = '#f9f3f3';
+                  }}
+                >
+                  <Send size={20} style={{ color: 'inherit' }} />
+                  ENVOYER MA DEMANDE
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-      </main>
+      </div>
     </div>
-  );
+  )
 }

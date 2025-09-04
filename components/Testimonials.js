@@ -155,7 +155,7 @@ export default function Testimonials() {
         {/* Section Témoignages */}
         <div className="text-left lg:text-center mb-12" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
-            Nos réalisations.
+            Nos réalisations
           </h2>
           <p className="text-xl lg:text-2xl max-w-3xl lg:mx-auto" style={{ color: '#16214a' }}>
             Découvrez nos sites web sur-mesure créés pour nos clients.
@@ -200,7 +200,7 @@ export default function Testimonials() {
             }}
           >
                         {projects.map((project, index) => (
-              <div key={index} className="bg-[#f9f7f2] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0 w-[calc(50vw-2rem)] md:w-[calc(33.333vw-2rem)] lg:w-[300px] min-w-[280px] max-w-[300px]" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}>
+              <div key={index} className="p-6 border-2 rounded-lg transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0 w-[calc(50vw-2rem)] md:w-[calc(33.333vw-2rem)] lg:w-[300px] min-w-[280px] max-w-[300px]" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}>
 
                              {/* Project Image */}
                <div className="mb-4 h-52 -mx-6 -mt-6 transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
@@ -236,8 +236,8 @@ export default function Testimonials() {
                 {project.technologies.slice(0, 3).map((tech, index) => (
                   <span
                     key={index}
-                    className="px-2 py-1 border text-xs font-medium"
-                    style={{ borderColor: '#16214a', color: '#16214a', backgroundColor: '#f9f7f2' }}
+                    className="px-2 py-1 border text-xs font-medium rounded-lg"
+                    style={{ borderColor: '#16214a', color: '#16214a' }}
                   >
                     {tech}
                   </span>
@@ -248,24 +248,24 @@ export default function Testimonials() {
               <div className="flex gap-2">
                 <Link
                   href={`/projets/${project.slug}`}
-                  className="flex-1 text-center px-4 py-2 text-sm font-bold transition-all duration-300"
+                  className="flex-1 text-center px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg"
                   style={{
                     boxShadow: '4px 4px 0px #16214a',
-                    color: '#f9f7f2',
-                    borderColor: '#f9f7f2',
+                    color: '#f9f3f3',
+                    borderColor: '#f9f3f3',
                     backgroundColor: '#16214a',
-                    border: '2px solid #f9f7f2',
+                    border: '2px solid #f9f3f3',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
-                    e.target.style.backgroundColor = '#f9f7f2';
+                    e.target.style.backgroundColor = '#f9fafb';
                     e.target.style.color = '#16214a';
                     e.target.style.borderColor = '#16214a';
                   }}
                   onMouseLeave={(e) => {
                     e.target.style.backgroundColor = '#16214a';
-                    e.target.style.color = '#f9f7f2';
-                    e.target.style.borderColor = '#f9f7f2';
+                    e.target.style.color = '#f9f3f3';
+                    e.target.style.borderColor = '#f9f3f3';
                   }}
                 >
                   Voir le projet

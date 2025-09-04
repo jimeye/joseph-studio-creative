@@ -189,24 +189,24 @@ export default function JJFPortfolioPage() {
                     <div className="flex gap-2">
                       <Link
                         href={project.url}
-                        className="flex-1 text-center px-4 py-2 text-sm font-bold transition-all duration-300"
+                        className="flex-1 text-center px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg"
                         style={{
                           boxShadow: '4px 4px 0px #16214a',
-                          color: '#FAFAFA',
-                          borderColor: '#FAFAFA',
+                          color: '#f9f3f3',
+                          borderColor: '#f9f3f3',
                           backgroundColor: '#16214a',
-                          border: '2px solid #FAFAFA',
+                          border: '2px solid #f9f3f3',
                           transition: 'all 0.3s ease'
                         }}
                         onMouseEnter={(e) => {
-                          e.target.style.backgroundColor = '#FAFAFA';
+                          e.target.style.backgroundColor = '#f9fafb';
                           e.target.style.color = '#16214a';
                           e.target.style.borderColor = '#16214a';
                         }}
                         onMouseLeave={(e) => {
                           e.target.style.backgroundColor = '#16214a';
-                          e.target.style.color = '#FAFAFA';
-                          e.target.style.borderColor = '#FAFAFA';
+                          e.target.style.color = '#f9f3f3';
+                          e.target.style.borderColor = '#f9f3f3';
                         }}
                       >
                         Voir le projet

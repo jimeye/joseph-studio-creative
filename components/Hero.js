@@ -33,9 +33,9 @@ export default function Hero() {
                 transition: 'all 0.3s ease'
               }}
               onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#f9f3f3';
+                e.target.style.backgroundColor = '#f9fafb';
                 e.target.style.color = '#16214a';
-                e.target.style.borderColor = '#f9f3f3';
+                e.target.style.borderColor = '#16214a';
               }}
               onMouseLeave={(e) => {
                 e.target.style.backgroundColor = '#16214a';

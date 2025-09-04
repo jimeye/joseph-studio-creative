@@ -29,7 +29,7 @@ export default function Contact() {
       <div className="container-custom">
                 <div className="text-left lg:text-center mb-12" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
-            Contactez-Nous.
+            Contactez-Nous
           </h2>
           <p className="text-xl lg:text-2xl max-w-3xl lg:mx-auto" style={{ color: '#16214a' }}>
             Prêt à transformer votre entreprise ? Contactez-nous pour un devis gratuit !
@@ -38,7 +38,7 @@ export default function Contact() {
 
         <div className="flex justify-center w-full max-w-none mx-0">
           {/* Formulaire */}
-          <div className="bg-gray-50 p-8 border-2 rounded-lg w-full max-w-2xl" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
+          <div className="bg-gray-50 p-8 rounded-lg w-full">
             <h3 className="text-2xl font-bold mb-6" style={{ color: '#16214a' }}>
               Demande de Devis Gratuit
             </h3>
@@ -126,23 +126,23 @@ export default function Contact() {
               <div className="mt-8">
                                         <button
                             type="submit"
-                            className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300"
+                            className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 rounded-lg"
                             style={{ 
                               boxShadow: '4px 4px 0px #16214a', 
-                              color: '#f9f7f2', 
-                              borderColor: '#f9f7f2', 
+                              color: '#f9f3f3', 
+                              borderColor: '#f9f3f3', 
                               backgroundColor: '#16214a',
                               transition: 'all 0.3s ease'
                             }}
                             onMouseEnter={(e) => {
-                              e.target.style.backgroundColor = '#f9f7f2';
+                              e.target.style.backgroundColor = '#f9fafb';
                               e.target.style.color = '#16214a';
                               e.target.style.borderColor = '#16214a';
                             }}
                             onMouseLeave={(e) => {
                               e.target.style.backgroundColor = '#16214a';
-                              e.target.style.color = '#f9f7f2';
-                              e.target.style.borderColor = '#f9f7f2';
+                              e.target.style.color = '#f9f3f3';
+                              e.target.style.borderColor = '#f9f3f3';
                             }}
                           >
                             <Send size={20} style={{ color: 'inherit' }} />

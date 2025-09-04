@@ -41,10 +41,24 @@ export default function Mission() {
             </div>
             <button 
               onClick={() => window.location.href = '/pricelist'}
-              className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 cursor-pointer" 
-              style={{ boxShadow: '4px 4px 0px #16214a', color: '#f9f7f2', borderColor: '#16214a', backgroundColor: '#16214a', transition: 'all 0.3s ease' }} 
-              onMouseEnter={(e) => { e.target.style.backgroundColor = '#f9f7f2'; e.target.style.color = '#16214a'; e.target.style.borderColor = '#16214a'; }} 
-              onMouseLeave={(e) => { e.target.style.backgroundColor = '#16214a'; e.target.style.color = '#f9f7f2'; e.target.style.borderColor = '#16214a'; }}>
+              className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 rounded-lg" 
+              style={{ 
+                boxShadow: '4px 4px 0px #16214a', 
+                color: '#f9f3f3',
+                borderColor: '#f9f3f3', 
+                backgroundColor: '#16214a',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.backgroundColor = '#f9fafb';
+                e.target.style.color = '#16214a';
+                e.target.style.borderColor = '#16214a';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = '#16214a';
+                e.target.style.color = '#f9f3f3';
+                e.target.style.borderColor = '#f9f3f3';
+              }}>
               SE FORMER EN 1:1 AVEC UN EXPERT
             </button>
           </div>
