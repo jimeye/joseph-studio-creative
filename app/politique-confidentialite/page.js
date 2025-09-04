@@ -35,7 +35,7 @@ export default function PolitiqueConfidentialite() {
                 <p>16 Boulevard des Filles du Calvaire</p>
                 <p>75011 Paris, France</p>
                 <p>Téléphone : +33 06 08 25 12 23</p>
-                <p>Email : contact@josephstudiocreative.com</p>
+                <p>Email : <a href="mailto:info@josephstudiocreative.com" className="underline hover:no-underline">info@josephstudiocreative.com</a></p>
                 <p>Directeur de publication : Jimmy Fellous</p>
               </div>
             </section>
@@ -151,22 +151,37 @@ export default function PolitiqueConfidentialite() {
             {/* Cookies */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#16214a' }}>9. Cookies et technologies similaires</h2>
-              <div className="space-y-2" style={{ color: '#16214a' }}>
-                <p>Notre site utilise des cookies pour améliorer votre expérience :</p>
-                <h3 className="text-lg font-semibold mt-4 mb-2">9.1 Types de cookies utilisés</h3>
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li><strong>Cookies techniques :</strong> Nécessaires au fonctionnement du site</li>
-                  <li><strong>Cookies analytiques :</strong> Pour mesurer l'audience et les performances</li>
-                  <li><strong>Cookies de session :</strong> Pour maintenir votre connexion</li>
-                </ul>
+              <div className="space-y-4" style={{ color: '#16214a' }}>
+                <p>Notre site utilise des cookies et technologies similaires pour améliorer votre expérience de navigation et analyser l'utilisation du site.</p>
                 
-                <h3 className="text-lg font-semibold mt-4 mb-2">9.2 Gestion des cookies</h3>
-                <p>Vous pouvez configurer votre navigateur pour :</p>
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li>Accepter ou refuser les cookies</li>
-                  <li>Être informé quand un cookie est envoyé</li>
-                  <li>Supprimer les cookies existants</li>
-                </ul>
+                <h3 className="text-lg font-semibold mt-4 mb-2">9.1 Qu'est-ce qu'un cookie ?</h3>
+                <p>Un cookie est un petit fichier texte stocké sur votre appareil lorsque vous visitez notre site web. Les cookies nous permettent de reconnaître votre appareil et de mémoriser vos préférences.</p>
+                
+                <h3 className="text-lg font-semibold mt-4 mb-2">9.2 Types de cookies utilisés</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold">Cookies nécessaires :</h4>
+                    <p className="text-sm ml-4">Ces cookies sont essentiels au fonctionnement du site. Ils incluent les cookies de session et de sécurité.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Cookies analytiques :</h4>
+                    <p className="text-sm ml-4">Nous utilisons Google Analytics pour comprendre comment vous utilisez notre site. Ces données sont anonymisées.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Cookies de préférences :</h4>
+                    <p className="text-sm ml-4">Ces cookies mémorisent vos choix (langue, paramètres d'affichage) pour personnaliser votre expérience.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Cookies marketing :</h4>
+                    <p className="text-sm ml-4">Utilisés pour afficher des publicités pertinentes et mesurer l'efficacité de nos campagnes.</p>
+                  </div>
+                </div>
+                
+                <h3 className="text-lg font-semibold mt-4 mb-2">9.3 Gestion de vos préférences</h3>
+                <p>Vous pouvez gérer vos préférences de cookies à tout moment en visitant notre <Link href="/gestion-cookies" className="underline hover:no-underline">page de gestion des cookies</Link>.</p>
+                
+                <h3 className="text-lg font-semibold mt-4 mb-2">9.4 Cookies tiers</h3>
+                <p>Notre site peut contenir des cookies provenant de services tiers (Google Analytics, réseaux sociaux). Ces services ont leurs propres politiques de confidentialité.</p>
               </div>
             </section>
 

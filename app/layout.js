@@ -1,6 +1,7 @@
 import './globals.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import CookiePopup from '../components/CookiePopup'
 import { LanguageProvider } from '../contexts/LanguageContext'
 import { structuredData, localBusinessData, faqData } from './structured-data'
 
@@ -90,6 +91,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
           <Footer />
+          <CookiePopup />
         </LanguageProvider>
       </body>
     </html>
