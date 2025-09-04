@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Mail, Phone, MapPin, Send, Clock } from 'lucide-react'
+import { Send } from 'lucide-react'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-official" style={{ paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem' }}>
+    <section id="contact" className="bg-gray-50" style={{ paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem' }}>
       <div className="container-custom">
                 <div className="text-left lg:text-center mb-12" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
@@ -36,9 +36,9 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 w-full max-w-none mx-0">
+        <div className="flex justify-center w-full max-w-none mx-0">
           {/* Formulaire */}
-          <div className="bg-[#f9f7f2]  p-8 border-2 rounded-lg" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
+          <div className="bg-gray-50 p-8 border-2 rounded-lg w-full max-w-2xl" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
             <h3 className="text-2xl font-bold mb-6" style={{ color: '#16214a' }}>
               Demande de Devis Gratuit
             </h3>
@@ -54,7 +54,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-gray-50"
                     style={{ borderColor: '#16214a' }}
                     placeholder="Votre nom"
                   />
@@ -69,7 +69,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-gray-50"
                     style={{ borderColor: '#16214a' }}
                     placeholder="votre@email.com"
                   />
@@ -86,7 +86,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-gray-50"
                     style={{ borderColor: '#16214a' }}
                     placeholder="06 12 34 56 78"
                   />
@@ -100,7 +100,7 @@ export default function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
+                    className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-gray-50"
                     style={{ borderColor: '#16214a' }}
                     placeholder="Nom de votre entreprise"
                   />
@@ -117,7 +117,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows="4"
-                  className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-[#f9f7f2]"
+                  className="w-full px-4 py-3 border  focus:ring-2 focus:ring-accent focus:border-transparent bg-transparent"
                   style={{ borderColor: '#16214a' }}
                   placeholder="Décrivez votre projet, vos besoins, votre budget..."
                 ></textarea>
@@ -150,58 +150,6 @@ export default function Contact() {
                           </button>
               </div>
             </form>
-          </div>
-
-          {/* Informations de contact */}
-          <div className="space-y-8">
-            <div className="text-left">
-              <h3 className="text-2xl font-bold mb-4" style={{ color: '#16214a' }}>
-                Nos Coordonnées
-              </h3>
-              <div className="space-y-2">
-                <div className="flex items-start">
-                  <Mail size={20} className="mr-4" style={{ color: '#16214a' }} />
-                  <div>
-                    <h4 className="font-semibold" style={{ color: '#16214a' }}>Email</h4>
-                    <a href="mailto:contact@josephstudiocreative.com" style={{ color: '#16214a', cursor: 'pointer' }} className="hover:!text-red-600">contact@josephstudiocreative.com</a>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <Phone size={20} className="mr-4" style={{ color: '#16214a' }} />
-                  <div>
-                    <h4 className="font-semibold" style={{ color: '#16214a' }}>Téléphone</h4>
-                    <a href="tel:+330608251223" style={{ color: '#16214a', cursor: 'pointer' }} className="hover:!text-red-600">+33 06 08 25 12 23</a>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <MapPin size={20} className="mr-4 mt-1" style={{ color: '#16214a' }} />
-                  <div>
-                    <h4 className="font-semibold" style={{ color: '#16214a' }}>Adresse</h4>
-                    <a href="https://maps.google.com/?q=16+Boulevard+des+Filles+du+Calvaire+75011+Paris+France" target="_blank" rel="noopener noreferrer" style={{ color: '#16214a', cursor: 'pointer' }} className="hover:!text-red-600">16 Bld des Filles du Calvaire<br />75011 Paris, France</a>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <Clock size={20} className="mr-4" style={{ color: '#16214a' }} />
-                  <div>
-                    <h4 className="font-semibold" style={{ color: '#16214a' }}>Horaires</h4>
-                    <p className="text-gray-600">Lun-Ven: 9h-18h</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#f9f7f2]  p-8 border-2" style={{ borderColor: '#16214a', boxShadow: '4px 4px 0px #16214a' }}>
-              <h4 className="text-lg font-bold mb-4" style={{ color: '#d92f35' }}>
-                ⚡ Réponse Rapide
-              </h4>
-              <p style={{ color: '#d92f35' }}>
-                Nous répondons à toutes les demandes sous 24h maximum !
-              </p>
-            </div>
-
           </div>
         </div>
       </div>

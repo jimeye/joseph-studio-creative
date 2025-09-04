@@ -11,9 +11,11 @@ export default function Footer() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Logo et description */}
             <div className="text-left">
-              <h3 className="text-sm mb-2 whitespace-nowrap font-bold" style={{ color: '#16214a' }}>
-                JOSEPH STUDIO CREATIVE
-              </h3>
+              <div className="flex flex-col justify-center cursor-pointer hover:opacity-80 transition-opacity mb-2" style={{ width: '120px', gap: '-25px', lineHeight: '0.8', alignItems: 'center' }}>
+                <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.16em', display: 'block', width: '120px' }}>JOSEPH</span>
+                <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '2.0', color: '#ff0000', fontSize: '18px', letterSpacing: '0.21em', display: 'block', width: '180px', marginTop: '-10px' }}>STUDIO</span>
+                <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.03em', display: 'block', width: '120px', marginTop: '-10px' }}>CREATIVE</span>
+              </div>
               <p className="mb-2 max-w-md" style={{ color: '#16214a' }}>
                 Création de sites web ultra modernes.<br />
                 Performance, design et SEO optimisés.
@@ -34,7 +36,7 @@ export default function Footer() {
             <div className="text-left mb-4">
               <ul className="space-y-1" style={{ color: '#16214a' }}>
                 <li>
-                  <a href="mailto:contact@josephstudiocreative.com" className="block hover:!text-red-600 cursor-pointer">contact@josephstudiocreative.com</a>
+                  <a href="mailto:info@josephstudiocreative.com" className="block hover:!text-red-600 cursor-pointer">info@JScreative.com</a>
                 </li>
                 <li>
                   <a href="tel:+330608251223" className="block hover:!text-red-600 cursor-pointer">+33 06 08 25 12 23</a>

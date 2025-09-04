@@ -69,7 +69,7 @@ export default function Hero() {
                 <img src="/images/shopify-logo.svg" alt="Shopify" className="w-10 h-10 object-contain" style={{ marginLeft: '-30px', marginTop: '-3px' }} />
               </div>
             </div>
-            <p className="text-xs font-bold mt-4 text-center" style={{ color: '#16214a' }}>
+            <p className="text-xs font-bold text-left" style={{ color: '#16214a', marginTop: '-16px' }}>
               PLUS DE 156 SITES WEB RÉALISÉS DEPUIS 2018
             </p>
           </div>
