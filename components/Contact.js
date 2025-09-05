@@ -123,7 +123,7 @@ export default function Contact() {
                 ></textarea>
               </div>
               
-              <div className="mt-8">
+              <div className="mt-8 flex justify-center">
                                         <button
                             type="submit"
                             className="text-lg flex items-center gap-2 font-bold py-2 px-8 border transition-all duration-300 rounded-lg"
