@@ -149,9 +149,9 @@ export default function Testimonials() {
 
 
   return (
-    <section id="realisations" className="bg-official mt-0" style={{ marginTop: 0, paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem', scrollMarginTop: '100px', backgroundColor: '#f9f7f2' }}>
+    <section id="realisations" className="bg-official mt-0" style={{ marginTop: 0, paddingTop: '1.5rem', paddingBottom: '3rem', scrollMarginTop: '100px', backgroundColor: '#f9f7f2' }}>
 
-      <div className="container-custom">
+      <div className="fluid-container">
         
         {/* Section Témoignages */}
         <div className="text-left lg:text-center mb-12" style={{ marginTop: '0rem' }}>

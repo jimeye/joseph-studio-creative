@@ -10,7 +10,7 @@ export default function Header() {
       {/* Main Header */}
       <header className="sticky top-0 z-50 bg-gray-50" style={{ paddingBottom: '1px', borderTop: '1px solid #16214a', borderBottom: '1px solid #16214a' }}>
         <div className="fluid-container">
-          <div className="flex items-center pt-1 pb-0 px-2">
+          <div className="flex items-center pt-1 pb-1 px-2">
                                     {/* Logo */}
                         <a href="/" className="flex flex-col justify-center cursor-pointer hover:opacity-80 transition-opacity" style={{ width: '120px', gap: '-25px', lineHeight: '0.8', alignItems: 'center' }}>
                           <span className="text-lg font-bold text-center" style={{ fontFamily: 'Arial', lineHeight: '0.8', color: '#16214a', fontSize: '18px', letterSpacing: '0.16em', display: 'block', width: '120px' }}>JOSEPH</span>

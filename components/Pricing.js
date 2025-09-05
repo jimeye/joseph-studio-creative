@@ -41,9 +41,9 @@ export default function Services() {
   ]
 
   return (
-    <section id="pricing" className="section-padding bg-official" style={{ scrollMarginTop: '100px' }}>
+    <section id="pricing" className="bg-official" style={{ paddingTop: '1.5rem', paddingBottom: '3rem', scrollMarginTop: '100px' }}>
       <div id="pricing-anchor" style={{ position: 'absolute', top: '-100px' }}></div>
-      <div className="w-full">
+      <div className="fluid-container">
                 <div className="text-left mb-8">
           <h2 className="text-4xl md:text-5xl font-normal text-primary mb-4 tracking-tight" style={{ wordSpacing: '-0.1em' }}>
             Nos conseils d'<span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>experts</span> pour propulser votre <span className="hero-title" style={{ fontSize: 'inherit', color: '#d92f35' }}>business</span> en ligne

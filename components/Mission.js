@@ -17,8 +17,8 @@ export default function Mission() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-official" style={{ marginTop: 0, paddingTop: '1rem', paddingBottom: '4rem', marginBottom: '0', paddingLeft: '1rem', paddingRight: '1rem' }}>
-      <div className="container-custom">
+    <section ref={sectionRef} className="bg-official" style={{ marginTop: 0, paddingTop: '1rem', paddingBottom: '3rem', marginBottom: '0' }}>
+      <div className="fluid-container">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Cadre jaune avec la mission */}
                       <div

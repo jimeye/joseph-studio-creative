@@ -41,8 +41,8 @@ export default function Features() {
   ]
 
   return (
-    <section id="a-propos" className="section-padding bg-official" style={{ marginTop: 0, paddingTop: 0, scrollMarginTop: '100px' }}>
-      <div className="container-custom">
+    <section id="a-propos" className="bg-official" style={{ marginTop: 0, paddingTop: '2rem', paddingBottom: '4rem', scrollMarginTop: '100px' }}>
+      <div className="fluid-container">
                 <div className="text-left mb-4">
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight" style={{ wordSpacing: '-0.1em', color: '#16214a' }}>
                           Pourquoi choisir Joseph Studio creative ?

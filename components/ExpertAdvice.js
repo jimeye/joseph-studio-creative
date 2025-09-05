@@ -37,8 +37,8 @@ export default function ExpertAdvice() {
   ]
 
   return (
-    <section className="bg-[#f9f7f2]" style={{ paddingTop: '2rem', paddingBottom: '4rem', paddingLeft: '1rem', paddingRight: '1rem' }}>
-      <div className="container-custom">
+    <section className="bg-[#f9f7f2]" style={{ paddingTop: '1.5rem', paddingBottom: '3rem' }}>
+      <div className="fluid-container">
         <div className="text-left lg:text-center mb-6" style={{ marginTop: '0rem' }}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight hero-title" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
             Stratégies de consultants et spécialistes pour réussir votre web et propulser votre business.

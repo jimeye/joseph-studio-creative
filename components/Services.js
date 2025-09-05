@@ -23,10 +23,8 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="section-padding bg-official" style={{ scrollMarginTop: '100px' }}>
-      {/* Ligne de séparation */}
-      <div className="border-t -my-8" style={{ borderColor: '#f9f9f9' }}></div>
-      <div className="container-custom">
+    <section id="services" className="bg-official" style={{ paddingTop: '1.5rem', paddingBottom: '3rem', scrollMarginTop: '100px' }}>
+      <div className="fluid-container">
         <div className="text-left mb-8">
           <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight hero-title" style={{ wordSpacing: '-0.1em', letterSpacing: '-0.05em', color: '#16214a' }}>
             Nous vous accompagnons dans la <span className="hero-title" style={{ fontSize: 'inherit', color: '#F20000 !important' }}>création</span> ou la <span className="hero-title" style={{ fontSize: 'inherit', color: '#0038b8' }}>refonte</span> de votre site web.
