@@ -12,22 +12,22 @@ export default function Home() {
     <div className="min-h-screen">
       <Hero />
       
-      <SectionSeparator sectionName="Services" color="#0038b8" />
+      {/* <SectionSeparator sectionName="Services" color="#0038b8" /> */}
       <Services />
       
-      <SectionSeparator sectionName="Expertise" color="#F20000" />
+      {/* <SectionSeparator sectionName="Expertise" color="#F20000" /> */}
       <Pricing />
       
-      <SectionSeparator sectionName="Fonctionnalités" color="#0038b8" />
+      {/* <SectionSeparator sectionName="Fonctionnalités" color="#0038b8" /> */}
       <Features />
       
-      <SectionSeparator sectionName="Mission" color="#F20000" />
+      {/* <SectionSeparator sectionName="Mission" color="#F20000" /> */}
       <Mission />
       
-      <SectionSeparator sectionName="Réalisations" color="#0038b8" />
+      {/* <SectionSeparator sectionName="Réalisations" color="#0038b8" /> */}
       <Testimonials />
       
-      <SectionSeparator sectionName="Contact" color="#F20000" />
+      {/* <SectionSeparator sectionName="Contact" color="#F20000" /> */}
       <Contact />
     </div>
   )
