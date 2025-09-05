@@ -23,7 +23,7 @@ export default function Pricing() {
   const plans = [
     {
       name: "Starter",
-      price: "1 €",
+      price: "1 € HT",
       originalPrice: "500 €",
       description: "Site vitrine basique pour commencer",
       features: [

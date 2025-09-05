@@ -82,7 +82,7 @@ export const localBusinessData = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Site web express à 1€",
+          "name": "Site web express à 1€ HT",
           "description": "Site web créé en 1 journée avec aides publiques"
         }
       }

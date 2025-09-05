@@ -11,7 +11,7 @@
     "language": "English"
   },
   "hero": {
-    "title": "Site internet dernière génération à 1€",
+    "title": "JOSEPH STUDIO CREATIVE - Agence Web Design",
     "subtitle": "Création de sites web Next.js/React ultra modernes avec financement d'aides publiques inclus. Performance, design et SEO optimisés. Maintenance 3 ans incluse.",
     "cta": "Commencer maintenant",
     "features": {
@@ -61,7 +61,7 @@
     "plans": {
       "starter": {
         "title": "Starter",
-        "price": "1€",
+        "price": "1€ HT",
         "description": "Site vitrine professionnel",
         "features": ["Design responsive", "5 pages", "Hébergement 3 ans", "Maintenance 1 an", "SEO de base"]
       },

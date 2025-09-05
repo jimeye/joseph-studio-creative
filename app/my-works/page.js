@@ -2,6 +2,7 @@
 
 import { Star, Quote, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
 
 export default function JJFPortfolioPage() {
@@ -20,11 +21,21 @@ export default function JJFPortfolioPage() {
             
             {/* Carousel Container */}
             <div className="relative">
+              {/* Indicateur de scroll sur mobile */}
+              <div className="md:hidden text-center mb-4">
+                <p className="text-sm text-gray-600">← Glissez pour voir plus de projets →</p>
+              </div>
               <div 
                 className="flex gap-8 overflow-x-auto cursor-grab active:cursor-grabbing"
-                style={{ scrollBehavior: 'smooth', scrollbarWidth: 'none', msOverflowStyle: 'none', transition: 'scroll-left 0.5s ease-in-out' }}
+                style={{ 
+                  scrollBehavior: 'smooth', 
+                  scrollbarWidth: 'none', 
+                  msOverflowStyle: 'none', 
+                  transition: 'scroll-left 0.5s ease-in-out',
+                  WebkitOverflowScrolling: 'touch' // Améliore le scroll sur iOS
+                }}
                 onMouseDown={(e) => {
-                  // Désactiver le drag sur mobile
+                  // Désactiver le drag sur mobile pour permettre le scroll natif
                   if (window.innerWidth < 768) return;
                   
                   const slider = e.currentTarget;
@@ -155,11 +166,14 @@ export default function JJFPortfolioPage() {
                   <div key={index} className="bg-[#FAFAFA] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0 w-[calc(50vw-2rem)] md:w-[calc(33.333vw-2rem)] lg:w-[300px] min-w-[280px] max-w-[300px]" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}>
                     {/* Project Image */}
                     <div className="mb-4 h-52 -mx-6 -mt-6 transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
-                      <img 
+                      <Image 
                         src={project.image} 
                         alt={project.name}
+                        width={400}
+                        height={208}
                         className="w-full h-full object-cover"
                         style={{ border: '0', outline: 'none', boxShadow: 'none' }}
+                        priority={index < 3}
                         onError={(e) => {
                           e.target.style.display = 'none';
                           e.target.nextSibling.style.display = 'flex';

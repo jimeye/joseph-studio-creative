@@ -6,9 +6,14 @@ import { LanguageProvider } from '../contexts/LanguageContext'
 import { structuredData, localBusinessData, faqData } from './structured-data'
 
 export const metadata = {
-  title: 'JOSEPH STUDIO CREATIVE - Site internet dernière génération à 1€ | Création Web Next.js/React',
+  title: 'JOSEPH STUDIO CREATIVE - Agence Web Design',
   description: 'Création de sites web Next.js/React ultra modernes avec financement d\'aides publiques inclus. Performance, design et SEO optimisés. Maintenance 1 an incluse. Sites web à partir de 1€ HT.',
-  keywords: 'création site web, Next.js, React, développement web, aides publiques, site internet 1€, SEO, performance, design moderne, maintenance site web, France',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
+  keywords: 'création site web, Next.js, React, développement web, aides publiques, site internet 1€ HT, SEO, performance, design moderne, maintenance site web, France',
   authors: [{ name: 'JOSEPH STUDIO CREATIVE' }],
   creator: 'JOSEPH STUDIO CREATIVE',
   publisher: 'JOSEPH STUDIO CREATIVE',
@@ -22,7 +27,7 @@ export const metadata = {
     canonical: '/',
   },
       openGraph: {
-      title: 'JOSEPH STUDIO CREATIVE - Site internet dernière génération à 1€',
+      title: 'JOSEPH STUDIO CREATIVE - Agence Web Design',
     description: 'Création de sites web Next.js/React ultra modernes avec financement d\'aides publiques inclus. Performance, design et SEO optimisés.',
     url: 'https://joseph-creative-studio.com',
           siteName: 'JOSEPH STUDIO CREATIVE',
@@ -39,7 +44,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-          title: 'JOSEPH STUDIO CREATIVE - Site internet dernière génération à 1€',
+          title: 'JOSEPH STUDIO CREATIVE - Agence Web Design',
     description: 'Création de sites web Next.js/React ultra modernes avec financement d\'aides publiques inclus.',
     images: ['/og-image.jpg'],
   },

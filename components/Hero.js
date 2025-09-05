@@ -2,6 +2,7 @@
 
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import { useState } from 'react'
+import Image from 'next/image'
 import AppointmentModal from './AppointmentModal'
 
 export default function Hero() {
@@ -56,17 +57,17 @@ export default function Hero() {
             <div className="flex items-center gap-4 md:gap-6">
               {/* Squarespace Circle Platinum Partner */}
               <div className="w-8 h-8 flex items-center justify-center">
-                <img src="/images/squarespace-logo.svg" alt="Squarespace" className="w-6 h-6 object-contain" />
+                <Image src="/images/squarespace-logo.svg" alt="Squarespace" width={24} height={24} className="w-6 h-6 object-contain" />
               </div>
 
               {/* Notion Official Ambassador */}
               <div className="w-8 h-8 flex items-center justify-center">
-                <img src="/images/notion-logo.svg" alt="Notion" className="w-6 h-6 object-contain" />
+                <Image src="/images/notion-logo.svg" alt="Notion" width={24} height={24} className="w-6 h-6 object-contain" />
               </div>
 
               {/* Shopify Partner */}
               <div className="w-16 h-16 flex items-center justify-center">
-                <img src="/images/shopify-logo.svg" alt="Shopify" className="w-10 h-10 object-contain" style={{ marginLeft: '-30px', marginTop: '-3px' }} />
+                <Image src="/images/shopify-logo.svg" alt="Shopify" width={40} height={40} className="w-10 h-10 object-contain" style={{ marginLeft: '-30px', marginTop: '-3px' }} />
               </div>
             </div>
             <p className="text-xs font-bold text-left" style={{ color: '#16214a', marginTop: '-16px' }}>

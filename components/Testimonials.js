@@ -2,6 +2,7 @@
 
 import { Star, Quote, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
 
 export default function Testimonials() {
@@ -164,12 +165,22 @@ export default function Testimonials() {
 
         {/* Carousel Container */}
         <div className="relative">
+          {/* Indicateur de scroll sur mobile */}
+          <div className="md:hidden text-center mb-4">
+            <p className="text-sm text-gray-600">← Glissez pour voir plus de réalisations →</p>
+          </div>
           <div 
             ref={carouselRef}
-            className="flex gap-8 overflow-x-auto cursor-grab active:cursor-grabbing md:overflow-x-auto overflow-x-hidden"
-            style={{ scrollBehavior: 'smooth', scrollbarWidth: 'none', msOverflowStyle: 'none', transition: 'scroll-left 0.5s ease-in-out' }}
+            className="flex gap-8 overflow-x-auto cursor-grab active:cursor-grabbing"
+            style={{ 
+              scrollBehavior: 'smooth', 
+              scrollbarWidth: 'none', 
+              msOverflowStyle: 'none', 
+              transition: 'scroll-left 0.5s ease-in-out',
+              WebkitOverflowScrolling: 'touch' // Améliore le scroll sur iOS
+            }}
             onMouseDown={(e) => {
-              // Désactiver le drag sur mobile
+              // Désactiver le drag sur mobile pour permettre le scroll natif
               if (window.innerWidth < 768) return;
               
               const slider = e.currentTarget;
@@ -204,11 +215,14 @@ export default function Testimonials() {
 
                              {/* Project Image */}
                <div className="mb-4 h-52 -mx-6 -mt-6 transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.name}
+                  width={400}
+                  height={208}
                   className="w-full h-full object-cover"
                   style={{ border: '0', outline: 'none', boxShadow: 'none' }}
+                  priority={index < 3}
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';

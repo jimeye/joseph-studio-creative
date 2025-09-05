@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Mission() {
   const sectionRef = useRef(null);
@@ -86,19 +87,19 @@ export default function Mission() {
             {/* Orbite 1 - 4 planètes (rotation lente) */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48" style={{ animationDuration: '25s', animation: 'flyOut 25s linear infinite' }}>
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/notion-logo.svg" alt="Notion" className="w-8 h-8 mb-1" />
+                <Image src="/images/notion-logo.svg" alt="Notion" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Notion</div>
               </div>
               <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/zapier-logo.svg" alt="Zapier" className="w-8 h-8 mb-1" />
+                <Image src="/images/zapier-logo.svg" alt="Zapier" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Zapier</div>
               </div>
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/canva-logo.svg" alt="Canva" className="w-8 h-8 mb-1" />
+                <Image src="/images/canva-logo.svg" alt="Canva" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Canva</div>
               </div>
               <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/shopify-logo.svg" alt="Shopify" className="w-8 h-8 mb-1" />
+                <Image src="/images/shopify-logo.svg" alt="Shopify" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Shopify</div>
               </div>
             </div>
@@ -106,35 +107,35 @@ export default function Mission() {
             {/* Orbite 2 - 8 planètes (rotation plus rapide) */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80" style={{ animationDuration: '20s', animation: 'flyOut 20s linear infinite' }}>
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/figma-logo.svg" alt="Figma" className="w-8 h-8 mb-1" />
+                <Image src="/images/figma-logo.svg" alt="Figma" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Figma</div>
               </div>
               <div className="absolute top-1/4 right-1/4 transform translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/framer-logo.svg" alt="Framer" className="w-8 h-8 mb-1" />
+                <Image src="/images/framer-logo.svg" alt="Framer" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Framer</div>
               </div>
               <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/livechat-logo.svg" alt="LiveChat" className="w-8 h-8 mb-1" />
+                <Image src="/images/livechat-logo.svg" alt="LiveChat" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>LiveChat</div>
               </div>
               <div className="absolute bottom-1/4 right-1/4 transform translate-x-1/2 translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/acuity-logo.svg" alt="Acuity" className="w-16 h-16 mb-1" />
+                <Image src="/images/acuity-logo.svg" alt="Acuity" width={64} height={64} className="w-16 h-16 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Acuity</div>
               </div>
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/squarespace-logo.svg" alt="Squarespace" className="w-8 h-8 mb-1" />
+                <Image src="/images/squarespace-logo.svg" alt="Squarespace" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>Squarespace</div>
               </div>
               <div className="absolute bottom-1/4 left-1/4 transform -translate-x-1/2 translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/beyable-logo.svg" alt="BEYABLE" className="w-8 h-8 mb-1" />
+                <Image src="/images/beyable-logo.svg" alt="BEYABLE" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>BEYABLE</div>
               </div>
               <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/wg-logo.svg" alt="WG" className="w-8 h-8 mb-1" />
+                <Image src="/images/wg-logo.svg" alt="WG" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>WG</div>
               </div>
               <div className="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center" style={{ width: '80px', height: '80px' }}>
-                <img src="/images/t-logo.svg" alt="T" className="w-8 h-8 mb-1" />
+                <Image src="/images/t-logo.svg" alt="T" width={32} height={32} className="w-8 h-8 mb-1" />
                 <div className="text-xs font-bold" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk' }}>T</div>
               </div>
             </div>

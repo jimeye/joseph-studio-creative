@@ -117,7 +117,7 @@ export default function TestStylo() {
               </h3>
               
               <div className="text-2xl font-normal mb-4" style={{ color: '#16214a', wordSpacing: '-0.1em', letterSpacing: '-0.05em' }}>
-                à partir de <span style={{ ...variation.style, display: 'inline-block', paddingTop: '0', paddingBottom: '0' }}>1 €</span>
+                à partir de <span style={{ ...variation.style, display: 'inline-block', paddingTop: '0', paddingBottom: '0' }}>1 € HT</span>
               </div>
               
               <div className="text-sm text-gray-600">

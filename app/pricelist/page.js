@@ -19,7 +19,7 @@ export default function Pricelist() {
       title: "Besoin d'aide ? Réservez un accompagnement en visio avec un expert",
       price: "90,00 €",
       description: "Accompagnement personnalisé en visioconférence avec un expert",
-      icon: "/images/produits-services/01-accompagnement-visio-expert-90e.png",
+      icon: "/images/produits-services/01-accompagnement-visio-expert-90e.webp",
       type: "Visioconférence",
       category: "Formations"
     },
@@ -28,7 +28,7 @@ export default function Pricelist() {
       title: "Pack heure de maintenance",
       price: "À partir de 90,00 €",
       description: "Service de maintenance à la demande pour votre site web",
-      icon: "/images/produits-services/02-pack-maintenance-90e.png",
+      icon: "/images/produits-services/02-pack-maintenance-90e.webp",
       category: "Maintenance & options"
     },
     {
@@ -36,7 +36,7 @@ export default function Pricelist() {
       title: "Optimisation SEO pour remonter sur Google",
       price: "320,00 €",
       description: "Amélioration de votre référencement pour une meilleure visibilité sur Google",
-      icon: "/images/produits-services/03-optimisation-seo-google-320e.png",
+      icon: "/images/produits-services/03-optimisation-seo-google-320e.webp",
       category: "Communication & Marketing"
     },
     {
@@ -44,7 +44,7 @@ export default function Pricelist() {
       title: "Boostez le design de votre site web",
       price: "À partir de 300,00 €",
       description: "Refonte et amélioration du design de votre site web",
-      icon: "/images/produits-services/04-boost-design-site-300e.png",
+      icon: "/images/produits-services/04-boost-design-site-300e.webp",
       category: "Création de contenus"
     },
     {
@@ -52,7 +52,7 @@ export default function Pricelist() {
       title: "Création de newsletter",
       price: "À partir de 210,00 €",
       description: "Conception et mise en place de votre newsletter professionnelle",
-      icon: "/images/produits-services/05-creation-newsletter-210e.png",
+      icon: "/images/produits-services/05-creation-newsletter-210e.webp",
       category: "Communication & Marketing"
     },
     {
@@ -60,7 +60,7 @@ export default function Pricelist() {
       title: "Pack : Passer à Squarespace 7.1 + refonte du web design",
       price: "À partir de 350,00 €",
       description: "Migration vers Squarespace 7.1 avec refonte complète du design",
-      icon: "/images/produits-services/06-migration-squarespace-71-350e.png",
+      icon: "/images/produits-services/06-migration-squarespace-71-350e.webp",
       category: "Création de contenus"
     },
     {
@@ -68,7 +68,7 @@ export default function Pricelist() {
       title: "Votre site devient multilingue avec Weglot",
       price: "120,00 €",
       description: "Traduction et adaptation de votre site en plusieurs langues",
-      icon: "/images/produits-services/07-site-multilingue-weglot-120e.png",
+      icon: "/images/produits-services/07-site-multilingue-weglot-120e.webp",
       category: "Plug-in"
     },
     {
@@ -76,7 +76,7 @@ export default function Pricelist() {
       title: "Optimisation de vos images",
       price: "À partir de 80,00 €",
       description: "Compression et optimisation de vos images pour de meilleures performances",
-      icon: "/images/produits-services/08-optimisation-images-80e.png",
+      icon: "/images/produits-services/08-optimisation-images-80e.webp",
       category: "Maintenance & options"
     },
     {
@@ -84,7 +84,7 @@ export default function Pricelist() {
       title: "Se former à la gestion de ses réseaux sociaux",
       price: "300,00 €",
       description: "Formation complète à la gestion de vos réseaux sociaux",
-      icon: "/images/produits-services/09-formation-reseaux-sociaux-300e.png",
+      icon: "/images/produits-services/09-formation-reseaux-sociaux-300e.webp",
       type: "Visioconférence",
       category: "Formations"
     },
@@ -93,7 +93,7 @@ export default function Pricelist() {
       title: "Se former à Squarespace",
       price: "150,00 €",
       description: "Formation personnalisée à l'utilisation de Squarespace",
-      icon: "/images/produits-services/10-formation-squarespace-150e.png",
+      icon: "/images/produits-services/10-formation-squarespace-150e.webp",
       type: "Visioconférence",
       category: "Formations"
     },
@@ -102,7 +102,7 @@ export default function Pricelist() {
       title: "Campagne digitale",
       price: "430,00 €",
       description: "Conception et mise en place de votre campagne marketing digitale",
-      icon: "/images/produits-services/11-campagne-digitale-430e.png",
+      icon: "/images/produits-services/11-campagne-digitale-430e.webp",
       category: "Communication & Marketing"
     },
     {
@@ -110,7 +110,7 @@ export default function Pricelist() {
       title: "Mettre en place une opération spéciale sur mon site web",
       price: "370,00 €",
       description: "Configuration d'opérations spéciales et promotions sur votre site",
-      icon: "/images/produits-services/12-operation-speciale-site-370e.png",
+      icon: "/images/produits-services/12-operation-speciale-site-370e.webp",
       category: "Communication & Marketing"
     },
     {
@@ -118,7 +118,7 @@ export default function Pricelist() {
       title: "Se former à Acuity Scheduling",
       price: "300,00 €",
       description: "Formation à l'utilisation d'Acuity Scheduling pour la prise de rendez-vous",
-      icon: "/images/produits-services/13-formation-acuity-300e.png",
+      icon: "/images/produits-services/13-formation-acuity-300e.webp",
       type: "Visioconférence",
       category: "Formations"
     },
@@ -127,7 +127,7 @@ export default function Pricelist() {
       title: "Ajouter la prise de rdv sur mon site web",
       price: "720,00 €",
       description: "Intégration d'un système de prise de rendez-vous sur votre site",
-      icon: "/images/produits-services/14-prise-rdv-site-720e.png",
+      icon: "/images/produits-services/14-prise-rdv-site-720e.webp",
       category: "Plug-in"
     },
     {
@@ -135,7 +135,7 @@ export default function Pricelist() {
       title: "Paramétrer Instagram Shopping",
       price: "490,00 €",
       description: "Configuration et optimisation d'Instagram Shopping pour votre business",
-      icon: "/images/produits-services/15-instagram-shopping-490e.png",
+      icon: "/images/produits-services/15-instagram-shopping-490e.webp",
       category: "Communication & Marketing"
     },
     {
@@ -143,7 +143,7 @@ export default function Pricelist() {
       title: "Se former à Shopify",
       price: "300,00 €",
       description: "Formation complète à l'utilisation de Shopify pour votre e-commerce",
-      icon: "/images/produits-services/16-formation-shopify-300e.png",
+      icon: "/images/produits-services/16-formation-shopify-300e.webp",
       type: "Visioconférence",
       category: "Formations"
     },
@@ -152,7 +152,7 @@ export default function Pricelist() {
       title: "Rédaction de vos documents légaux par un avocat",
       price: "À partir de 280,00 €",
       description: "Rédaction de vos documents légaux par un professionnel du droit",
-      icon: "/images/produits-services/17-documents-legaux-avocat-280e.png",
+      icon: "/images/produits-services/17-documents-legaux-avocat-280e.webp",
       category: "Création de contenus"
     },
     {
@@ -160,7 +160,7 @@ export default function Pricelist() {
       title: "Faire développer une demande sur mesure",
       price: "420,00 €",
       description: "Développement personnalisé selon vos besoins spécifiques",
-      icon: "/images/produits-services/18-developpement-sur-mesure-420e.png",
+      icon: "/images/produits-services/18-developpement-sur-mesure-420e.webp",
       category: "Création de contenus"
     },
     {
@@ -168,7 +168,7 @@ export default function Pricelist() {
       title: "Montage vidéo pour dynamiser votre page d'accueil",
       price: "250,00 €",
       description: "Création de vidéos dynamiques pour votre page d'accueil",
-      icon: "/images/produits-services/19-montage-video-accueil-250e.png",
+      icon: "/images/produits-services/19-montage-video-accueil-250e.webp",
       category: "Création de contenus"
     },
     {
@@ -176,7 +176,7 @@ export default function Pricelist() {
       title: "Se former à la création de newsletter",
       price: "250,00 €",
       description: "Formation à la création et gestion de newsletters professionnelles",
-      icon: "/images/produits-services/20-formation-newsletter-250e.png",
+      icon: "/images/produits-services/20-formation-newsletter-250e.webp",
       type: "Visioconférence",
       category: "Formations"
     },
@@ -185,7 +185,7 @@ export default function Pricelist() {
       title: "Intégrez un chat pour plus d'interaction avec vos clients",
       price: "350,00 €",
       description: "Intégration d'un système de chat pour améliorer l'interaction client",
-      icon: "/images/produits-services/21-chat-interaction-clients-350e.png",
+      icon: "/images/produits-services/21-chat-interaction-clients-350e.webp",
       category: "Plug-in"
     },
     {
@@ -193,7 +193,7 @@ export default function Pricelist() {
       title: "Réservez votre nom de domaine et créez votre adresse e-mail professionnelle",
       price: "90,00 €",
       description: "Réservation de nom de domaine et création d'adresse email professionnelle",
-      icon: "/images/produits-services/21-nom-domaine-email-90e.png",
+      icon: "/images/produits-services/21-nom-domaine-email-90e.webp",
       type: "Visioconférence",
       category: "Formations"
     },
@@ -202,7 +202,7 @@ export default function Pricelist() {
       title: "Ajoutez un espace membre à votre site web pour monétiser du contenu premium ou créer une communauté",
       price: "450,00 €",
       description: "Création d'un espace membre pour monétiser du contenu premium",
-      icon: "/images/produits-services/22-espace-membre-premium-450e.png",
+      icon: "/images/produits-services/22-espace-membre-premium-450e.webp",
       category: "Plug-in"
     },
     {
@@ -210,7 +210,7 @@ export default function Pricelist() {
       title: "Fonctionnalité e-commerce",
       price: "900,00 €",
       description: "Ajout de fonctionnalités e-commerce à votre site web",
-      icon: "/images/produits-services/23-fonctionnalite-ecommerce-900e.png",
+      icon: "/images/produits-services/23-fonctionnalite-ecommerce-900e.webp",
       category: "Plug-in"
     },
     {
@@ -218,7 +218,7 @@ export default function Pricelist() {
       title: "Faites rédiger vos textes par une journaliste",
       price: "À partir de 250,00 €",
       description: "Rédaction professionnelle de vos textes par une journaliste",
-      icon: "/images/produits-services/23-redaction-journaliste-250e.png",
+      icon: "/images/produits-services/23-redaction-journaliste-250e.webp",
       category: "Création de contenus"
     },
     {
@@ -226,7 +226,7 @@ export default function Pricelist() {
       title: "Template E-shop",
       price: "75,00 €",
       description: "Template e-commerce prêt à l'emploi pour votre boutique",
-      icon: "/images/produits-services/24-template-eshop-75e.png",
+      icon: "/images/produits-services/24-template-eshop-75e.webp",
       category: "Templates"
     },
     {
@@ -234,7 +234,7 @@ export default function Pricelist() {
       title: "Template Agence",
       price: "75,00 €",
       description: "Template professionnel pour agence avec design moderne",
-      icon: "/images/produits-services/25-template-agence-75e.png",
+      icon: "/images/produits-services/25-template-agence-75e.webp",
       category: "Templates"
     },
     {
@@ -242,7 +242,7 @@ export default function Pricelist() {
       title: "Template Startup",
       price: "75,00 €",
       description: "Template dynamique et moderne pour startup",
-      icon: "/images/produits-services/26-template-startup-75e.png",
+      icon: "/images/produits-services/26-template-startup-75e.webp",
       category: "Templates"
     },
     {
@@ -250,7 +250,7 @@ export default function Pricelist() {
       title: "Template Architecte",
       price: "75,00 €",
       description: "Template élégant et professionnel pour architectes",
-      icon: "/images/produits-services/27-template-architecte-75e.png",
+      icon: "/images/produits-services/27-template-architecte-75e.webp",
       category: "Templates"
     },
     {
@@ -258,7 +258,7 @@ export default function Pricelist() {
       title: "Couleur du menu de navigation au passage du curseur",
       price: "0,00 €",
       description: "Personnalisation de la couleur du menu au survol",
-      icon: "/images/produits-services/28-couleur-menu-curseur-0e.png",
+      icon: "/images/produits-services/28-couleur-menu-curseur-0e.webp",
       category: "Ressources gratuites"
     },
     {
@@ -266,7 +266,7 @@ export default function Pricelist() {
       title: "Avantages Squarespace",
       price: "0,00 €",
       description: "Guide des avantages de la plateforme Squarespace",
-      icon: "/images/produits-services/29-avantages-squarespace-0e.png",
+      icon: "/images/produits-services/29-avantages-squarespace-0e.webp",
       category: "Ressources gratuites"
     },
     {
@@ -274,7 +274,7 @@ export default function Pricelist() {
       title: "Check-list des éléments à réunir avant de créer un site web",
       price: "0,00 €",
       description: "Liste complète des éléments nécessaires avant création de site",
-      icon: "/images/produits-services/30-checklist-creation-site-0e.png",
+      icon: "/images/produits-services/30-checklist-creation-site-0e.webp",
       category: "Ressources gratuites"
     }
   ]
