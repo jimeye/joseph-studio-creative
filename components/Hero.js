@@ -31,7 +31,8 @@ export default function Hero() {
                                 color: '#f9f3f3',
                 borderColor: '#f9f3f3', 
                 backgroundColor: '#16214a',
-                transition: 'all 0.3s ease'
+                transition: 'all 0.3s ease',
+                transform: 'translateY(-3px)'
               }}
               onMouseEnter={(e) => {
                 e.target.style.backgroundColor = '#f9fafb';
