@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright centré sur toute la largeur */}
-          <div className="text-xs mt-2 text-center" style={{ color: '#16214a', fontSize: '18px' }}>
+          <div className="text-sm mt-2 text-center" style={{ color: '#16214a', fontSize: '20px' }}>
             ©2025 JOSEPH-STUDIO-CREATIVE | Powered by US | Tous droits réservés |
           </div>
         </div>
