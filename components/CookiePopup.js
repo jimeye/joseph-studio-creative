@@ -7,9 +7,9 @@ export default function CookiePopup() {
   const [isAccepted, setIsAccepted] = useState(false)
 
   useEffect(() => {
-    // Vérifier si l'utilisateur a déjà accepté les cookies
+    // Vérifier si l'utilisateur a déjà fait un choix
     const cookieConsent = localStorage.getItem('cookieConsent')
-    if (!cookieConsent) {
+    if (!cookieConsent || cookieConsent === 'null' || cookieConsent === 'undefined') {
       // Afficher le popup après 2 secondes
       const timer = setTimeout(() => {
         setIsVisible(true)
@@ -29,7 +29,9 @@ export default function CookiePopup() {
     setIsVisible(false)
   }
 
-  if (!isVisible || isAccepted) {
+  // Ne pas afficher si l'utilisateur a déjà fait un choix
+  const cookieConsent = typeof window !== 'undefined' ? localStorage.getItem('cookieConsent') : null
+  if (!isVisible || isAccepted || (cookieConsent && cookieConsent !== 'null' && cookieConsent !== 'undefined')) {
     return null
   }
 
