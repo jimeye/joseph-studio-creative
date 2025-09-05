@@ -1,3 +1,5 @@
+'use client'
+
 import { Globe, Smartphone, Search, Zap, Shield, Palette } from 'lucide-react'
 
 export default function Services() {
@@ -77,11 +79,6 @@ export default function Services() {
           ))}
         </div>
 
-                            <div className="text-left mt-12">
-                      <button className="text-lg flex items-center gap-2 font-bold py-3 px-8 border rounded-lg transition-all duration-300" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
-                        DÉCOUVRIR TOUS NOS SERVICES
-                      </button>
-                    </div>
       </div>
     </section>
   )

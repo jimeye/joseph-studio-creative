@@ -298,7 +298,7 @@ export default function Services() {
               Vous avez déjà démarré la création de votre site web mais vous avez besoin de l'aide d'un expert ? C'est ici !
             </p>
             <div className="text-center">
-              <button className="text-lg flex items-center justify-center gap-2 bg-white font-bold py-3 px-8 border-2 hover:transform hover:-translate-x-1 hover:-translate-y-1 mx-auto transition-all duration-300 hover:bg-[#ffff00]" style={{ boxShadow: '4px 4px 0px #16214a', color: '#16214a', borderColor: '#16214a' }}>
+              <button className="text-lg flex items-center justify-center gap-2 bg-white font-bold py-3 px-8 rounded-lg border transition-all duration-300 hover:bg-[#ffff00] mx-auto" style={{ boxShadow: '4px 4px 0px #000000', color: '#16214a', borderColor: '#16214a' }}>
                 AMÉLIOREZ VOTRE SITE WEB
               </button>
             </div>
